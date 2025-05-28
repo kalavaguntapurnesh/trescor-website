@@ -109,7 +109,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/terms-and-conditions"
+                          href="/privacy-policy"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
                         >
                           Terms & Conditions
@@ -169,14 +169,7 @@ const Footer = () => {
                         </a>
                       </li>
 
-                      {/* <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/about-us#location_map"
-                      className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
-                        >
-                          Where to Find Us
-                        </a>
-                      </li> */}
+                   
                     </ul>
                   </div>
 

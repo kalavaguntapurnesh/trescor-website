@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import SupportOne from "../assets/SupportTwo.jpg";
 
 const Hero = () => {
   const slides = [
-    {
+     {
       image: "https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       heading: "Unify capabilities with Dynamics 365",
       paragraph:
@@ -14,10 +13,10 @@ const Hero = () => {
     },
 
     {
-      image: "https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      heading: "Unify capabilities with Dynamics 365",
+      image: "https://images.pexels.com/photos/1181320/pexels-photo-1181320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      heading: "Intelligent Solutions for your business",
       paragraph:
-        "From integrated workflows to real-time insights, we streamline every part of your operations.",
+        "Stay ahead with your business in the market with our innovative and reliable services.",
       buttonText: "Contact With Us",
       buttonLink: "/contact-trescor",
     },
@@ -35,13 +34,13 @@ const Hero = () => {
   }, [slides.length]);
 
   return (
-    <section className="relative h-full w-full overflow-hidden select-none">
+    <section className="relative h-[100vh] w-full overflow-hidden select-none">
       {/* Background Images */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0]">
 
-        <AnimatePresence>
-          <motion.img
-            key={slides[currentIndex].image}
+        <AnimatePresence mode="wait">
+          <img
+            key={`slide-${currentIndex}`}
             src={slides[currentIndex].image}
             alt={`Slide ${currentIndex + 1}`}
             initial={{ opacity: 0 }}
@@ -54,7 +53,7 @@ const Hero = () => {
 
       </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-[#e7e5df] lg:text-start text-center px-4 ">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black/50 bg-opacity-50 text-[#e7e5df] lg:text-start text-center px-4 ">
         <div className="max-w-[1400px] mx-auto w-[100%] mt-16 lg:mt-24 lg:px-6 space-y-4">
           <div
 
@@ -161,6 +160,20 @@ const Hero = () => {
         </div>
       </div>
     </section>
+
+    // <section className="relative w-full h-[100vh] overflow-hidden">
+    //   <div className="absolute inset-0 z-0">
+    //     <img
+    //       src="https://images.pexels.com/photos/17129992/pexels-photo-17129992/free-photo-of-house-by-street.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
+    //       alt="test"
+    //       className="w-full h-full object-cover"
+    //     />
+    //   </div>
+
+    //   <div className="relative z-10 flex items-center justify-center h-full bg-black/50 text-white">
+    //     <h1 className="text-3xl font-bold">Image Layer Test</h1>
+    //   </div>
+    // </section>
   );
 };
 
