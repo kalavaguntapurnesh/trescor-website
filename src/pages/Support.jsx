@@ -104,7 +104,7 @@ const Support = () => {
 
                                 <div className="flex flex-wrap flex-col items-center pb-3">
                                     <div className="text-center mt-4">
-                                        <h3 className="lg:text-4xl text-2xl font-bold text-[#0A3161]">
+                                        <h3 className="lg:text-4xl text-3xl font-bold text-[#0A3161]">
                                             Uncover Your Business Scope With Us
                                         </h3>
                                     </div>

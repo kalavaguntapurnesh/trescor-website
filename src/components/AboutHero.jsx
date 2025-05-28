@@ -49,13 +49,13 @@ const AboutHero = () => {
                           About TRESCor
                         </p>
                         <div>
-                          <p className="lg:text-4xl text-3xl text-start font-bold text-[#0A3161] leading-relaxed pt-2">
+                          <p className="lg:text-4xl text-3xl text-center lg:text-start font-bold text-[#0A3161] leading-relaxed pt-2">
                             Empowering a Brighter Financial Future Together
                           </p>
                         </div>
                       </div>
 
-                      <div className="text-start text-base text-gray-600 lg:leading-normal">
+                      <div className="lg:text-start text-center text-base text-gray-600 lg:leading-normal">
                         <p>
                           Trescor  is engaged in solving critical business problems
                           through digital transformation and innovative cloud

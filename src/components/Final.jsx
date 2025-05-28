@@ -24,7 +24,7 @@ const Final = () => {
                     <div className="font-bold lg:text-2xl text-xl flex lg:justify-start justify-center">
                       <h1 className="text-[#0a3161]">Customized Execution Strategy</h1>
                     </div>
-                    <div className="lg:text-base text-sm flex lg:justify-start justify-center">
+                    <div className=" flex lg:justify-start justify-center">
                       <p className="text-[#555] lg:text-start text-center">Our customized execution strategy is tailored to align with your unique objectives, ensuring precision and flexibility at every stage. We adapt swiftly to evolving conditions.</p>
                     </div>
                   </div>
@@ -36,7 +36,7 @@ const Final = () => {
                     <div className="font-bold lg:text-2xl text-xl flex lg:justify-start justify-center">
                       <h1 className="text-[#0a3161]">Complete Project Management</h1>
                     </div>
-                    <div className="lg:text-base text-sm flex lg:justify-start justify-center">
+                    <div className=" flex lg:justify-start justify-center">
                       <p className="text-[#555] lg:text-start text-center">We offer end-to-end project management solutions that cover every phase from planning to execution. With clear communication, structured timelines, and expert oversight.</p>
                     </div>
                   </div>
@@ -50,7 +50,7 @@ const Final = () => {
                     <div className="font-bold lg:text-2xl text-xl flex lg:justify-start justify-center">
                       <h1 className="text-[#0a3161]">Supply Chain Optimization</h1>
                     </div>
-                    <div className="lg:text-base text-sm flex lg:justify-start justify-center">
+                    <div className="flex lg:justify-start justify-center">
                       <p className="text-[#555] lg:text-start text-center">We streamline your supply chain operations to enhance efficiency, reduce costs, and improve overall performance. By identifying key bottlenecks and implementing smart solutions.</p>
                     </div>
                   </div>

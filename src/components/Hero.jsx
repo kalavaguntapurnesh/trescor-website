@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import SupportOne from "../assets/SupportTwo.jpg";
 
 const Hero = () => {
   const slides = [
@@ -18,7 +19,7 @@ const Hero = () => {
       paragraph:
         "From integrated workflows to real-time insights, we streamline every part of your operations.",
       buttonText: "Contact With Us",
-       buttonLink: "/contact-trescor",
+      buttonLink: "/contact-trescor",
     },
   ];
 
@@ -37,6 +38,7 @@ const Hero = () => {
     <section className="relative h-full w-full overflow-hidden select-none">
       {/* Background Images */}
       <div className="absolute inset-0 z-0">
+
         <AnimatePresence>
           <motion.img
             key={slides[currentIndex].image}
@@ -49,6 +51,7 @@ const Hero = () => {
             className="absolute inset-0 object-cover w-full h-full"
           />
         </AnimatePresence>
+
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-[#e7e5df] lg:text-start text-center px-4 ">
