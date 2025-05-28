@@ -24,6 +24,21 @@ import { MdSupport } from "react-icons/md";
 import { FaBusinessTime } from "react-icons/fa";
 import { FaIntercom } from "react-icons/fa6";
 
+import {
+  FaCogs,
+  FaChartBar,
+  FaTools,
+  FaMoneyCheckAlt,
+  FaIndustry,
+  FaLaptopCode,
+  FaUniversity,
+  FaPuzzlePiece,
+  FaLightbulb,
+  FaQuestionCircle,
+  FaLock,
+  FaLifeRing
+} from 'react-icons/fa';
+
 const SecNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -112,7 +127,7 @@ const SecNavbar = () => {
           className={
             !isMobileMenuOpen
               ? "lg:hidden fixed left-[-100%] h-[100%] ease-in-out duration-1000 "
-              : "lg:hidden fixed left-0 top-0 w-[70%] h-[100%] bg-white ease-in-out duration-1000 rounded-b-lg z-10 shadow-sm-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
+              : "lg:hidden fixed left-0 top-0 w-[100%] h-[100%] bg-white ease-in-out duration-1000 rounded-b-lg z-10 shadow-sm-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]"
           }
         >
           <a href="/" className="flex items-center flex-row ml-4 pt-4 ">
@@ -122,129 +137,13 @@ const SecNavbar = () => {
             </span>
           </a>
 
-          <ul className="p-4">
-            <li className="p-4 border-b border-gray-600">
-              <div
-                onClick={() => toggleMobileDropdown("subscription")}
-                className="flex items-center justify-between cursor-pointer text-navGray"
-              >
-                Landlord
-                <FaAngleDown
-                  className={`transition-transform ${openDropdownMobile === "subscription"
-                    ? "rotate-180 text-mainColor"
-                    : ""
-                    }`}
-                />
-              </div>
-              <AnimatePresence>
-                {openDropdownMobile === "subscription" && (
-                  <motion.ul
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    className="pl-4 mt-6 space-y-2"
-                  >
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Rental Listings
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Rental Applications
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                      >
-                        Tenant Screening
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Credit, Criminal, Eviction Reports
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Digital Leases
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                      >
-                        Online Rent Collection
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        FastPay
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Maintenance Tracking
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                      >
-                        Rent Price Analysis
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Rental Property Calculator
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Property Accounting
-                      </a>
-                    </li>
-                  </motion.ul>
-                )}
-              </AnimatePresence>
-            </li>
-            <li className="p-4 border-b border-gray-600">
+          <ul className="p-4 mt-4">
+            <li className="px-4 py-3">
               <div
                 onClick={() => toggleMobileDropdown("home")}
-                className="flex items-center justify-between cursor-pointer text-navGray"
+                className="flex items-center justify-between cursor-pointer text-[#0a3161] font-medium"
               >
-                Tenants
+                Our Services
                 <FaAngleDown
                   className={`transition-transform ${openDropdownMobile === "home"
                     ? "rotate-180 text-mainColor"
@@ -258,68 +157,87 @@ const SecNavbar = () => {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    className="pl-4 mt-6 space-y-2"
+                    className="mt-6 grid grid-cols-2 gap-4"
                   >
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                      >
-                        Renter Profile
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center hover:bg-[#d9d9d9] transition-colors">
+                      <FaCogs className="text-[#0a3161]" />
+                      <a href="/services-microsoft-dynamics-365-finance" className="block text-sm text-gray-700">
+                        Dynamic F & O
                       </a>
                     </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Online Rent Payments
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center hover:bg-[#d9d9d9] transition-colors">
+                      <FaChartBar className="text-[#0a3161]" />
+                      <a href="/services-microsoft-dynamics-365" className="block text-sm text-gray-700">
+                        BI Analytics
                       </a>
                     </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Digital Lease Signing
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                      >
-                        Maintenance Tickets
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        CreditBoost
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/rental-listings"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold"
-                      >
-                        Find Next Place
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center hover:bg-[#d9d9d9] transition-colors">
+                      <FaTools className="text-[#0a3161]" />
+                      <a href="/services-microsoft-dynamics-365-finance" className="block text-sm text-gray-700">
+                        Support & Managed
                       </a>
                     </li>
                   </motion.ul>
                 )}
               </AnimatePresence>
             </li>
-            <li className="p-4 border-b border-gray-600">
+
+            <li className="px-4 py-3">
+              <div
+                onClick={() => toggleMobileDropdown("services")}
+                className="flex items-center justify-between cursor-pointer text-[#0a3161] font-medium"
+              >
+                Industries we serve
+                <FaAngleDown
+                  className={`transition-transform ${openDropdownMobile === "services"
+                    ? "rotate-180 text-mainColor"
+                    : ""
+                    }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "services" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="mt-6 grid grid-cols-2 gap-4"
+                  >
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
+                      <FaMoneyCheckAlt className="text-[#0a3161]" />
+                      <a href="/industries" className="block text-sm text-gray-700">
+                        Financial
+                      </a>
+                    </li>
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
+                      <FaIndustry className="text-[#0a3161]" />
+                      <a href="/industries" className="block text-sm text-gray-700">
+                        Manufacturing
+                      </a>
+                    </li>
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
+                      <FaLaptopCode className="text-[#0a3161]" />
+                      <a href="/industries" className="block text-sm text-gray-700">
+                        Software
+                      </a>
+                    </li>
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
+                      <FaUniversity className="text-[#0a3161]" />
+                      <a href="/industries" className="block text-sm text-gray-700">
+                        Public Sector
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+
+            <li className="px-4 py-3">
               <div
                 onClick={() => toggleMobileDropdown("products")}
-                className="flex items-center justify-between cursor-pointer text-navGray"
+                className="flex items-center justify-between cursor-pointer text-[#0a3161] font-medium"
               >
-                Resources
+                Our Solutions
                 <FaAngleDown
                   className={`transition-transform ${openDropdownMobile === "products"
                     ? "rotate-180 text-mainColor"
@@ -333,33 +251,18 @@ const SecNavbar = () => {
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    className="pl-4 mt-6 space-y-2"
+                    className="mt-6 grid grid-cols-2 gap-4"
                   >
-                    <li className="text-navGray">
-                      <a
-                        href="/about-us"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                      >
-                        About Us
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
+                      <FaPuzzlePiece className="text-[#0a3161]" />
+                      <a href="/" className="block text-sm text-gray-700">
+                        Integration Consulting
                       </a>
                     </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/contact-us"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                      >
-                        Contact Us
-                      </a>
-                    </li>
-                    <li className="text-navGray">
-                      <a
-                        href="/testimonials"
-                        className="block text-sm hover:text-mainColor transition duration-300 ease-in-out  hover:font-semibold
-        "
-                      >
-                        Testimonials
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
+                      <FaLightbulb className="text-[#0a3161]" />
+                      <a href="/" className="block text-sm text-gray-700">
+                        Business Needs
                       </a>
                     </li>
                   </motion.ul>
@@ -367,54 +270,129 @@ const SecNavbar = () => {
               </AnimatePresence>
             </li>
 
-            <li className="p-4 border-b border-gray-600">
-              <a
-                href="/login"
-                className="flex items-center justify-between cursor-pointer text-navGray"
+            <li className="px-4 py-3">
+              <div
+                onClick={() => toggleMobileDropdown("technologies")}
+                className="flex items-center justify-between cursor-pointer text-[#0a3161] font-medium"
               >
-                Login
-              </a>
+                About Trescor
+                <FaAngleDown
+                  className={`transition-transform ${openDropdownMobile === "technologies"
+                    ? "rotate-180 text-mainColor"
+                    : ""
+                    }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "technologies" && (
+
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="mt-6 grid grid-cols-2 gap-4"
+                  >
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
+                      <FaQuestionCircle className="text-[#0a3161]" />
+                      <a href="/about-trescor" className="block text-sm text-gray-700">
+                        Why Trescor
+                      </a>
+                    </li>
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
+                      <FaHandshake className="text-[#0a3161]" />
+                      <a href="/collaborate-with-us" className="block text-sm text-gray-700">
+                        Collaborate with us
+                      </a>
+                    </li>
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
+                      <FaLock className="text-[#0a3161]" />
+                      <a href="/privacy-policy" className="block text-sm text-gray-700">
+                        Privacy Policy
+                      </a>
+                    </li>
+                  </motion.ul>
+                )}
+              </AnimatePresence>
+            </li>
+            <li className="px-4 py-3">
+              <div
+                onClick={() => toggleMobileDropdown("mobile-app")}
+                className="flex items-center justify-between cursor-pointer text-[#0a3161] font-medium"
+              >
+                Need Support
+                <FaAngleDown
+                  className={`transition-transform ${openDropdownMobile === "mobile-app" ? "rotate-180 text-mainColor" : ""
+                    }`}
+                />
+              </div>
+              <AnimatePresence>
+                {openDropdownMobile === "mobile-app" && (
+                  <motion.ul
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="mt-6 grid grid-cols-2 gap-4"
+                  >
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
+                      <FaLifeRing className="text-[#0a3161]" />
+                      <a href="/dynamics-365-support-services" className="block text-sm text-gray-700">
+                        Find with us
+                      </a>
+                    </li>
+                  </motion.ul>
+
+                )}
+              </AnimatePresence>
             </li>
 
-            <li className="p-4 border-b border-gray-600">
-              <a
-                href="/register"
-                className="flex items-center justify-between cursor-pointer text-navGray"
-              >
-                Register
-              </a>
-            </li>
 
-            <li className="p-4 border-b border-gray-600">
+
+
+            <li className="px-4 mt-10 w-[100%] flex justify-center items-center">
               <a
-                href="/contact-us"
-                className="flex items-center justify-between cursor-pointer text-navGray"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="border-[1px] relative py-[10px] bg-trumpOne text-white rounded-full border-[#0a3161] text-sm bg-[#0a3161]  flex justify-center items-center font-semibold overflow-hidden text-center w-[90%]"
               >
-                Contact Us
+                <span className="relative z-10">Close</span>
               </a>
             </li>
           </ul>
 
           <div className="px-4">
-            <h5 className="p-4 text-xl text-footerLinks font-semibold">
+            <h5 className="p-4 text-xl text-center text-[#0a3161] font-semibold">
               Follow us on
             </h5>
             <div className="p-4">
-              <div className="grid grid-cols-4">
-                <a href="https://www.linkedin.com/company/alchemindssolutions">
-                  <FaLinkedinIn className="w-6 h-6 text-footerLinks duration-1000 hover:text-mainColor ease-in-out" />
-                </a>
-                <a href="https://x.com/alchemindsindia">
-                  <FaXTwitter className="w-6 h-6 text-footerLinks duration-1000 hover:text-mainColor ease-in-out" />
-                </a>
-                <a href="https://www.instagram.com/alchemindssolutions/">
-                  {" "}
-                  <FaInstagram className="w-6 h-6 text-footerLinks duration-1000 hover:text-mainColor ease-in-out" />
-                </a>
-                <a href="https://www.threads.net/@alchemindssolutions">
-                  {" "}
-                  <FaThreads className="w-6 h-6 text-footerLinks duration-1000 hover:text-mainColor ease-in-out" />
-                </a>
+              <div className="grid grid-cols-5 ">
+                <div className="flex justify-center items-center">
+                  <a href="https://www.linkedin.com/company/alchemindssolutions">
+                    <FaLinkedinIn className="w-6 h-6 text-[#0a3161] duration-1000 hover:text-mainColor ease-in-out " />
+                  </a>
+                </div>
+                <div className="flex justify-center items-center">
+                  <a href="https://x.com/alchemindsindia">
+                    <FaXTwitter className="w-6 h-6 text-[#0a3161] duration-1000 hover:text-mainColor ease-in-out" />
+                  </a>
+                </div>
+                <div className="flex justify-center items-center">
+                  <a href="https://www.instagram.com/alchemindssolutions/">
+                    {" "}
+                    <FaInstagram className="w-6 h-6 text-[#0a3161] duration-1000 hover:text-mainColor ease-in-out" />
+                  </a>
+                </div>
+                <div className="flex justify-center items-center">
+                  <a href="https://www.threads.net/@alchemindssolutions">
+                    {" "}
+                    <FaThreads className="w-6 h-6 text-[#0a3161] duration-1000 hover:text-mainColor ease-in-out" />
+                  </a>
+                </div>
+
+                <div className="flex justify-center items-center">
+                  <a href="https://www.threads.net/@alchemindssolutions">
+                    {" "}
+                    <FaThreads className="w-6 h-6 text-[#0a3161] duration-1000 hover:text-mainColor ease-in-out" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

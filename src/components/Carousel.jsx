@@ -215,7 +215,7 @@ const Carousel = () => {
                                 Why Trescor is best?
                               </p>
                             </div>
-                            <h3 className="text-4xl font-bold text-[#0A3161] lg:text-start text-center">
+                            <h3 className="lg:text-4xl text-3xl font-bold text-[#0A3161] lg:text-start text-center">
                               Empowering Business Innovation through Deep Expertise.
                             </h3>
 

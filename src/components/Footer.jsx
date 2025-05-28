@@ -29,7 +29,7 @@ const Footer = () => {
                       <p className="mb-4 text-[#0A3161] lg:text-start text-center">Unify capabilities with Dynamics 365—modern that help move your business forward</p>
 
                       <div className="flex flex-row md:justify-start justify-center items-center gap-2 mb-8 text-[#0A3161]">
-                        <p >View More</p>
+                        <a href="/about-trescor">View More</a>
                         <FaAngleRight className="w-3 h-3" />
                       </div>
 
@@ -93,7 +93,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/about-us"
+                          href="/about-trescor"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
                         >
                           About Trescor
@@ -101,7 +101,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/about-us#our_leadership"
+                          href="/about-trescor"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
                         >
                           Our Leadership
@@ -137,7 +137,7 @@ const Footer = () => {
                     <ul className="pl-0 mt-3 space-y-3 list-none">
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/managed-it-services"
+                          href="/services-microsoft-dynamics-365-finance"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
                         >
                           Dynamic 365 Finance & Operations
@@ -145,7 +145,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/services-microsoft-dynamics-365-finance"
+                          href="/services-microsoft-dynamics-365"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
                         >
                           BI Analytics
@@ -241,7 +241,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/"
+                          href="/industries"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
                         >
                           Manufacturing Services
@@ -250,7 +250,7 @@ const Footer = () => {
 
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/"
+                          href="/industries"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
                         >
                           Software Services
@@ -258,7 +258,7 @@ const Footer = () => {
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
-                          href="/"
+                          href="/industries"
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
                         >
                           Public Sector Services
@@ -283,9 +283,9 @@ const Footer = () => {
               <div className="flex items-center justify-center space-x-4 text-sm text-[#0A3161] mt-4">
                 {/* <p>Return & Refund Policy</p>
                 <div className="h-4 w-px bg-[#0A3161]" /> */}
-                <p>Terms of Service</p>
+                <a href="/privacy-policy">Terms of Service</a>
                 <div className="h-4 w-px bg-[#0A3161]" />
-                <p>Privacy Policy</p>
+                <a href="/privacy-policy">Privacy Policy</a>
               </div>
 
 
