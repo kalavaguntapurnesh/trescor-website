@@ -395,9 +395,9 @@ const AboutHero = () => {
 
                               <div className='py-4 text-gray-600'>
 
-                                <p>Expertise:</p>
+                                <p className='lg:text-start text-center'>Expertise:</p>
 
-                                <div className='pt-2 flex flex-row items-center justify-between'>
+                                <div className='pt-2 flex lg:flex-row gap-2 flex-col items-center justify-between'>
                                   <div className='flex flex-row items-center'>
                                     <img src={star} alt="star" className='w-6 h-6' />
                                     <h1 className='ml-2'>Dynamics 365 Expert</h1>

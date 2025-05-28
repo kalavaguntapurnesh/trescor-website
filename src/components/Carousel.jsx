@@ -78,24 +78,18 @@ const Carousel = () => {
 
 
 
-              <motion.div
-                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
+              <div
+               
                 className="text-center mt-4"
               >
                 <p className="leading-relaxed tracking-wide font-normal text-base text-gray-600 dark:text-gray-800 ">
                   Discover the Comprehensive Suite of Microsoft Dynamics 365 and
                   other Microsoft Solutions for Your Business Transformation
                 </p>
-              </motion.div>
+              </div>
 
-              <motion.div
-                variants={fadeIn("up", 0.1)} // Fade in from top to bottom
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
+              <div
+              
                 className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pt-8"
               >
                 <div className="flex md:justify-start justify-center">
@@ -189,7 +183,7 @@ const Carousel = () => {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
 
             </div>
@@ -202,11 +196,7 @@ const Carousel = () => {
                     <div className="justify-center w-full ">
                       <div className="w-full max-w-[14000px] mx-auto space-y-4 ">
                         <div className="items-center px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-16 lg:px-6">
-                          <motion.div
-                            variants={fadeIn("down", 0.1)} // Fade in from top to bottom
-                            initial="hidden"
-                            whileInView="show"
-                            viewport={{ once: true, amount: 0.5 }}
+                          <div
                             className="col-span-2 mb-8 space-y-3"
                           >
                             <div className="flex items-center lg:justify-start justify-center ">
@@ -242,12 +232,9 @@ const Carousel = () => {
                                 </a>
                               </div>
                             </div>
-                          </motion.div>
-                          <motion.div
-                            variants={fadeIn("up", 0.1)} // Fade in from top to bottom
-                            initial="hidden"
-                            whileInView="show"
-                            viewport={{ once: true, amount: 0.5 }}
+                          </div>
+                          <div
+                         
                             className="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0"
                           >
                             <div className="flex flex-col lg:items-start items-center">
@@ -308,7 +295,7 @@ const Carousel = () => {
                                 requirements.
                               </p>
                             </div>
-                          </motion.div>
+                          </div>
                         </div>
                       </div>
                     </div>

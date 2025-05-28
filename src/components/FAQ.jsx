@@ -9,11 +9,8 @@ const FAQ = () => {
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px]">
             <div className="p-4">
-              <motion.div
-                variants={fadeIn("down", 0.1)} // Fade in from top to bottom
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
+              <div
+                
                 className="space-y-3"
               >
                 <div className="flex items-center text-center justify-center ">
@@ -24,17 +21,14 @@ const FAQ = () => {
                 </div>
 
                 <div className="text-center mt-4">
-                  <h3 className="lg:text-4xl text-2xl font-bold text-[#0A3161]">
+                  <h3 className="lg:text-4xl text-3xl font-bold text-[#0A3161]">
                     Frequently asked questions
                   </h3>
                 </div>
 
-              </motion.div>
-              <motion.div
-                variants={fadeIn("up", 0.1)} // Fade in from top to bottom
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.5 }}
+              </div>
+              <div
+               
                 className="w-full flex justify-center items-center pt-8"
               >
                 <div className="md:w-5/6 w-full">
@@ -55,7 +49,7 @@ const FAQ = () => {
                   answer="It helps streamline business processes by centralizing data, automating tasks, and providing real-time insights. With Business Central, you can manage finance, sales, purchasing, inventory, and more from a single platform. It simplifies workflows, improves collaboration across teams, and enables data-driven decision-making."
                 />
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>

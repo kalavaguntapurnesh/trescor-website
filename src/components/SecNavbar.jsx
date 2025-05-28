@@ -351,7 +351,7 @@ const SecNavbar = () => {
             <li className="px-4 mt-10 w-[100%] flex justify-center items-center">
               <a
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="border-[1px] relative py-[10px] bg-trumpOne text-white rounded-full border-[#0a3161] text-sm bg-[#0a3161]  flex justify-center items-center font-semibold overflow-hidden text-center w-[90%]"
+                className="border-[1px] relative py-[10px] bg-trumpOne text-white rounded-full border-[#0a3161] text-sm bg-[#0a3161]  flex justify-center items-center font-semibold overflow-hidden text-center w-[100%]"
               >
                 <span className="relative z-10">Close</span>
               </a>

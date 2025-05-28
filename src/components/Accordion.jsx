@@ -5,7 +5,7 @@ const Accordion = ({ title, answer }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className="py-6 md:border-b-[0px] border-b-[1px] md:mt-2 md:bg-[#f8f9fa] rounded md:pt-0 pt-2 select-none cursor-pointer">
+    <div className="py-6 md:border-b-[0px] border-b-[1px] border-gray-100 md:mt-2 md:bg-[#f8f9fa] rounded md:pt-0 pt-2 select-none cursor-pointer">
       <button
         onClick={() => {
           setAccordionOpen(!accordionOpen);
