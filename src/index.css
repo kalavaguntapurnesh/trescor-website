@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Outfit", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.pin {
+  background: #da1333;
+  position: absolute;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+}
+
+.pin::before {
+  content: "";
+  background: #da1333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite ease-out;
+}
+
+.pin span {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  left: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #0A3161;
+  border-radius: 3em;
+  padding: 0.3em 0.6em;
+  font-size: 0.9em;
+  color: #fff;
+  font-weight: 600;
+}
+
+.usa {
+  top: 42%;
+  left: 14.5%;
+}
+
+.france {
+  top: 31%;
+  left: 45%;
+}
+
+.brazil {
+  top: 35%;
+  left: 26%;
+}
+
+.china {
+  top: 54%;
+  left: 67%;
+}
+
+@media screen and (max-width: 600px) {
+  .world-map {
+    font-size: 13px;
+  }
+}
