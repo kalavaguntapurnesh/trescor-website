@@ -241,7 +241,7 @@ const Benefits = () => {
 
                     <div className="flex lg:justify-start justify-center">
                       <a
-                        href="/contact#contact_form"
+                    href="/contact-trescor"
                        className="relative flex h-[50px] md:w-60 w-3/4 items-center bg-white border-[#0A3161] text-[#0A3161] justify-center overflow-hidden border  transition-all before:absolute before:h-0 before:w-0  before:bg-[#B31942] hover:text-white hover:border-[#B31942] before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded"
                       >
                         <span class="relative z-10">Read More</span>
@@ -312,7 +312,7 @@ const Benefits = () => {
 
                     <div className="flex lg:justify-start justify-center lg:ml-4">
                       <a
-                        href="/contact#contact_form"
+                       href="/contact-trescor"
                         className="relative flex h-[50px] md:w-60 w-3/4 items-center bg-white border-[#0A3161] text-[#0A3161] justify-center overflow-hidden border  transition-all before:absolute before:h-0 before:w-0  before:bg-[#B31942] hover:text-white hover:border-[#B31942] before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded"
                       >
                         <span class="relative z-10">Read More</span>

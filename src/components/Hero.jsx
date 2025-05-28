@@ -82,7 +82,7 @@ const Hero = () => {
           >
             <a
               href={slides[currentIndex].buttonLink}
-              className="inline-block px-[48px] py-3 border-[1px] bg-[#e7e5df] border-[#e7e5df] text-[#1a1a1a] rounded-full font-medium"
+              className="inline-block px-[48px] py-3 border-[1px] bg-[#e7e5df] border-[#e7e5df] text-[#1a1a1a] rounded font-medium"
             >
               {slides[currentIndex].buttonText}
             </a>
@@ -117,26 +117,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* <div className="grid grid-cols-6 gap-4 mt-4 mx-8">
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
-              <span>Find Next Place</span>
-            </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
-              <span>RMA Credits</span>
-            </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
-              <span>Property Audit</span>
-            </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
-              <span>Track Maintenance</span>
-            </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
-              <span>Landlord Resource</span>
-            </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
-              <span>RMA Screening</span>
-            </div>
-          </div> */}
+         
         </div>
 
         <div
@@ -145,16 +126,16 @@ const Hero = () => {
         >
           <div className="grid grid-cols-2 gap-4 mt-8">
             <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
-              <span>Credit Boost</span>
+              <span>Dynamics 365</span>
             </div>
             <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
-              <span>Rental Listing</span>
+              <span>Business Targets</span>
             </div>
             <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
-              <span>Digital Leases</span>
+              <span>Support Service</span>
             </div>
             <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
-              <span>Price Analysis</span>
+              <span>BI Analytics</span>
             </div>
           </div>
         </div>

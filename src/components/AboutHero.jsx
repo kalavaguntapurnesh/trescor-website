@@ -36,7 +36,7 @@ const AboutHero = () => {
 
   return (
     <div>
-      <div className="lg:pt-24 pt-20 select-none">
+      <div className="lg:pt-24 pt-16 select-none">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px]">
@@ -76,7 +76,7 @@ const AboutHero = () => {
 
                       <div className="flex lg:justify-start justify-center items-center pb-4 pt-2">
                         <a
-                          href="/contact"
+                          href="/contact-trescor"
                           className="relative flex h-[50px] md:w-60 w-3/4 items-center bg-white border-[#0A3161] text-[#0A3161] justify-center overflow-hidden border  transition-all before:absolute before:h-0 before:w-0  before:bg-[#B31942] hover:text-white hover:border-[#B31942] before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded"
                         >
                           <span className="relative z-10 text-base">
@@ -400,19 +400,19 @@ const AboutHero = () => {
                                 <div className='pt-2 flex lg:flex-row gap-2 flex-col items-center justify-between'>
                                   <div className='flex flex-row items-center'>
                                     <img src={star} alt="star" className='w-6 h-6' />
-                                    <h1 className='ml-2'>Dynamics 365 Expert</h1>
+                                    <h1 className='ml-2'>Dynamics 365 Business Analyst</h1>
 
                                   </div>
 
                                   <div className='flex flex-row items-center'>
                                     <img src={star} alt="star" className='w-6 h-6' />
-                                    <h1 className='ml-2'>Dynamics 365 Expert</h1>
+                                    <h1 className='ml-2'>Dynamics 365 Supply Chain Consultant</h1>
 
                                   </div>
 
                                   <div className='flex flex-row items-center'>
                                     <img src={star} alt="star" className='w-6 h-6' />
-                                    <h1 className='ml-2'>Dynamics 365 Expert</h1>
+                                    <h1 className='ml-2'>Dynamics AX Functional Specialist</h1>
 
                                   </div>
                                 </div>

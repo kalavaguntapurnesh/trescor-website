@@ -1,6 +1,7 @@
 import React from 'react'
 import SecNavbar from './../components/SecNavbar';
 import Footer from './../components/Footer';
+import ScrollToTop from "../components/ScrollToTop";
 
 const Industries = () => {
     return (
@@ -9,6 +10,7 @@ const Industries = () => {
             {/* Section 1 */}
 
             <SecNavbar/>
+                <ScrollToTop />
 
              <div className="lg:pt-32 pt-24 select-none">
                 <div className="relative">
@@ -66,7 +68,7 @@ const Industries = () => {
                                         </div>
                                         <div class="px-6 pb-4 flex lg:justify-start justify-center">
                                             <a
-                                                href="/contact"
+                                                href="/contact-trescor"
                                                 class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-[#0A3161] text-[#0A3161] transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#0A3161] before:duration-300 before:ease-out hover:text-white hover:shadow-[#0A3161] hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                                             >
                                                 <span class="relative z-10">Know More</span>
@@ -95,7 +97,7 @@ const Industries = () => {
                                         </div>
                                         <div class="px-6 pb-4 flex lg:justify-start justify-center">
                                             <a
-                                                href="/contact"
+                                                href="/contact-trescor"
                                                 class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-[#0A3161] text-[#0A3161] transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#0A3161] before:duration-300 before:ease-out hover:text-white hover:shadow-[#0A3161] hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                                             >
                                                 <span class="relative z-10">Know More</span>
@@ -124,7 +126,7 @@ const Industries = () => {
                                         </div>
                                         <div class="px-6 pb-4 flex lg:justify-start justify-center">
                                             <a
-                                                href="/contact"
+                                                href="/contact-trescor"
                                                 class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-[#0A3161] text-[#0A3161] transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#0A3161] before:duration-300 before:ease-out hover:text-white hover:shadow-[#0A3161] hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                                             >
                                                 <span class="relative z-10">Know More</span>
@@ -152,7 +154,7 @@ const Industries = () => {
                                         </div>
                                         <div class="px-6 pb-4 flex lg:justify-start justify-center">
                                             <a
-                                                href="/contact"
+                                                href="/contact-trescor"
                                                 class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-[#0A3161] text-[#0A3161] transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#0A3161] before:duration-300 before:ease-out hover:text-white hover:shadow-[#0A3161] hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                                             >
                                                 <span class="relative z-10">Know More</span>
@@ -180,7 +182,7 @@ const Industries = () => {
                                         </div>
                                         <div class="px-6 pb-4 flex lg:justify-start justify-center">
                                             <a
-                                                href="/contact"
+                                                href="/contact-trescor"
                                                 class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-[#0A3161] text-[#0A3161] transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#0A3161] before:duration-300 before:ease-out hover:text-white hover:shadow-[#0A3161] hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                                             >
                                                 <span class="relative z-10">Know More</span>
@@ -208,7 +210,7 @@ const Industries = () => {
                                         </div>
                                         <div class="px-6 pb-4 flex lg:justify-start justify-center">
                                             <a
-                                                href="/contact"
+                                                href="/contact-trescor"
                                                 class="relative h-[40px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-[#0A3161] text-[#0A3161] transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#0A3161] before:duration-300 before:ease-out hover:text-white hover:shadow-[#0A3161] hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded"
                                             >
                                                 <span class="relative z-10">Know More</span>

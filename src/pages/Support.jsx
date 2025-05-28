@@ -15,6 +15,8 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 import { FaHandPaper } from "react-icons/fa";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { IoSettings } from "react-icons/io5";
+import ScrollToTop from "../components/ScrollToTop";
+
 const Support = () => {
     const [openIndex, setOpenIndex] = useState(null);
 
@@ -91,6 +93,7 @@ const Support = () => {
     return (
         <>
             <SecNavbar />
+            <ScrollToTop />
 
             {/* section 1 */}
             <div className="lg:pt-32 pt-24 select-none">
@@ -222,7 +225,7 @@ const Support = () => {
                                     </p>
                                     <div className="flex justify-center lg:justify-start">
                                         <a
-                                            href="/contact"
+                                            href="/contact-trescor"
                                             class="relative h-[50px] w-48 mt-8 flex items-center justify-center overflow-hidden border border-[#0A3161] text-[#0A3161] transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#0A3161] before:duration-300 before:ease-out hover:text-white hover:shadow-[#0A3161] hover:before:h-40 hover:before:w-48 hover:before:opacity-100 rounded font-medium"
                                         >
                                             <span class="relative z-10">Reach out to us</span>
@@ -252,7 +255,7 @@ const Support = () => {
                                         className="flex items-center justify-center"
                                     >
 
-                                     <h1 className="uppercase font-bold text-[#B31942] ">
+                                        <h1 className="uppercase font-bold text-[#B31942] ">
                                             Our core support
                                         </h1>
                                     </div>
@@ -331,7 +334,7 @@ const Support = () => {
                                     className="flex justify-center pt-8"
                                 >
                                     <a
-                                        href="/contact"
+                                        href="/contact-trescor"
                                         class="relative mt-2 flex h-[54px] xl:w-1/4 w-3/4 items-center justify-center overflow-hidden bg-white border border-[#0A3161] text-[#0A3161]  transition-all before:absolute before:h-0 before:w-0  before:bg-[#0A3161] hover:text-white before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded"
                                     >
                                         <span class="relative z-10">

@@ -8,12 +8,14 @@ import migrations from "../../assets/migrations.png"
 import business from "../../assets/business.png"
 import Maintenance from "../../assets/Maintenance.png"
 import Nine from "../../assets/Nine.png"
+import ScrollToTop from "../../components/ScrollToTop";
 
 const MicrosoftDynamics365Finance = () => {
     return (
         <div>
             {/* <AboutLayout /> */}
             <SecNavbar />
+                <ScrollToTop />
 
             {/* section 1 */}
 
@@ -392,7 +394,7 @@ const MicrosoftDynamics365Finance = () => {
 
                                     <div className="flex lg:justify-start justify-center">
                                         <a
-                                            href="/contact#contact_form"
+                                             href="/contact-trescor"
                                             class="relative mt-4 flex h-[50px] w-48 items-center justify-center overflow-hidden bg-[#0A3161] border border-[#0A3161] text-white  transition-all before:absolute before:h-0 before:w-0  before:bg-white hover:text-[#0A3161] before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-56 rounded"
                                         >
                                             <span class="relative z-10">Read More</span>

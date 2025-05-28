@@ -1,12 +1,15 @@
 import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import SecNavbar from './../components/SecNavbar';
+import ScrollToTop from "../components/ScrollToTop";
 
 const PrivacyPolicy = () => {
 
   return (
     <div>
       <SecNavbar />
+      <ScrollToTop />
+
       <div className="relative lg:pt-32 pt-24 pb-12">
         <div className="w-full">
           <div className="w-full px-4 mx-auto max-w-[1400px]">
@@ -15,7 +18,7 @@ const PrivacyPolicy = () => {
                 <div>
                   <section className="py-8 border border-gray-300 rounded">
                     <div className="py-2">
-                      <h1 className="text-center font-bold text-xl text-colorFour">
+                      <h1 className="text-center font-bold text-xl text-[#0A3161]">
                         Privacy Policy
                       </h1>
                     </div>
@@ -151,9 +154,9 @@ const PrivacyPolicy = () => {
                     </div>
                   </section>
 
-                 
 
-                 
+
+
                 </div>
               </div>
             </div>

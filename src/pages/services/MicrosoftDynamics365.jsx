@@ -12,6 +12,7 @@ import Lock from "../../assets/Lock.png"
 import Sales from "../../assets/Sales.png"
 import Maintenance from "../../assets/Maintenance.png"
 import Growing from "../../assets/Growing.png"
+import ScrollToTop from "../../components/ScrollToTop";
 
 const MicrosoftDynamics365 = () => {
     const services = [
@@ -64,6 +65,7 @@ const MicrosoftDynamics365 = () => {
         <div>
 
             <SecNavbar />
+                <ScrollToTop />
 
             {/* section 2 */}
             <div className="w-full lg:pt-36 pt-28 pb-8 select-none">
