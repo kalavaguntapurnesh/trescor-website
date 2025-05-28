@@ -3,6 +3,9 @@ import { fadeIn } from "../variants.js";
 import { FaWrench } from "react-icons/fa";
 import { VscGraph } from "react-icons/vsc";
 import { FaSearch } from "react-icons/fa";
+import FinalOne from "../assets/FinalOne.png"
+import FinalTwo from "../assets/FinalTwo.png"
+import FinalThree from "../assets/FinalThree.png"
 
 const Final = () => {
   return (
@@ -12,14 +15,14 @@ const Final = () => {
           <div className="w-full px-4 mx-auto max-w-[1400px]">
             <div
 
-              className="mx-auto max-w-[1400px] bg-[#f0f0f0] lg:h-80 h-auto rounded-2xl"
+              className="mx-auto max-w-[1400px] bg-[#f0f0f0] lg:h-[420px] xl:h-[380px] h-auto rounded-2xl"
             >
               <div className="space-y-4">
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:pt-12 pt-8 lg:px-12 px-4">
                   <div className="space-y-3">
                     <div className="flex lg:justify-start justify-center">
-                      <FaWrench className="w-4 h-4 text-[#0a3161]" />
+                      <img src={FinalOne} alt="final" className="w-12 h-12" />
                     </div>
                     <div className="font-bold lg:text-2xl text-xl flex lg:justify-start justify-center">
                       <h1 className="text-[#0a3161]">Customized Execution Strategy</h1>
@@ -31,7 +34,7 @@ const Final = () => {
 
                   <div className="space-y-3">
                     <div className="flex lg:justify-start justify-center">
-                      <VscGraph className="w-4 h-4 text-[#0a3161]" />
+                      <img src={FinalTwo} alt="final" className="w-12 h-12" />
                     </div>
                     <div className="font-bold lg:text-2xl text-xl flex lg:justify-start justify-center">
                       <h1 className="text-[#0a3161]">Complete Project Management</h1>
@@ -45,7 +48,7 @@ const Final = () => {
 
                   <div className="space-y-3">
                     <div className="flex lg:justify-start justify-center">
-                      <FaSearch className="w-4 h-4 text-[#0a3161]" />
+                      <img src={FinalThree} alt="final" className="w-12 h-12" />
                     </div>
                     <div className="font-bold lg:text-2xl text-xl flex lg:justify-start justify-center">
                       <h1 className="text-[#0a3161]">Supply Chain Optimization</h1>
