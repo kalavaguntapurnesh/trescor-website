@@ -83,14 +83,7 @@ const Footer = () => {
                       </h4>
                     </div>
                     <ul className="pl-0 mt-3 space-y-3 list-none">
-                      <li className=" flex items-start md:justify-start justify-center">
-                        <a
-                          href="/privacy-policy"
-                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
-                        >
-                          Our Privacy Policy
-                        </a>
-                      </li>
+
                       <li className=" flex items-start md:justify-start justify-center">
                         <a
                           href="/about-trescor"
@@ -113,6 +106,14 @@ const Footer = () => {
                           className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
                         >
                           Terms & Conditions
+                        </a>
+                      </li>
+                      <li className=" flex items-start md:justify-start justify-center">
+                        <a
+                          href="/privacy-policy"
+                          className="hover:text-mainColor text-footerItems hover:font-bold no-underline lg:text-start text-center  text-[14px] leading-6 text-[#0A3161]   transition duration-300 font-medium ease-in-out"
+                        >
+                          Our Privacy Policy
                         </a>
                       </li>
                       <li className=" flex items-start md:justify-start justify-center">
@@ -169,7 +170,7 @@ const Footer = () => {
                         </a>
                       </li>
 
-                   
+
                     </ul>
                   </div>
 
