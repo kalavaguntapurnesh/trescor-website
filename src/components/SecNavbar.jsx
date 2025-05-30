@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { FiChevronDown } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaAngleDown } from "react-icons/fa";
@@ -372,30 +373,30 @@ const SecNavbar = () => {
             <div className="p-4">
               <div className="grid grid-cols-5 ">
                 <div className="flex justify-center items-center">
-                  <a href="https://www.linkedin.com/company/alchemindssolutions">
+                  <a href="https://www.linkedin.com/in/trescor-software-546012369/">
                     <FaLinkedinIn className="w-6 h-6 text-[#0a3161] duration-1000 hover:text-mainColor ease-in-out " />
                   </a>
                 </div>
                 <div className="flex justify-center items-center">
-                  <a href="https://x.com/alchemindsindia">
+                  <a href="https://x.com/Trescor1226">
                     <FaXTwitter className="w-6 h-6 text-[#0a3161] duration-1000 hover:text-mainColor ease-in-out" />
                   </a>
                 </div>
                 <div className="flex justify-center items-center">
-                  <a href="https://www.instagram.com/alchemindssolutions/">
+                  <a href="https://www.instagram.com/trescorsoftware/">
                     {" "}
                     <FaInstagram className="w-6 h-6 text-[#0a3161] duration-1000 hover:text-mainColor ease-in-out" />
                   </a>
                 </div>
                 <div className="flex justify-center items-center">
-                  <a href="https://www.threads.net/@alchemindssolutions">
+                  <a href="https://www.facebook.com/profile.php?id=61576887840484">
                     {" "}
-                    <FaThreads className="w-6 h-6 text-[#0a3161] duration-1000 hover:text-mainColor ease-in-out" />
+                    <FaFacebook className="w-6 h-6 text-[#0a3161] duration-1000 hover:text-mainColor ease-in-out" />
                   </a>
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <a href="https://www.threads.net/@alchemindssolutions">
+                  <a href="https://www.threads.com/@trescorsoftware">
                     {" "}
                     <FaThreads className="w-6 h-6 text-[#0a3161] duration-1000 hover:text-mainColor ease-in-out" />
                   </a>

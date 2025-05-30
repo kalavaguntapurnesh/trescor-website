@@ -1,5 +1,5 @@
 import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaThreads, FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa6";
@@ -36,31 +36,31 @@ const Footer = () => {
                       </div> */}
 
                       <div className="grid grid-cols-5 mb-8">
-                        <a href="" className="flex md:justify-start justify-center items-center">
+                        <a href="https://www.linkedin.com/in/trescor-software-solutions-546012369/" className="flex md:justify-start justify-center items-center">
                           <FaLinkedin
                             size={20}
                             className="cursor-pointer text-[#0A3161]"
                           />
                         </a>
-                        <a href="" className="flex md:justify-start justify-center items-center">
-                          <FaXTwitter
+                        <a href="https://www.threads.com/@trescorsoftware" className="flex md:justify-start justify-center items-center">
+                          <FaThreads
                             size={20}
                             className="cursor-pointer text-[#0A3161]"
                           />
                         </a>
-                        <a href="" className="flex md:justify-start justify-center items-center">
+                        <a href="https://www.instagram.com/trescorsoftware/" className="flex md:justify-start justify-center items-center">
                           <FaInstagram
                             size={20}
                             className="cursor-pointer text-[#0A3161]"
                           />
                         </a>
-                        <a href="" className="flex md:justify-start justify-center items-center">
-                          <FaGoogle
+                        <a href="https://x.com/Trescor1226" className="flex md:justify-start justify-center items-center">
+                          <FaXTwitter
                             size={20}
                             className="cursor-pointer text-[#0A3161]"
                           />
                         </a>
-                        <a href="" className="flex md:justify-start justify-center items-center">
+                        <a href="https://www.facebook.com/profile.php?id=61576887840484" className="flex md:justify-start justify-center items-center">
                           <FaFacebook
                             size={20}
                             className="cursor-pointer text-[#0A3161]"
