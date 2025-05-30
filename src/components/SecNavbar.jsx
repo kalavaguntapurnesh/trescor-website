@@ -333,6 +333,13 @@ const SecNavbar = () => {
                     exit={{ opacity: 0, height: 0 }}
                     className="mt-6 grid grid-cols-2 gap-4"
                   >
+
+                    <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
+                      <FaLifeRing className="text-[#0a3161]" />
+                      <a href="/contact-trescor" className="block text-sm text-gray-700">
+                        Contact Us
+                      </a>
+                    </li>
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaLifeRing className="text-[#0a3161]" />
                       <a href="/dynamics-365-support-services" className="block text-sm text-gray-700">

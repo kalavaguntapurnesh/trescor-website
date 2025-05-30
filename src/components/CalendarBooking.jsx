@@ -153,7 +153,7 @@ const CalendarBooking = () => {
                                     <h4 className="mb-4 font-bold">
                                         Available Slots for {selectedDate}
                                     </h4>
-                                    <div className="flex flex-wrap gap-2 mt-2">
+                                    <div className="grid lg:grid-cols-6 grid-cols-4  gap-2 mt-2">
                                         {availableSlots[selectedDate].map((slot, idx) => (
                                             <button
                                                 key={idx}

@@ -65,7 +65,7 @@ const Carousel = () => {
       <div className="relative select-none">
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
-            <div className="w-full px-4 mx-auto max-w-[1400px] mt-12">
+            <div className="w-full p-4 mx-auto max-w-[1400px] mt-8">
 
               <div className="flex flex-wrap flex-col items-center pb-3">
                 <div className="text-center mt-4">
@@ -192,10 +192,10 @@ const Carousel = () => {
             <div className="pt-16">
               <div className="bg-white">
                 <div className="w-full ">
-                  <div className="w-full px-4 mx-auto max-w-[1400px]">
+                  <div className="w-full p-4 mx-auto max-w-[1400px]">
                     <div className="justify-center w-full ">
                       <div className="w-full max-w-[14000px] mx-auto space-y-4 ">
-                        <div className="items-center px-4 py-8 mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-16 lg:px-6">
+                        <div className="items-center mx-auto lg:grid lg:grid-cols-4 lg:gap-16 xl:gap-24 lg:py-16">
                           <div
                             className="col-span-2 mb-8 space-y-3"
                           >
@@ -304,10 +304,6 @@ const Carousel = () => {
               </div>
             </div>
 
-
-
-
-
             <div className="pt-6 ">
               <div className="relative">
                 <div className="w-full">
@@ -368,15 +364,6 @@ const Carousel = () => {
                 </div>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
 
 
           </div>
