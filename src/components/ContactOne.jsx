@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import usa from "../assets/usa.svg";
 import india from "../assets/india.svg";
+import CalendarBooking from './CalendarBooking';
 
 const ContactOne = () => {
+
+
+
+
     return (
         <div className="pt-24 pb-16">
             <div className="relative">
@@ -96,92 +101,12 @@ const ContactOne = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div className="mx-2">
-                                        <form
-                                            // onSubmit={handleSubmit}
-                                            className="mt-8 lg:p-6 lg:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded"
-                                        >
-                                            <div className="w-full grid grid-cols-1 md:gap-4">
-                                                <div className="mb-3 w-full">
-                                                    <label
-                                                        htmlFor="fullname"
-                                                        className="mb-3 block text-base font-medium text-[#07074D]"
-                                                    >
-                                                        Full Name
-                                                    </label>
-                                                    <input
-                                                        type="text"
-                                                        name="fullname"
-                                                        id="fullname"
-                                                        // onChange={(e) => setFullName(e.target.value)}
-                                                        placeholder="Your Full Name"
-                                                        className="w-full rounded bg-[#f0f0f0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                                                    />
-                                                </div>
-                                            </div>
 
-                                            <div className="mb-5 w-full">
-                                                <label
-                                                    htmlFor="email"
-                                                    className="mb-3 block text-base font-medium text-[#07074D]"
-                                                >
-                                                    Your Email
-                                                </label>
-                                                <input
-                                                    type="email"
-                                                    name="email"
-                                                    id="email"
-                                                    // onChange={(e) => setEmail(e.target.value)}
-                                                    placeholder="Your Email"
-                                                    className="w-full rounded bg-[#f0f0f0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                                                />
-                                            </div>
-
-                                            <div className="mb-5 w-full">
-                                                <label
-                                                    htmlFor="phoneNumber"
-                                                    className="mb-3 block text-base font-medium text-[#07074D]"
-                                                >
-                                                    Phone Number
-                                                </label>
-                                                <input
-                                                    type="text"
-                                                    name="phoneNumber"
-                                                    id="phoneNumber"
-                                                    // onChange={(e) => setPhoneNumber(e.target.value)}
-                                                    placeholder="Your Phone Number"
-                                                    className="w-full rounded bg-[#f0f0f0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                                                />
-                                            </div>
-
-                                            <div className="mb-3 w-full">
-                                                <label
-                                                    htmlFor="message"
-                                                    className="mb-3 block text-base font-medium text-[#07074D]"
-                                                >
-                                                    Message
-                                                </label>
-                                                <textarea
-                                                    rows="4"
-                                                    name="message"
-                                                    id="message"
-                                                    // onChange={(e) => setMessage(e.target.value)}
-                                                    placeholder="Let us know if you’d like to schedule a meeting, discuss opportunities, or have any questions. We're here to help!"
-                                                    className="w-full resize-none rounded bg-[#f0f0f0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                                                ></textarea>
-                                            </div>
+                                <CalendarBooking />
 
 
-                                            <button
-                                                type="submit"
-                                                className="relative flex h-[50px] w-full items-center justify-center overflow-hidden bg-[#0A3161] border border-[#0A3161] text-white transition-all before:absolute before:h-0 before:w-0 before:bg-white hover:text-[#0A3161] before:duration-500 before:ease-out hover:before:h-56 hover:before:w-full rounded font-medium"
-                                            >
-                                                <span className="relative z-10">Submit</span>
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
+
+
                             </div>
                         </div>
                     </div>
