@@ -23,7 +23,7 @@ import { MdPrivacyTip } from "react-icons/md";
 import { MdSupport } from "react-icons/md";
 import { FaBusinessTime } from "react-icons/fa";
 import { FaIntercom } from "react-icons/fa6";
-
+import Logo from "../assets/Logo.png"
 import {
   FaCogs,
   FaChartBar,
@@ -71,18 +71,18 @@ const SecNavbar = () => {
   };
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out select-none ${isScrolled ? "bg-white shadow-sm-md py-6" : "bg-white py-6"
+      className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out select-none ${isScrolled ? "bg-white shadow-sm-md py-6" : "bg-white py-6 "
         }`}
     >
       <div
-        className={`lg:rounded-full max-w-[1400px] mx-auto flex justify-between items-center px-6 lg:bg-navColor ${isScrolled ? "lg:py-0" : "lg:py-[12px]"
+        className={`lg:rounded-full max-w-[1400px] mx-auto flex justify-between items-center px-6 lg:bg-navColor ${isScrolled ? "lg:py-0" : "lg:py-0"
           }`}
       >
         <a href="/" className="flex items-center flex-row">
-          {/* <img src={HomeImg} alt="logo" className="md:w-8 md:h-8 h-6 w-6" /> */}
+          <img src={Logo} alt="logo" className="w-10 h-10 md:w-12 md:h-12" />
 
           <span
-            className={`text-2xl ml-1 mt-[2px] transition-all duration-300 ease-in-out ${isScrolled ? "font-bold text-[#B31942]" : "text-[#B31942] font-bold"
+            className={`text-2xl transition-all duration-300 ease-in-out ${isScrolled ? "font-bold text-[#B31942]" : "text-[#B31942] font-bold"
               }`}
           >
             Trescor

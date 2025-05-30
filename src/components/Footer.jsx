@@ -3,6 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa6";
+import Logo from "../assets/Logo.png"
 import { FaAngleRight } from "react-icons/fa6";
 
 const Footer = () => {
@@ -18,20 +19,21 @@ const Footer = () => {
                     <div className="w-full flex flex-col">
                       <a
                         href="/"
-                        className="flex flex-row items-center md:justify-start justify-center mb-4"
+                        className="flex flex-row items-center md:justify-start justify-center mb-8"
                       >
-                        <h3 className="ml-1 text-2xl text-[#B31942] font-bold cursor-pointer">
+                        <img src={Logo} alt="logo" className="w-16 h-16" />
+                        <h3 className="ml-1 text-3xl text-[#B31942] font-bold cursor-pointer">
                           Trescor
 
                         </h3>
 
                       </a>
-                      <p className="mb-4 text-[#0A3161] lg:text-start text-center">Unify capabilities with Dynamics 365—modern that help move your business forward</p>
-
+                      <p className="mb-8 text-[#0A3161] lg:text-start text-center">Unify capabilities with Dynamics 365—modern that help move your business forward</p>
+{/* 
                       <div className="flex flex-row md:justify-start justify-center items-center gap-2 mb-8 text-[#0A3161]">
                         <a href="/about-trescor">View More</a>
                         <FaAngleRight className="w-3 h-3" />
-                      </div>
+                      </div> */}
 
                       <div className="grid grid-cols-5 mb-8">
                         <a href="" className="flex md:justify-start justify-center items-center">
