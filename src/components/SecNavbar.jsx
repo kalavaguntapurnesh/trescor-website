@@ -777,7 +777,7 @@ const AboutBar = () => {
           <GrCloudSoftware className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
             <p className="font-semibold text-[14px] ">
-              Why Tresccor?
+              Why Trescor?
             </p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
