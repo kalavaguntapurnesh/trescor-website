@@ -168,7 +168,7 @@ const SecNavbar = () => {
                     </li>
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center hover:bg-[#d9d9d9] transition-colors">
                       <FaChartBar className="text-[#0a3161]" />
-                      <a href="/services-microsoft-dynamics-365" className="block text-sm text-gray-700">
+                      <a href="/bi-analytics-services" className="block text-sm text-gray-700">
                         BI Analytics
                       </a>
                     </li>
@@ -588,7 +588,7 @@ const Blog = () => {
       </a>
 
       <a
-        href="/services-microsoft-dynamics-365"
+        href="/bi-analytics-services"
         className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
       >
         <div className="flex flex-row items-center">

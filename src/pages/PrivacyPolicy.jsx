@@ -1,163 +1,145 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Footer from "../components/Footer";
-import SecNavbar from './../components/SecNavbar';
+import SecNavbar from "./../components/SecNavbar";
 import ScrollToTop from "../components/ScrollToTop";
 
 const PrivacyPolicy = () => {
-
   return (
     <div>
       <SecNavbar />
       <ScrollToTop />
-
-      <div className="relative lg:pt-32 pt-24 pb-12">
-        <div className="w-full">
-          <div className="w-full px-4 mx-auto max-w-[1400px]">
-            <div className="justify-center w-full">
-              <div className="w-full max-w-[14000px] mx-auto space-y-4 ">
-                <div>
-                  <section className="py-8 border border-gray-300 rounded">
-                    <div className="py-2">
-                      <h1 className="text-center font-bold text-xl text-[#0A3161]">
+      <div className="pt-24">
+        <div className="relative">
+          <div className="w-full">
+            <div className="w-full lg:mx-auto max-w-[1400px] pb-6 mx-auto">
+              <div className="p-4">
+                <section className="py-4">
+                  <div className="flex flex-wrap flex-col items-center">
+                    <div className="text-center mt-4">
+                      <h3 className="lg:text-4xl text-3xl font-bold text-[#0A3161] mb-2">
                         Privacy Policy
-                      </h1>
+                      </h3>
                     </div>
-
-                    <div className="relative flex my-2 items-center mx-4">
-                      <div className="flex-grow border-t border-gray-400"></div>
-                      <span className="flex-shrink mx-4 text-gray-400 text-sm">
-                        Effective from May 2025
-                      </span>
-                      <div className="flex-grow border-t border-gray-400"></div>
+                    <div className="w-24 h-1 bg-gradient-to-r from-[#F14F21] via-[#7EB900] to-[#00A3EE] rounded-full"></div>
+                  </div>
+                  <div className="relative flex my-6 items-center mx-4">
+                    <div className="flex-grow border-t border-gray-400"></div>
+                    <span className="flex-shrink mx-4 text-gray-400">
+                      Effective from November 2025
+                    </span>
+                    <div className="flex-grow border-t border-gray-400"></div>
+                  </div>
+                  <div className="text-center my-2">
+                    <h1 className="  text-[#43474e] md:mx-0 mx-1">
+                      This Privacy Policy belongs to the Terms of Service of
+                      Trescore Software Solutions and should be followed as a
+                      part of it. Your Privacy is our priority and
+                      responsibility what we always remain committed to. This
+                      Privacy Policy comprises how we protect your data and what
+                      sort of measuring tools we adopt just to ensure
+                      confidentiality and integrity for all the personal or
+                      non-personal data that you entrust to us. This Privacy
+                      Policy consists of how we collect, use, and distribute
+                      your data that imbibes your identity or personal
+                      information as well as how we manage the security and
+                      protection part of your confidential data.
+                    </h1>
+                  </div>
+                  <div className="px-4 space-y-6   text-[#43474e]">
+                    <div>
+                      <h2 className="text-xl font-bold mt-4 text-[#0A3161]">
+                        Information That We Collect & Process
+                      </h2>
+                      <p className="mb-4 text-gray-700">
+                        The only purpose of collecting data from you is just to
+                        serve an improved experience to you every time when you
+                        visit our website. Initially, we collect information
+                        including your name, email, contact number, and your
+                        postal address. All such information we receive from you
+                        when you create your employer account with us, when you
+                        register for any event/webinar we organize, you
+                        communicate through contact, query, feedback form, etc.,
+                        or subscribe to our newsletters.
+                      </p>
                     </div>
-
-                    <div className="text-center my-2">
-                      <h1 className="text-sm text-[#43474e] md:mx-0 mx-1">
-                        This Privacy Policy outlines how Trescor collects, uses, stores,
-                        and protects personal and non-personal information from its users.
-                        By using our website, you agree to the terms of this policy.
-                      </h1>
-                    </div>
-
-                    <div className="px-4 space-y-6 text-sm text-[#43474e]">
-                      <div>
-                        <h2 className="text-lg font-semibold">1. Information We Collect</h2>
-                        <ul className="list-disc pl-5 space-y-1">
-                          <li>
-                            <strong>Personal Information:</strong> Name, email, contact
-                            details, etc., voluntarily provided via forms, subscriptions, or inquiries.
-                          </li>
-                          <li>
-                            <strong>Non-Personal Information:</strong> IP address, device info,
-                            browser type, and usage data via cookies and similar tools.
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h2 className="text-lg font-semibold">2. How We Use Information</h2>
-                        <ul className="list-disc pl-5 space-y-1">
-                          <li>To provide and manage services requested by you.</li>
-                          <li>To improve website content and user experience.</li>
-                          <li>To send promotional emails based on your preferences.</li>
-                          <li>To analyze usage trends for platform optimization.</li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h2 className="text-lg font-semibold">3. Data Sharing & Security</h2>
-                        <p>We do not sell or rent personal data. We may share it with:</p>
-                        <ul className="list-disc pl-5 space-y-1">
-                          <li>Trusted third-party vendors for website operations.</li>
-                          <li>Legal entities when required by law or for legal protection.</li>
-                        </ul>
-                        <p>
-                          We implement security measures, but no system is 100% secure.
-                        </p>
-                      </div>
-
-                      <div>
-                        <h2 className="text-lg font-semibold">4. Your Rights & Choices</h2>
-                        <ul className="list-disc pl-5 space-y-1">
-                          <li>Access or correct your data via your account or contact us.</li>
-                          <li>Opt out of emails via unsubscribe links or by contacting us.</li>
-                          <li>Request deletion of data (subject to legal obligations).</li>
-                        </ul>
-                        <p>
-                          We may update this policy periodically. Changes will be posted here.
-                        </p>
-                      </div>
-
-                      <div>
-                        <h2 className="text-lg font-semibold">
-                          5. Why We Collect Your Information
-                        </h2>
-                        <ul className="list-disc pl-5 space-y-1">
-                          <li>To manage relationships and communication.</li>
-                          <li>To improve services and conduct operations.</li>
-                          <li>
-                            To share updates (with consent), adhering to applicable laws like Canada’s Anti-Spam Legislation.
-                          </li>
-                          <li>To comply with legal obligations and protect legal rights.</li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h2 className="text-lg font-semibold">
-                          6. How We Collect Information
-                        </h2>
-                        <p>
-                          We collect data with your consent via website, email, phone,
-                          or in person. Occasionally, third-party sources may be used.
-                        </p>
-                        <p>
-                          Anonymous technical data (e.g., IP, device type) may be collected
-                          and combined with personal data only under specific conditions
-                          such as consent or legal necessity.
-                        </p>
-                        <p>
-                          We use cookies and Google services like Analytics & Tag Manager.
-                          <a
-                            href="https://policies.google.com/technologies/partner-sites"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="underline text-blue-500 ml-1"
-                          >
-                            Learn more
-                          </a>
-                        </p>
-                      </div>
-
-                      <div>
-                        <h2 className="text-lg font-semibold">
-                          7. Information Disclosure by Trescor
-                        </h2>
-                        <p>
-                          We may share information with third-party service providers
-                          for IT services or data analytics. No information is sold, rented,
-                          or traded. We share only with consent or legal obligation.
-                        </p>
-                      </div>
-
-                      <div>
-                        <h2 className="text-lg font-semibold">8. Contact Us</h2>
-                        <p>
-                          For questions or concerns about this policy, please email us at{" "}
-                          <a
-                            href="mailto:info@trescor.com"
-                            className="text-blue-500 underline"
-                          >
-                            info@trescor.com
-                          </a>
-                        </p>
-                      </div>
-                    </div>
-                  </section>
-
-
-
-
-                </div>
+                    <h3 className="text-xl font-bold mt-8 mb-2 text-[#0A3161]">
+                      Cookies That We Use
+                    </h3>
+                    <p className="mb-4 text-gray-700">
+                      We use cookies that help us to identify your browsing
+                      data, clicks you ensure, and the time you spent while
+                      navigating our website. All such information helps us to
+                      improve your experience whenever you come back to our
+                      website. This helps us to understand your preferences and
+                      the last web activities that you ensured so that we can
+                      serve what is anticipated by you.
+                    </p>
+                    <h3 className="text-xl font-bold mt-8 mb-2 text-[#0A3161]">
+                      Data Disclosure
+                    </h3>
+                    <p className="mb-4 text-gray-700">
+                      To improve our user experience, we may share our users'
+                      personal-identifiable information with certain third-party
+                      sources including our business partners, stakeholders, and
+                      vendors. We may also share your information with our
+                      search engine or digital providers.
+                    </p>
+                    <p className="mb-4 text-gray-700">
+                      When it comes to complying with any legal obligation,
+                      protect our rights, and ensuring the safety of our
+                      customers or any other terms, etc., we share our users'
+                      data.
+                    </p>
+                    <h3 className="text-xl font-bold mt-8 mb-2 text-[#0A3161]">
+                      Data Security
+                    </h3>
+                    <p className="mb-4 text-gray-700">
+                      We use security measures to protect and prevent your data
+                      from being misused, lost, or accessed by unauthorized
+                      sources. We do not share your data with any sources that
+                      may use it as a business source. If there is a need to
+                      share your data in case of a suspected data breach, we
+                      will notify you in advance.
+                    </p>
+                    <h3 className="text-xl font-bold mt-8 mb-2 text-[#0A3161]">
+                      User Rights
+                    </h3>
+                    <p className="mb-4 text-gray-700">
+                      Users can anytime unsubscribe from the notifications for
+                      newsletters, events/webinars, or from any of our incoming
+                      calls. You can either change your notification preference
+                      or can simply opt-out of any future notifications. You can
+                      also notify your concern or write to us at{" "}
+                      <a
+                        className="text-blue-500 underline"
+                        href="mailto:info@trescoresoftwaresolutions.com"
+                      >
+                        info@trescoresoftwaresolutions.com
+                      </a>
+                    </p>
+                    <h3 className="text-xl font-bold mt-8 mb-2 text-[#0A3161]">
+                      Changes & Amendments
+                    </h3>
+                    <p className="mb-4 text-gray-700">
+                      Trescore Software Solutions has the right to make changes
+                      and amendments anytime whenever requires. We can modify or
+                      update the provisions made in our privacy policy. Hence,
+                      to remain updated with our latest privacy policy, you are
+                      required to visit our page at frequent intervals.
+                    </p>
+                    <p className="mb-4 text-gray-700">
+                      We always welcome you to connect with us in any term. If
+                      you have any queries, questions, or suggestions, please
+                      write us at{" "}
+                      <a
+                        className="text-blue-500 underline"
+                        href="mailto:info@trescoresoftwaresolutions.com"
+                      >
+                        info@trescoresoftwaresolutions.com
+                      </a>
+                    </p>
+                  </div>
+                </section>
               </div>
             </div>
           </div>

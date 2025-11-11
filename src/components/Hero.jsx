@@ -3,8 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Hero = () => {
   const slides = [
-     {
-      image: "https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    {
+      image:
+        "https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       heading: "Unify capabilities with Dynamics 365",
       paragraph:
         "From integrated workflows to real-time insights, we streamline every part of your operations.",
@@ -13,7 +14,8 @@ const Hero = () => {
     },
 
     {
-      image: "https://images.pexels.com/photos/1181320/pexels-photo-1181320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image:
+        "https://images.pexels.com/photos/1181320/pexels-photo-1181320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       heading: "Intelligent Solutions for your business",
       paragraph:
         "Stay ahead with your business in the market with our innovative and reliable services.",
@@ -37,7 +39,6 @@ const Hero = () => {
     <section className="relative h-[100vh] w-full overflow-hidden select-none">
       {/* Background Images */}
       <div className="absolute inset-0 z-0]">
-
         <AnimatePresence mode="wait">
           <img
             key={`slide-${currentIndex}`}
@@ -50,36 +51,26 @@ const Hero = () => {
             className="absolute inset-0 object-cover w-full h-full"
           />
         </AnimatePresence>
-
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black/50 bg-opacity-50 text-[#e7e5df] lg:text-start text-center px-4 ">
         <div className="max-w-[1400px] mx-auto w-[100%] mt-16 lg:mt-24 lg:px-6 space-y-4">
-          <div
-
-          >
+          <div>
             <p className="uppercase font-medium text-[#e7e5df]">
               Empowering Your Business
             </p>
           </div>
-          <div
-
-          >
+          <div>
             <h1 className="md:text-5xl text-4xl font-semibold text-[#e7e5df]">
               {slides[currentIndex].heading}
             </h1>
           </div>
-          <div
-
-          >
+          <div>
             <p className="pt-4 lg:text-lg text-[#e7e5df]">
               {slides[currentIndex].paragraph}
             </p>
           </div>
-          <div
-
-            className="pt-4"
-          >
+          <div className="pt-4">
             <a
               href={slides[currentIndex].buttonLink}
               className="inline-block px-[48px] py-3 border-[1px] bg-[#e7e5df] border-[#e7e5df] text-[#1a1a1a] rounded font-medium"
@@ -89,11 +80,8 @@ const Hero = () => {
           </div>
         </div>
 
-        <div
-
-          className="border-t-[2px] xl:block hidden mt-[90px] border-[#ffffff1a] max-w-[1400px] mx-auto w-[100%] pt-4 lg:px-6"
-        >
-          <div className="grid grid-cols-7 gap-4 mt-8">
+        <div className="border-t-[2px] xl:block hidden mt-[90px] border-[#ffffff1a] max-w-[1400px] mx-auto w-[100%] pt-4 lg:px-6">
+          <div className="grid grid-cols-6 gap-4 mt-8">
             <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Dynamics 365</span>
             </div>
@@ -112,18 +100,10 @@ const Hero = () => {
             <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Support Service</span>
             </div>
-            <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
-              <span>Dynamics AX</span>
-            </div>
           </div>
-
-         
         </div>
 
-        <div
-
-          className="block lg:hidden border-[#ffffff1a] max-w-[1400px] mx-auto w-[100%]"
-        >
+        <div className="block lg:hidden border-[#ffffff1a] max-w-[1400px] mx-auto w-[100%]">
           <div className="grid grid-cols-2 gap-4 mt-8">
             <div className="border-[1px] text-center relative  px-8 py-[10px] rounded text-sm border-[#ffffff1a] backdrop-blur-md  text-gray-50 font-medium bg-white/20">
               <span>Dynamics 365</span>

@@ -1,17 +1,16 @@
 import React from "react";
-import Footer from "./../../components/Footer";
-import SecNavbar from "./../../components/SecNavbar";
-import TickMark from "../../assets/TickMark.svg";
-import analytics from "../../assets/analytics.png";
-import settings from "../../assets/settings.png";
-import migrations from "../../assets/migrations.png";
-import business from "../../assets/business.png";
-import Maintenance from "../../assets/Maintenance.png";
-import Nine from "../../assets/Nine.png";
+import Footer from "../../components/Footer";
+import SecNavbar from "../../components/SecNavbar";
+import FOne from "../../assets/FOne.webp";
+import FTwo from "../../assets/FTwo.webp";
+import FThree from "../../assets/FThree.webp";
+import FFour from "../../assets/FFour.webp";
+import FFive from "../../assets/FFive.webp";
+import FSix from "../../assets/FSix.webp";
 import ScrollToTop from "../../components/ScrollToTop";
 import { FiArrowUpRight } from "react-icons/fi";
 
-const MicrosoftDynamics365Finance = () => {
+const BIAnalytics = () => {
   return (
     <div>
       {/* <AboutLayout /> */}
@@ -30,20 +29,22 @@ const MicrosoftDynamics365Finance = () => {
                     <div className="flex flex-col space-y-8 w-full justify-center h-full">
                       <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-2 px-2 md:px-0">
                         <h1 className="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-md text-[#0A3161]">
-                          Dynamics 365 Finance <br />
+                          Business Intelligence (BI) <br />
                           <span className="bg-gradient-to-r from-[#F14F21] via-[#00A3EE] to-[#7EB900] bg-clip-text text-transparent">
-                            & Operations
+                            Analytics
                           </span>
                         </h1>
                       </div>
                       <div className="text-gray-600 lg:text-lg text-base lg:text-start text-center lg:ml-2 px-2 md:px-0">
                         <p>
-                          In today’s fast-paced digital landscape, businesses
-                          need agile and robust solutions to stay competitive
-                          and grow. At Trescor, we offer specialized services in
-                          Microsoft Dynamics 365 F & O solutions that transform
-                          your operations, boost efficiency, and unlock new
-                          levels of performance.
+                          Microsoft Dynamics 365 Enterprise represents the
+                          future of intelligent business applications,
+                          empowering organizations to innovate, grow, and adapt
+                          in an ever-changing landscape. At Trescor, we harness
+                          the power of Dynamics 365 to deliver tailored
+                          solutions that drive transformation. By unifying CRM
+                          functionalities, Microsoft Dynamics 365 Business
+                          Editions offers purpose-built applications.
                         </p>
                       </div>
                       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 lg:px-0 px-2">
@@ -80,7 +81,7 @@ const MicrosoftDynamics365Finance = () => {
                         {/* Water bubble accent right side */}
                         <div className="absolute -bottom-8 -right-4 w-32 h-32 bg-gradient-to-br from-[#00A3EE] via-[#FEB800] to-[#0A3161] rounded-full blur-2xl opacity-40"></div>
                         <img
-                          src="https://global.hitachi-solutions.com/wp-content/uploads/2023/07/Financial_Hero-Graphic.png"
+                          src="https://global.hitachi-solutions.com/wp-content/uploads/2023/12/Cybersecurity_Hero-Graphic.webp"
                           alt="Dynamics 365 Finance Hero"
                           className="rounded-xl w-full max-w-[550px] h-auto object-contain z-10 mx-auto"
                         />
@@ -107,14 +108,14 @@ const MicrosoftDynamics365Finance = () => {
                       className="absolute inset-0 h-full w-full bg-cover bg-center"
                       style={{
                         backgroundImage:
-                          'linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)), url("https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")',
+                          'linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0)), url("https://images.pexels.com/photos/5617397/pexels-photo-5617397.jpeg")',
                       }}
                     ></div>
                     <div className="relative z-10 h-full flex flex-col text-[#F4F2F2] gap-[16px] w-[90%]">
-                      <h1 className="text-[26px] md:text-[28px] lg:text-[40px] font-bold ">
+                      <h1 className="text-[26px] md:text-[28px] lg:text-[40px] font-bold">
                         Data Strategy and Consulting
                       </h1>
-                      <p className="text-[15px] md:text-[18px] lg:text-[20px] leading-relaxed   max-w-[65%] whitespace-break-spaces">
+                      <p className="text-[15px] md:text-[18px] lg:text-[20px] leading-relaxed max-w-[65%] whitespace-break-spaces">
                         Data Roadblocks Holding You Back? Get strategic Guidance
                         for Data Success
                       </p>
@@ -122,11 +123,11 @@ const MicrosoftDynamics365Finance = () => {
                         Connect with Us
                       </button>
                     </div>
-                    <div className="absolute bottom-2 left-[2px] z-20 text-sm   font-medium">
+                    <div className="absolute bottom-2 left-[2px] z-20 text-sm font-medium">
                       <p className="text-[12px] md:text-[12px] lg:text-[16px]">
                         Services /{" "}
                         <span className="text-[#0A3161]">
-                          Dynamics 365 Finance & Operations
+                          Business Intelligence Analytics
                         </span>
                       </p>
                     </div>
@@ -172,9 +173,9 @@ const MicrosoftDynamics365Finance = () => {
                 <div className="flex flex-wrap pb-2 flex-col items-center">
                   <div className="text-center mt-4">
                     <h1 className="md:text-4xl text-3xl font-extrabold leading-tight drop-shadow-md text-[#0A3161]">
-                      Features of Dynamics 365 Finance{" "}
+                      Features of Business Intelligence{" "}
                       <span className="bg-gradient-to-r from-[#F14F21] via-[#00A3EE] to-[#7EB900] bg-clip-text text-transparent">
-                        & Operations
+                        Analytics
                       </span>
                     </h1>
                   </div>
@@ -183,40 +184,40 @@ const MicrosoftDynamics365Finance = () => {
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pt-10 px-4 lg:px-8">
                   {[
                     {
-                      icon: analytics,
-                      Title: "BI Analytics",
+                      icon: FOne,
+                      Title: "Enhanced Collaboration",
                       description:
-                        "Business Intelligence Analytics combines data analysis, visualization, and reporting to support informed decision-making and optimize business performance effectively.",
+                        "Enhanced collaboration in Business Intelligence analytics fosters teamwork by enabling real-time data sharing, streamlined workflows, and unified insights, driving informed decisions and aligning cross-functional teams for improved organizational performance and agility.",
                     },
                     {
-                      icon: settings,
-                      Title: "End-to-End Implementation",
+                      icon: FTwo,
+                      Title: "Operational Efficiency",
                       description:
-                        "Tailor the Dynamics 365 system architecture to align with your operations and objectives. Seamless installation and configuration of the solution, ensuring minimal disruption to your business.",
+                        "Business Intelligence (BI) analytics enhances operational efficiency by providing real-time insights, streamlining processes, optimizing resource allocation, reducing costs, and enabling data-driven decisions for improved productivity and strategic growth.",
                     },
                     {
-                      icon: migrations,
-                      Title: "Data Migration Services",
+                      icon: FThree,
+                      Title: "Seamless integration",
                       description:
-                        "Transition your legacy data to our platform with precision and accuracy. Data Cleansing & Validation will ensure clean, reliable data that supports your business goals.",
+                        "Seamless integration of business intelligence analytics enables organizations to unify data, streamline decision-making, and enhance operational efficiency by embedding advanced insights directly into workflows, tools, and processes for actionable outcomes.",
                     },
                     {
-                      icon: Maintenance,
-                      Title: "Post-Implementation Support",
+                      icon: FFour,
+                      Title: "Customer Satisfaction",
                       description:
-                        "Deliver ongoing technical support to resolve issues and improve system performance. Regularly optimize workflows and implement upgrades to keep your business ahead of the curve.",
+                        "Customer satisfaction in business intelligence analytics reflects how effectively analytics tools meet user needs by providing actionable insights, improving decision-making, and enhancing operational efficiency, ultimately driving business growth and success.",
                     },
                     {
-                      icon: business,
-                      Title: "Business Upload & Maintenance",
+                      icon: FFive,
+                      Title: "Demand Forecasting",
                       description:
-                        "Conduct periodic assessments of your system to ensure compliance, efficiency, and optimal performance. Offer proactive maintenance to prevent downtime and address potential risks.",
+                        "Demand forecasting in business intelligence analytics leverages historical data, machine learning, and statistical methods to predict future demand, enabling informed decision-making, inventory optimization, and enhanced operational efficiency for businesses.",
                     },
                     {
-                      icon: Nine,
-                      Title: "Customization and Integration",
+                      icon: FSix,
+                      Title: "Real Time Insights",
                       description:
-                        "Adapt Dynamics 365 and its features to fit your unique processes. Integrate with existing tools like CRM systems, supply chain management software, and third-party applications for a unified ecosystem.",
+                        "Real-time business intelligence analytics delivers instant insights by processing live data streams, enabling swift decision-making, proactive responses, improved efficiency, and a competitive edge through continuous monitoring and dynamic visualization.",
                     },
                   ].map((value, index) => (
                     <div
@@ -292,12 +293,12 @@ const MicrosoftDynamics365Finance = () => {
                           <span className="bg-gradient-to-r from-[#F14F21] via-[#00A3EE] to-[#7EB900] bg-clip-text text-transparent">
                             Success Stories:
                           </span>{" "}
-                          Optimizing the Retail &amp; CPG Industry with AI
+                          Transforming Enterprises with Business Intelligence
+                          Analytics
                         </h3>
-
                         <div className="my-6">
                           <button className="w-fit px-[32px] py-[8px] rounded text-[14px] font-[500] bg-[#0A3161] text-white hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
-                            Know More
+                            View BI Analytics
                           </button>
                         </div>
                       </div>
@@ -322,15 +323,13 @@ const MicrosoftDynamics365Finance = () => {
                           </h5>
                           <ul className="list-disc pl-4 space-y-2">
                             <li className=" tracking-[2%] text-[#525252]">
-                              A multinational snack &amp; confectionery company
-                              sought to enhance operational efficiency by
-                              automating data extraction from Certificate of
-                              Analysis (COA) documents.{" "}
+                              Enterprises struggled to unify data and gain
+                              actionable insights for strategic decision-making
+                              and operational efficiency.
                             </li>
                             <li className=" tracking-[2%] text-[#525252]">
-                              The manual extraction process was inefficient,
-                              time-consuming, and prone to human error,
-                              hindering quality control.
+                              Siloed systems and manual processes led to delays,
+                              errors, and missed opportunities for growth.
                             </li>
                           </ul>
                         </div>
@@ -351,11 +350,14 @@ const MicrosoftDynamics365Finance = () => {
                           </h5>
                           <ul className="list-disc pl-4">
                             <li className=" tracking-[2%] text-[#525252]">
-                              Enhanced efficiency in quality control processes.
+                              Unified BI analytics platform enabled real-time
+                              data sharing, improved collaboration, and faster,
+                              more accurate decision-making.
                             </li>
                             <li className="tracking-[2%] text-[#525252]">
-                              Reduced reliance on manual labor, overcoming time
-                              constraints.
+                              Enhanced operational efficiency, reduced manual
+                              errors, and empowered teams to drive business
+                              growth.
                             </li>
                           </ul>
                         </div>
@@ -384,29 +386,29 @@ const MicrosoftDynamics365Finance = () => {
                           </h5>
                           <ul className="text-[#525252] pl-4 list-disc">
                             <li className="text-[14px] tracking-[2%]">
-                              Celebal Technologies developed an automated
-                              solution to extract key information pairs from COA
-                              documents.
+                              Implemented a centralized BI analytics solution
+                              integrating data from multiple sources, automating
+                              reporting, and providing actionable insights.
                             </li>
                             <li className="text-[14px] tracking-[2%]">
-                              This solution addressed the challenges of manual
-                              extraction, significantly enhancing efficiency and
-                              reducing labor requirements.
+                              Empowered teams with real-time dashboards,
+                              predictive analytics, and collaborative tools to
+                              drive strategic growth and efficiency.
                             </li>
                           </ul>
                         </div>
                       </div>
                       <img
-                        src="https://images.pexels.com/photos/19825057/pexels-photo-19825057/free-photo-of-close-up-of-a-data-hub-diskstation.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="Success Story"
+                        src="https://images.unsplash.com/photo-1616771544889-6a2af51f5219?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2597"
+                        alt="BI Analytics Success Story"
                         className="object-cover absolute bottom-[-2rem] md:hidden rounded-lg w-full"
                         style={{ zIndex: 0 }}
                       />
                     </div>
                     <div className="hidden md:block absolute top-0 right-0 w-[20%] h-full z-0">
                       <img
-                        src="https://images.pexels.com/photos/19825057/pexels-photo-19825057/free-photo-of-close-up-of-a-data-hub-diskstation.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="illustration"
+                        src="https://images.unsplash.com/photo-1616771544889-6a2af51f5219?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2597"
+                        alt="BI Analytics Illustration"
                         className="object-cover w-full h-full rounded-l-lg"
                       />
                     </div>
@@ -425,4 +427,4 @@ const MicrosoftDynamics365Finance = () => {
   );
 };
 
-export default MicrosoftDynamics365Finance;
+export default BIAnalytics;
