@@ -214,7 +214,7 @@ const CalendarBooking = () => {
                   htmlFor="businessEmail"
                   className="mb-3 block text-base font-medium text-[#07074D]"
                 >
-                  Your Email
+                  Business Email
                 </label>
                 <input
                   type="email"

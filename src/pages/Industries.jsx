@@ -2,6 +2,15 @@ import React from "react";
 import SecNavbar from "./../components/SecNavbar";
 import Footer from "./../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
+import {
+  FaMicrosoft,
+  FaHospitalAlt,
+  FaTruck,
+  FaShoppingBag,
+  FaUniversity,
+  FaBuilding,
+  FaChartLine,
+} from "react-icons/fa";
 
 const Industries = () => {
   return (
@@ -11,6 +20,155 @@ const Industries = () => {
 
       <SecNavbar />
       <ScrollToTop />
+
+      <div className="relative h-[900px] lg:h-[700px] lg:mt-[104px] mt-[100px] mx-auto max-w-[1400px] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute top-0 left-0 w-full h-full">
+          <img
+            src="https://images.pexels.com/photos/6476584/pexels-photo-6476584.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=2"
+            alt="Microsoft Dynamics Background"
+            className="absolute top-0 left-0 w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Overlay */}
+        <div className="absolute top-0 left-0 w-full h-full bg-[#13151ABF] z-[1]"></div>
+
+        {/* Content Container */}
+        <div className="relative z-10 h-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 max-w-[1440px] mx-auto">
+          <div className="h-full flex flex-col justify-center pt-[80px] lg:pt-[100px]">
+            {/* HERO + SIDEBAR */}
+            <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+              {/* Left: Hero */}
+              <div className="lg:col-span-7 col-span-1">
+                <div className="max-w-2xl">
+                  <p className="inline-block uppercase text-sm tracking-widest text-[#00A3EE] bg-white/5 px-3 py-1 rounded-full backdrop-blur-sm">
+                    Industries we serve
+                  </p>
+
+                  <h1 className="mt-6 text-white text-[30px] md:text-[40px] lg:text-[56px] leading-[1.02] font-extrabold">
+                    Transforming businesses with Microsoft Dynamics
+                    <br />
+                    <span className="bg-gradient-to-r from-[#F14F21] via-[#00A3EE] to-[#7EB900] bg-clip-text text-transparent">
+                      365
+                    </span>
+                  </h1>
+
+                  <p className="mt-6 lg:block hidden text-[#D6D8DB] text-lg md:text-[18px] max-w-xl">
+                    We design industry-tailored Dynamics solutions — from retail
+                    commerce and logistics to healthcare and education —
+                    delivering measurable outcomes: faster processes, unified
+                    data, and delightful customer experiences.
+                  </p>
+
+                  <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                    <a
+                      href="/contact"
+                      className="inline-flex items-center justify-center gap-3 bg-[#00A3EE] text-white px-[28px] py-3 rounded font-medium shadow-2xl transform-gpu transition hover:-translate-y-1"
+                    >
+                      Get Consultation
+                    </a>
+
+                    <div className="lg:flex items-center gap-4 hidden">
+                      <div className="flex items-center gap-3 opacity-80">
+                        <FaMicrosoft className="w-7 h-7 text-white" />
+                        <span className="text-white font-medium">
+                          Microsoft Certified
+                        </span>
+                      </div>
+                      <div className="h-[1px] w-[1px] bg-white/10 rounded-full" />
+                    </div>
+                  </div>
+
+                  {/* Trust strip */}
+                </div>
+              </div>
+
+              {/* Right: Highlight panel with industry cards */}
+              <div className="lg:col-span-5 col-span-1">
+                <div className="w-full bg-white/6 backdrop-blur-md border border-white/8 rounded-3xl p-5 shadow-lg">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="text-white font-semibold text-lg">
+                        Featured Industries
+                      </h3>
+                      <p className="text-sm text-[#C9CDD0] mt-1">
+                        Tailored Dynamics solutions that move the needle
+                      </p>
+                    </div>
+                    <div className="text-sm text-[#9DA3A7]">Explore →</div>
+                  </div>
+
+                  <div className="mt-5 grid grid-cols-2 gap-3">
+                    {[
+                      {
+                        name: "Retail & eCommerce",
+                        icon: <FaShoppingBag className="w-5 h-5" />,
+                        accent: "from-[#F14F21] to-[#FFD166]",
+                      },
+                      {
+                        name: "Manufacturing",
+                        icon: <FaChartLine className="w-5 h-5" />,
+                        accent: "from-[#7EB900] to-[#00A3EE]",
+                      },
+                      {
+                        name: "Logistics & Supply Chain",
+                        icon: <FaTruck className="w-5 h-5" />,
+                        accent: "from-[#00A3EE] to-[#7EB900]",
+                      },
+                      {
+                        name: "Healthcare",
+                        icon: <FaHospitalAlt className="w-5 h-5" />,
+                        accent: "from-[#F14F21] to-[#00A3EE]",
+                      },
+                      {
+                        name: "Education",
+                        icon: <FaUniversity className="w-5 h-5" />,
+                        accent: "from-[#8E6FF8] to-[#00A3EE]",
+                      },
+                      {
+                        name: "Financial Services",
+                        icon: <FaBuilding className="w-5 h-5" />,
+                        accent: "from-[#00A3EE] to-[#FFD166]",
+                      },
+                    ].map((it, idx) => (
+                      <button
+                        key={idx}
+                        className="group relative flex flex-col items-start gap-2 p-3 rounded-xl bg-gradient-to-r from-white/3 to-white/2 hover:from-white/6 hover:to-white/4 transform-gpu transition shadow-sm hover:shadow-xl focus:outline-none"
+                        aria-label={it.name}
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className="rounded-lg p-2 bg-gradient-to-br to-white/6 from-white/3 group-hover:scale-105 transform transition">
+                            <div
+                              className={`w-8 h-8 rounded-md bg-gradient-to-r ${it.accent} p-2 text-white flex items-center justify-center shadow-md`}
+                            >
+                              {it.icon}
+                            </div>
+                          </div>
+                          <div>
+                            <div className="text-white font-semibold text-sm">
+                              {it.name}
+                            </div>
+                            <div className="text-xs text-[#BFC4C8]">
+                              Solutions, automation & analytics
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* micro CTA */}
+                        <div className="mt-3 opacity-0 group-hover:opacity-100 transition text-xs text-[#9FB3C8]">
+                          Learn how we helped a client in{" "}
+                          {it.name.split(" ")[0]}
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="lg:pt-32 pt-24 select-none">
         <div className="relative">

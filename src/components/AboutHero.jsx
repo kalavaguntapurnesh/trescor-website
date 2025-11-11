@@ -4,10 +4,6 @@ import worldMap from "../assets/worldmap.jpg";
 import innovation from "../assets/comm.png";
 import handshare from "../assets/globe.png";
 import growth from "../assets/career.png";
-// import { FaInstagram } from "react-icons/fa";
-// import { FaLinkedin } from "react-icons/fa";
-// import { FaFacebook } from "react-icons/fa";
-// import star from "../assets/star.svg";
 
 const AboutHero = () => {
   const values1 = [

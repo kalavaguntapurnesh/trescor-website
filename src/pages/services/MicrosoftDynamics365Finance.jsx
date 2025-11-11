@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "./../../components/Footer";
 import SecNavbar from "./../../components/SecNavbar";
-import TickMark from "../../assets/TickMark.svg";
 import analytics from "../../assets/analytics.png";
 import settings from "../../assets/settings.png";
 import migrations from "../../assets/migrations.png";
@@ -384,7 +383,7 @@ const MicrosoftDynamics365Finance = () => {
                           </h5>
                           <ul className="text-[#525252] pl-4 list-disc">
                             <li className="text-[14px] tracking-[2%]">
-                              Celebal Technologies developed an automated
+                              Trescor Technologies developed an automated
                               solution to extract key information pairs from COA
                               documents.
                             </li>
