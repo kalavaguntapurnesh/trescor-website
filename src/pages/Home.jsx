@@ -12,7 +12,7 @@ const Home = () => {
       <ScrollToTop />
       <Carousel />
       {/* <Reviews /> */}
-      <FAQ />
+      {/* <FAQ /> */}
       <Final />
       <Footer />
     </div>

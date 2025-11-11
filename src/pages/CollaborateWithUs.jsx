@@ -227,7 +227,7 @@ const CollaborateWithUs = () => {
                             Empower Your Business with Expert MS Dynamics
                             Support!
                           </p>
-                          <h4 className="text-[16px] lg:text-[19px] w-auto md:max-w-[80%] whitespace-break-spaces">
+                          <h4 className=" w-auto md:max-w-[80%] whitespace-break-spaces">
                             Maximize productivity, streamline operations, and
                             ensure seamless performance with our dedicated
                             Microsoft Dynamics 365 support.
@@ -236,7 +236,7 @@ const CollaborateWithUs = () => {
                         <div>
                           <h4 className="text-[20px] md:text-[16px] lg:text-[20px] font-medium font-jakarta"></h4>
                         </div>
-                        <button className="w-fit px-[20px] py-[12px] rounded-full text-[14px] font-[500] bg-white text-black cursor-pointer">
+                        <button className="w-fit px-[28px] py-[12px] rounded-full text-[14px] font-[500] bg-white text-black cursor-pointer">
                           Book a Meeting
                         </button>
                       </div>

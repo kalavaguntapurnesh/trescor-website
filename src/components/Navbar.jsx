@@ -70,7 +70,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out ${
-        isScrolled ? "bg-white shadow-sm-md py-6" : "bg-transparent py-6"
+        isScrolled ? "bg-white py-6" : "bg-transparent py-6"
       }`}
     >
       <div
@@ -615,8 +615,8 @@ const Blog = () => {
       <div className="w-[30%] bg-gradient-to-br from-[#F14F21] to-[#00A3EE] p-6 rounded-l-lg flex flex-col justify-center">
         <div className="text-white">
           <FaCogs className="w-12 h-12 mb-4" />
-          <h3 className="text-xl font-bold mb-2">Our Services</h3>
-          <p className="text-sm opacity-90">
+          <h3 className="text-2xl font-bold mb-2">Our Services</h3>
+          <p className="opacity-90 text-lg">
             Comprehensive Microsoft Dynamics 365 and business solutions
           </p>
         </div>
@@ -630,12 +630,12 @@ const Blog = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaMoneyCheck className="w-6 h-6 text-[#F14F21] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#F14F21]">
+              <FaMoneyCheck className="w-8 h-8 text-[#F14F21] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#F14F21]">
                 Dynamics 365 Finance & Operations
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+            <p className=" text-gray-600">
               Complete ERP solution for financial management and operations
             </p>
           </a>
@@ -645,12 +645,12 @@ const Blog = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <VscGraph className="w-6 h-6 text-[#00A3EE] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#00A3EE]">
+              <VscGraph className="w-8 h-8 text-[#00A3EE] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#00A3EE]">
                 Business Intelligence & Analytics
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Transform data into actionable insights with advanced analytics
             </p>
           </a>
@@ -660,12 +660,12 @@ const Blog = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaTools className="w-6 h-6 text-[#F14F21] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#7EB900]">
+              <FaTools className="w-8 h-8 text-[#F14F21] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
                 Implementation & Deployment
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Expert implementation of Dynamics 365 solutions for your business
             </p>
           </a>
@@ -675,12 +675,12 @@ const Blog = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <MdOutlineSupportAgent className="w-6 h-6 text-[#00A3EE] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#FEB800]">
+              <MdOutlineSupportAgent className="w-8 h-8 text-[#00A3EE] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
                 Support & Managed Services
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Ongoing support and maintenance for your Dynamics 365 environment
             </p>
           </a>
@@ -697,8 +697,8 @@ const Homebar = () => {
       <div className="w-[30%] bg-gradient-to-br from-[#7EB900] to-[#FEB800] p-6 rounded-l-lg flex flex-col justify-center">
         <div className="text-white">
           <FaIntercom className="w-12 h-12 mb-4" />
-          <h3 className="text-xl font-bold mb-2">Solutions</h3>
-          <p className="text-sm opacity-90">
+          <h3 className="text-2xl font-bold mb-2">Solutions</h3>
+          <p className="opacity-90 text-lg">
             Comprehensive business solutions tailored to your needs
           </p>
         </div>
@@ -712,12 +712,12 @@ const Homebar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaIntercom className="w-6 h-6 text-[#7EB900] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#7EB900]">
+              <FaIntercom className="w-8 h-8 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
                 Integration Consulting
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Expert guidance for seamless system integration and optimization
             </p>
           </a>
@@ -727,12 +727,12 @@ const Homebar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaBusinessTime className="w-6 h-6 text-[#FEB800] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#FEB800]">
+              <FaBusinessTime className="w-8 h-8 text-[#FEB800] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
                 Business Needs Analysis
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Comprehensive assessment and strategic planning for your business
             </p>
           </a>
@@ -742,12 +742,12 @@ const Homebar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <GrCloudSoftware className="w-6 h-6 text-[#7EB900] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#7EB900]">
+              <GrCloudSoftware className="w-8 h-8 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
                 Cloud Migration
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Secure and efficient migration to cloud platforms
             </p>
           </a>
@@ -757,12 +757,12 @@ const Homebar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaLaptopCode className="w-6 h-6 text-[#FEB800] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#FEB800]">
+              <FaLaptopCode className="w-8 h-8 text-[#FEB800] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
                 Custom Development
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Tailored software solutions built to your specifications
             </p>
           </a>
@@ -779,8 +779,8 @@ const ContactBar = () => {
       <div className="w-[30%] bg-gradient-to-br from-[#00A3EE] to-[#7EB900] p-6 rounded-l-lg flex flex-col justify-center">
         <div className="text-white">
           <MdFactory className="w-12 h-12 mb-4" />
-          <h3 className="text-xl font-bold mb-2">Industries We Serve</h3>
-          <p className="text-sm opacity-90">
+          <h3 className="text-2xl font-bold mb-2">Industries We Serve</h3>
+          <p className="opacity-90 text-lg">
             Tailored solutions across diverse industry sectors
           </p>
         </div>
@@ -794,12 +794,12 @@ const ContactBar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaSackDollar className="w-6 h-6 text-[#00A3EE] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#00A3EE]">
+              <FaSackDollar className="w-8 h-8 text-[#00A3EE] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#00A3EE]">
                 Financial Services
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Comprehensive financial solutions and compliance management
             </p>
           </a>
@@ -810,11 +810,11 @@ const ContactBar = () => {
           >
             <div className="flex items-center mb-2">
               <MdFactory className="w-6 h-6 text-[#7EB900] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#7EB900]">
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
                 Manufacturing
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Streamlined production and supply chain optimization
             </p>
           </a>
@@ -824,12 +824,12 @@ const ContactBar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaLaptop className="w-6 h-6 text-[#00A3EE] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#00A3EE]">
+              <FaLaptop className="w-8 h-8 text-[#00A3EE] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#00A3EE]">
                 Technology & Software
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Digital transformation and software development solutions
             </p>
           </a>
@@ -839,12 +839,12 @@ const ContactBar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaUsers className="w-6 h-6 text-[#7EB900] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#7EB900]">
+              <FaUsers className="w-8 h-8 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
                 Public Sector
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Government and public administration solutions
             </p>
           </a>
@@ -861,8 +861,8 @@ const SupportBar = () => {
       <div className="w-[30%] bg-gradient-to-br from-[#FEB800] to-[#F14F21] p-6 rounded-l-lg flex flex-col justify-center">
         <div className="text-white">
           <MdSupport className="w-12 h-12 mb-4" />
-          <h3 className="text-xl font-bold mb-2">Need Support</h3>
-          <p className="text-sm opacity-90">
+          <h3 className="text-2xl font-bold mb-2">Need Support</h3>
+          <p className="opacity-90 text-lg">
             Get the help and assistance you need from our team
           </p>
         </div>
@@ -876,12 +876,12 @@ const SupportBar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <MdSupport className="w-6 h-6 text-[#FEB800] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#F14F21]">
+              <MdSupport className="w-8 h-8 text-[#FEB800] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#F14F21]">
                 Where to find us
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               We are here to assist you with all your technical needs
             </p>
           </a>
@@ -891,12 +891,12 @@ const SupportBar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaLifeRing className="w-6 h-6 text-[#F14F21] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#00A3EE]">
+              <FaLifeRing className="w-8 h-8 text-[#F14F21] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#00A3EE]">
                 Contact Support
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Get in touch with our support team for immediate assistance
             </p>
           </a>
@@ -906,12 +906,12 @@ const SupportBar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaQuestionCircle className="w-6 h-6 text-[#FEB800] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#7EB900]">
+              <FaQuestionCircle className="w-8 h-8 text-[#FEB800] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
                 Documentation
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Access comprehensive guides and documentation
             </p>
           </a>
@@ -921,12 +921,12 @@ const SupportBar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaLightbulb className="w-6 h-6 text-[#F14F21] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#FEB800]">
+              <FaLightbulb className="w-8 h-8 text-[#F14F21] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
                 FAQ
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Find answers to frequently asked questions
             </p>
           </a>
@@ -943,8 +943,8 @@ const AboutBar = () => {
       <div className="w-[30%] bg-gradient-to-br from-[#7EB900] to-[#00A3EE] p-6 rounded-l-lg flex flex-col justify-center">
         <div className="text-white">
           <GrCloudSoftware className="w-12 h-12 mb-4" />
-          <h3 className="text-xl font-bold mb-2">About Trescor</h3>
-          <p className="text-sm opacity-90">
+          <h3 className="text-2xl font-bold mb-2">About Trescor</h3>
+          <p className="opacity-90 text-lg">
             Learn more about our company, mission, and values
           </p>
         </div>
@@ -958,12 +958,12 @@ const AboutBar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <GrCloudSoftware className="w-6 h-6 text-[#7EB900] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#7EB900]">
+              <GrCloudSoftware className="w-8 h-8 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
                 Why Trescor?
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Discover what makes us the right choice for your business
             </p>
           </a>
@@ -973,12 +973,12 @@ const AboutBar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaHandshake className="w-6 h-6 text-[#00A3EE] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#F14F21]">
+              <FaHandshake className="w-8 h-8 text-[#00A3EE] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#F14F21]">
                 Collaborate with us
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Partner with us to build innovative solutions together
             </p>
           </a>
@@ -988,12 +988,12 @@ const AboutBar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <MdPrivacyTip className="w-6 h-6 text-[#7EB900] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#00A3EE]">
+              <MdPrivacyTip className="w-8 h-8 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#00A3EE]">
                 Privacy Policy
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Understanding how we protect and handle your data
             </p>
           </a>
@@ -1003,12 +1003,12 @@ const AboutBar = () => {
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaUsers className="w-6 h-6 text-[#00A3EE] mr-3" />
-              <h4 className="font-semibold text-[#0A3161] group-hover:text-[#FEB800]">
+              <FaUsers className="w-8 h-8 text-[#00A3EE] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
                 Join Our Team
               </h4>
             </div>
-            <p className="text-sm text-gray-600">
+             <p className=" text-gray-600">
               Explore career opportunities and grow with us
             </p>
           </a>
