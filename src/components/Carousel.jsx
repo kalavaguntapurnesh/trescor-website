@@ -16,33 +16,27 @@ const Carousel = () => {
   const values1 = [
     {
       icon: World,
-      Title: "Worldwide Accessiblity",
+      Title: "Integration",
       description:
-        "Wherever you are, our online platform brings world-class services right to your doorstep.",
+        "Supporting customers with highly scalable integration end points leveraging multi-threading for scalability, supporting REST and SOAP API’s for B2B, B2C transactional data exchanges. Premium support available for 24/7 SLA.",
     },
     {
-      icon: career,
-      Title: "Career-Centric Approach",
+      icon: settings,
+      Title: "Dynamics F & O",
       description:
-        "Our services are designed to help you not just learn but launch and grow your career.",
+        "Boutique Microsoft Dynamics team specializing in core F&O modules, delivering end-to-end solutions across architecture, development, testing, and upgrades. Backed by 11+ years of experience from AX2009 to D365 F&O with Azure CSP-based managed support.",
     },
     {
-      icon: expert,
-      Title: "Expert Handlers",
+      icon: business,
+      Title: "Business Intelligence",
       description:
-        "Learn from trainers with 10+ years of real industry experience who focus on practical, industry skills.",
-    },
-    {
-      icon: CPI,
-      Title: "Continuous Innovation",
-      description:
-        "Our services are designed to help you not just learn but launch and grow your career.",
+        "Dedicated Data Warehouse and BI team delivering data-driven insights, ensuring integrity between Dynamics and Data Marts, and developing interactive Power BI dashboards for informed business decision-making with proactive ongoing support.",
     },
   ];
 
   return (
     <div>
-      <div className="relative select-none">
+      <div className="relative">
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
             <div className="w-full p-4 mx-auto max-w-[1400px] mt-8">
@@ -288,9 +282,9 @@ const Carousel = () => {
                         <div className="flex flex-col items-center pb-3">
                           <div className="text-center mt-4 relative">
                             <h3 className="lg:text-4xl text-3xl font-bold text-[#0A3161]">
-                              Our Core{" "}
+                              Services We{" "}
                               <span className="bg-gradient-to-r from-[#F14F21] via-[#7EB900] to-[#00A3EE] bg-clip-text text-transparent">
-                                Values
+                                Offer
                               </span>
                             </h3>
                             {/* Animated Accent */}
@@ -309,8 +303,7 @@ const Carousel = () => {
                         </div>
                       </div>
 
-                      {/* Polished values1 grid */}
-                      <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 pt-10 px-4 lg:px-8">
+                      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pt-10 px-4 lg:px-8">
                         {values1.map((value, index) => {
                           const bgGrad =
                             index % 4 === 0
@@ -321,15 +314,6 @@ const Carousel = () => {
                               ? "from-[#7EB900] to-[#FEB800]"
                               : "from-[#FEB800] to-[#F14F21]";
 
-                          const titleHoverColor =
-                            index % 4 === 0
-                              ? "group-hover:text-[#F14F21]"
-                              : index % 4 === 1
-                              ? "group-hover:text-[#00A3EE]"
-                              : index % 4 === 2
-                              ? "group-hover:text-[#7EB900]"
-                              : "group-hover:text-[#FEB800]";
-
                           const barGrad =
                             index % 4 === 0
                               ? "bg-gradient-to-r from-[#F14F21] to-[#FEB800]"
@@ -339,40 +323,55 @@ const Carousel = () => {
                               ? "bg-gradient-to-r from-[#7EB900] to-[#FEB800]"
                               : "bg-gradient-to-r from-[#FEB800] to-[#F14F21]";
 
+                          // overlay gradient from bottom to top
+                          const overlayGrad =
+                            index % 4 === 0
+                              ? "bg-gradient-to-t from-[#F14F21]/95 to-[#FEB800]/85"
+                              : index % 4 === 1
+                              ? "bg-gradient-to-t from-[#00A3EE]/95 to-[#7EB900]/85"
+                              : index % 4 === 2
+                              ? "bg-gradient-to-t from-[#7EB900]/95 to-[#FEB800]/85"
+                              : "bg-gradient-to-t from-[#FEB800]/95 to-[#F14F21]/85";
+
                           return (
                             <div
                               key={index}
                               className="flex justify-center transition-transform duration-500 hover:-translate-y-2 group"
                             >
-                              <div className="w-full bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-500 p-8 text-center">
-                                <div className="flex justify-center items-center mb-5">
-                                  <div className="relative w-24 h-24 flex items-center justify-center rounded-full overflow-hidden">
-                                    <div
-                                      className={`absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 blur-lg transition duration-500`}
-                                      aria-hidden="true"
-                                    ></div>
-
-                                    <img
-                                      src={value.icon}
-                                      alt={value.Title}
-                                      className="relative w-20 h-20 object-contain transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-3"
-                                    />
-                                  </div>
-                                </div>
-
-                                <h1
-                                  className={`text-2xl font-bold mb-3 transition-colors duration-300 text-[#0A3161] ${titleHoverColor}`}
-                                >
-                                  {value.Title}
-                                </h1>
-
-                                <p className="text-gray-600 leading-relaxed mb-6 px-2">
-                                  {value.description}
-                                </p>
-
+                              <div className="w-full bg-white rounded-2xl border border-gray-200 shadow-md hover:shadow-xl transition-all duration-500 p-8 text-center relative overflow-hidden">
+                                {/* Gradient overlay - animates bottom -> top on hover */}
                                 <div
-                                  className={`h-[3px] w-1/2 mx-auto rounded-full ${barGrad}`}
+                                  className={`absolute inset-0 rounded-2xl transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out ${overlayGrad} pointer-events-none z-10`}
+                                  aria-hidden="true"
                                 />
+
+                                {/* Optional subtle overlay for blur/gloss (uncomment if desired) */}
+                                {/* <div className="absolute inset-0 rounded-2xl bg-white/0 group-hover:bg-white/10 backdrop-blur-sm transition-all duration-500 pointer-events-none z-15" /> */}
+
+                                {/* Content should be above overlay */}
+                                <div className="relative z-0 group-hover:z-20 flex flex-col items-center transition-[z-index] duration-300">
+                                  <div className="flex justify-center items-center mb-5">
+                                    <div className="relative w-24 h-24 flex items-center justify-center rounded-full overflow-hidden">
+                                      <img
+                                        src={value.icon}
+                                        alt={value.Title}
+                                        className="relative w-20 h-20 object-contain transition-transform duration-700 ease-out group-hover:scale-110 group-hover:rotate-3"
+                                      />
+                                    </div>
+                                  </div>
+
+                                  <h1 className="text-2xl font-bold mb-3 transition-colors duration-300 text-[#0A3161] group-hover:text-white">
+                                    {value.Title}
+                                  </h1>
+
+                                  <p className="text-gray-600 leading-relaxed mb-6 px-2 transition-colors duration-300 group-hover:text-white">
+                                    {value.description}
+                                  </p>
+
+                                  <div
+                                    className={`h-[3px] w-1/2 mx-auto rounded-full ${barGrad}`}
+                                  />
+                                </div>
                               </div>
                             </div>
                           );

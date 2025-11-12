@@ -58,20 +58,20 @@ const CalendarBooking = () => {
       <div className="flex flex-row shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] py-2.5 justify-between rounded-full items-center my-4 px-2">
         <button
           onClick={() => setActiveTab("calendar")}
-          className={`group bg-gradient-to-r from-[#0A3161] to-[#00A3EE] hover:from-[#00A3EE] hover:to-[#7EB900] px-6 py-3 rounded-full text-white items-center gap-3 transition-all duration-500 w-fit flex shadow-lg hover:shadow-xl transform hover:-translate-y-1 ${
+          className={`group bg-gradient-to-r px-[28px] from-[#0A3161] to-[#00A3EE] hover:from-[#00A3EE] hover:to-[#7EB900] py-3 rounded-full text-white items-center gap-3 transition-all duration-500 w-fit flex shadow-lg hover:shadow-xl transform hover:-translate-y-1 ${
             activeTab === "calendar" ? "" : "opacity-75"
           }`}
         >
-          Book a Discovery Call
+          Book a Call
         </button>
 
         <button
           onClick={() => setActiveTab("form")}
-          className={`group bg-gradient-to-r from-[#00A3EE] to-[#7EB900] hover:from-[#0A3161] hover:to-[#00A3EE] px-6 py-3 rounded-full text-white items-center gap-3 transition-all duration-500 w-fit flex shadow-lg hover:shadow-xl transform hover:-translate-y-1 ${
+          className={`group bg-gradient-to-r from-[#00A3EE] to-[#7EB900] hover:from-[#0A3161] hover:to-[#00A3EE] px-[28px] py-3 rounded-full text-white items-center gap-3 transition-all duration-500 w-fit flex shadow-lg hover:shadow-xl transform hover:-translate-y-1 ${
             activeTab === "form" ? "" : "opacity-75"
           }`}
         >
-          Fill a form with us
+          Fill a Form
         </button>
       </div>
 
