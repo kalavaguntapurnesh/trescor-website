@@ -55,9 +55,9 @@ const Hero = () => {
                   the implementation,
                   <br />
                   configuration, customization, integration, or ongoing
-                  maintenance,
+                  maintenance, our M365
                   <br />
-                  our M365 Consultants are ready to help.
+                  Consultants are ready to help.
                 </p>
               </div>
 
