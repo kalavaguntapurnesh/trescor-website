@@ -47,14 +47,14 @@ const ContactOne = () => {
                     </p>
                   </div>
 
-                  <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 mt-8">
+                  <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mt-8">
                     <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative">
                       <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-orange-500 via-white to-green-600"></div>
                       <div className="flex lg:justify-start justify-center mb-4">
                         <img
                           src={india}
                           alt="india"
-                          className="lg:w-36 lg:h-36 h-auto w-32 filter drop-shadow-md"
+                          className="md:w-36 md:h-36 h-auto w-[50%] filter drop-shadow-md"
                         />
                       </div>
                       <div className="text-gray-700 flex flex-col lg:items-start items-center space-y-1">
@@ -78,7 +78,7 @@ const ContactOne = () => {
                         <img
                           src={usa}
                           alt="usa"
-                          className="lg:w-36 lg:h-36 h-auto w-32 filter drop-shadow-md"
+                          className="md:w-36 md:h-36 h-auto w-[50%] filter drop-shadow-md"
                         />
                       </div>
                       <div className="text-gray-700 flex flex-col lg:items-start items-center space-y-1">

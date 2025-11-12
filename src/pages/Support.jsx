@@ -247,7 +247,6 @@ const Support = () => {
                       <p class="text-[15px] md:text-[18px] leading-relaxed md:max-w-[65%] whitespace-break-spaces">
                         Unlock the full potential of your Microsoft Dynamics
                         data with expert consulting, seamless integration, and
-                        color: "text-green-500", // Green color for this icon
                         decisions.
                       </p>
 

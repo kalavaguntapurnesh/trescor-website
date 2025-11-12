@@ -107,7 +107,7 @@ const Final = () => {
                     <div>
                       <h4 className="text-[20px] md:text-[16px] lg:text-[20px] font-medium font-jakarta"></h4>
                     </div>
-                    <button className="w-fit px-[28px] py-[12px] rounded-full text-[14px] font-[500] bg-white text-black cursor-pointer">
+                    <button className="w-fit px-[36px] py-[12px] rounded-full text-[14px] font-[500] bg-white text-black cursor-pointer">
                       Book a Meeting
                     </button>
                   </div>

@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiChevronDown } from "react-icons/fi";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { FaAngleDown } from "react-icons/fa";
 import { VscGraph } from "react-icons/vsc";
 import { FaMoneyCheck } from "react-icons/fa";
@@ -39,7 +39,6 @@ import {
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [openDropdown, setOpenDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdownMobile, setOpenDropdownMobile] = useState(null);
 
@@ -55,14 +54,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const toggleDropdown = (dropdown) => {
-    if (openDropdown === dropdown) {
-      setOpenDropdown(null);
-    } else {
-      setOpenDropdown(dropdown);
-    }
-  };
 
   const toggleMobileDropdown = (dropdown) => {
     setOpenDropdownMobile((prev) => (prev === dropdown ? null : dropdown));
@@ -650,7 +641,7 @@ const Blog = () => {
                 Business Intelligence & Analytics
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Transform data into actionable insights with advanced analytics
             </p>
           </a>
@@ -665,7 +656,7 @@ const Blog = () => {
                 Implementation & Deployment
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Expert implementation of Dynamics 365 solutions for your business
             </p>
           </a>
@@ -680,7 +671,7 @@ const Blog = () => {
                 Support & Managed Services
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Ongoing support and maintenance for your Dynamics 365 environment
             </p>
           </a>
@@ -717,7 +708,7 @@ const Homebar = () => {
                 Integration Consulting
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Expert guidance for seamless system integration and optimization
             </p>
           </a>
@@ -732,7 +723,7 @@ const Homebar = () => {
                 Business Needs Analysis
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Comprehensive assessment and strategic planning for your business
             </p>
           </a>
@@ -747,7 +738,7 @@ const Homebar = () => {
                 Cloud Migration
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Secure and efficient migration to cloud platforms
             </p>
           </a>
@@ -762,7 +753,7 @@ const Homebar = () => {
                 Custom Development
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Tailored software solutions built to your specifications
             </p>
           </a>
@@ -799,7 +790,7 @@ const ContactBar = () => {
                 Financial Services
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Comprehensive financial solutions and compliance management
             </p>
           </a>
@@ -814,7 +805,7 @@ const ContactBar = () => {
                 Manufacturing
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Streamlined production and supply chain optimization
             </p>
           </a>
@@ -829,7 +820,7 @@ const ContactBar = () => {
                 Technology & Software
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Digital transformation and software development solutions
             </p>
           </a>
@@ -844,7 +835,7 @@ const ContactBar = () => {
                 Public Sector
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Government and public administration solutions
             </p>
           </a>
@@ -881,7 +872,7 @@ const SupportBar = () => {
                 Where to find us
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               We are here to assist you with all your technical needs
             </p>
           </a>
@@ -896,7 +887,7 @@ const SupportBar = () => {
                 Contact Support
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Get in touch with our support team for immediate assistance
             </p>
           </a>
@@ -911,7 +902,7 @@ const SupportBar = () => {
                 Documentation
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Access comprehensive guides and documentation
             </p>
           </a>
@@ -926,7 +917,7 @@ const SupportBar = () => {
                 FAQ
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Find answers to frequently asked questions
             </p>
           </a>
@@ -963,7 +954,7 @@ const AboutBar = () => {
                 Why Trescor?
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Discover what makes us the right choice for your business
             </p>
           </a>
@@ -978,7 +969,7 @@ const AboutBar = () => {
                 Collaborate with us
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Partner with us to build innovative solutions together
             </p>
           </a>
@@ -993,7 +984,7 @@ const AboutBar = () => {
                 Privacy Policy
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Understanding how we protect and handle your data
             </p>
           </a>
@@ -1008,7 +999,7 @@ const AboutBar = () => {
                 Join Our Team
               </h4>
             </div>
-             <p className=" text-gray-600">
+            <p className=" text-gray-600">
               Explore career opportunities and grow with us
             </p>
           </a>

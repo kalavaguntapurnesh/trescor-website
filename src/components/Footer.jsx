@@ -28,8 +28,8 @@ const Footer = () => {
                   projects succeed, contact us today.
                 </p>
               </div>
-              <div className="lg:px-0 px-2">
-                <button className="w-fit px-[28px] py-[12px] rounded-[10px] text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
+              <div className="lg:px-0 px-2 flex lg:justify-start justify-center">
+                <button className="w-fit px-[36px] py-[12px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
                   Connect with Us
                 </button>
               </div>
