@@ -2,9 +2,7 @@ import { FaThreads } from "react-icons/fa6";
 import React, { useState, useEffect } from "react";
 import { RiMenu3Fill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
-import {
-  FaXTwitter,
-} from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -24,7 +22,7 @@ import { MdPrivacyTip } from "react-icons/md";
 import { MdSupport } from "react-icons/md";
 import { FaBusinessTime } from "react-icons/fa";
 import { FaIntercom } from "react-icons/fa6";
-import Logo from "../assets/Logo.png"
+import Logo from "../assets/Logo.png";
 import {
   FaCogs,
   FaChartBar,
@@ -37,8 +35,8 @@ import {
   FaLightbulb,
   FaQuestionCircle,
   FaLock,
-  FaLifeRing
-} from 'react-icons/fa';
+  FaLifeRing,
+} from "react-icons/fa";
 
 const SecNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -72,19 +70,24 @@ const SecNavbar = () => {
   };
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out select-none ${isScrolled ? "bg-white shadow-sm-md py-6" : "bg-white py-6 "
-        }`}
+      className={`fixed top-0 left-0 w-full z-20 transition-all duration-300 ease-in-out select-none ${
+        isScrolled ? "bg-white shadow-sm-md py-6" : "bg-white py-6 "
+      }`}
     >
       <div
-        className={`lg:rounded-full max-w-[1400px] mx-auto flex justify-between items-center px-6 lg:bg-navColor ${isScrolled ? "lg:py-0" : "lg:py-0"
-          }`}
+        className={`lg:rounded-full max-w-[1400px] mx-auto flex justify-between items-center px-6 lg:bg-navColor ${
+          isScrolled ? "lg:py-0" : "lg:py-0"
+        }`}
       >
         <a href="/" className="flex items-center flex-row">
           <img src={Logo} alt="logo" className="w-10 h-10 md:w-12 md:h-12" />
 
           <span
-            className={`text-2xl transition-all duration-300 ease-in-out ${isScrolled ? "font-bold text-[#B31942]" : "text-[#B31942] font-bold"
-              }`}
+            className={`text-2xl transition-all duration-300 ease-in-out ${
+              isScrolled
+                ? "font-bold text-[#B31942]"
+                : "text-[#B31942] font-bold"
+            }`}
           >
             Trescor
           </span>
@@ -92,17 +95,17 @@ const SecNavbar = () => {
 
         <ul className="hidden lg:flex flex-grow justify-center space-x-8 items-center">
           <Tabs />
-
         </ul>
 
         {/* Login Button */}
         <div className="hidden lg:flex space-x-4">
           <a
             href="/contact-trescor"
-            className={`border-[1px] font-medium relative  lg:px-6 md:px-4 py-2 rounded text-sm border-[#0A3161] transition duration-500 ${isScrolled
-              ? "border-[#0A3161] hover:border-none text-[#0A3161] font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0 before:bg-[#B31942] before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 "
-              : "border-[#0A3161] text-[#0A3161]"
-              }`}
+            className={`border-[1px] font-medium relative  lg:px-6 md:px-4 py-2 rounded text-sm border-[#0A3161] transition duration-500 ${
+              isScrolled
+                ? "border-[#0A3161] hover:border-none text-[#0A3161] font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0 before:bg-[#B31942] before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 "
+                : "border-[#0A3161] text-[#0A3161]"
+            }`}
           >
             <span className="relative z-10">Contact Us</span>
           </a>
@@ -112,13 +115,15 @@ const SecNavbar = () => {
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? (
               <AiOutlineClose
-                className={`w-5 h-5 ${isScrolled ? "text-[#0A3161]" : "text-[#0A3161]"
-                  }`}
+                className={`w-5 h-5 ${
+                  isScrolled ? "text-[#0A3161]" : "text-[#0A3161]"
+                }`}
               />
             ) : (
               <RiMenu3Fill
-                className={`w-5 h-5 ${isScrolled ? "text-[#0A3161]" : "text-[#0A3161]"
-                  }`}
+                className={`w-5 h-5 ${
+                  isScrolled ? "text-[#0A3161]" : "text-[#0A3161]"
+                }`}
               />
             )}
           </button>
@@ -146,10 +151,11 @@ const SecNavbar = () => {
               >
                 Our Services
                 <FaAngleDown
-                  className={`transition-transform ${openDropdownMobile === "home"
-                    ? "rotate-180 text-mainColor"
-                    : ""
-                    }`}
+                  className={`transition-transform ${
+                    openDropdownMobile === "home"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
                 />
               </div>
               <AnimatePresence>
@@ -162,19 +168,28 @@ const SecNavbar = () => {
                   >
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center hover:bg-[#d9d9d9] transition-colors">
                       <FaCogs className="text-[#0a3161]" />
-                      <a href="/services-microsoft-dynamics-365-finance" className="block text-sm text-gray-700">
+                      <a
+                        href="/services-microsoft-dynamics-365-finance"
+                        className="block text-sm text-gray-700"
+                      >
                         Dynamic F & O
                       </a>
                     </li>
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center hover:bg-[#d9d9d9] transition-colors">
                       <FaChartBar className="text-[#0a3161]" />
-                      <a href="/bi-analytics-services" className="block text-sm text-gray-700">
+                      <a
+                        href="/bi-analytics-services"
+                        className="block text-sm text-gray-700"
+                      >
                         BI Analytics
                       </a>
                     </li>
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center hover:bg-[#d9d9d9] transition-colors">
                       <FaTools className="text-[#0a3161]" />
-                      <a href="/services-microsoft-dynamics-365-finance" className="block text-sm text-gray-700">
+                      <a
+                        href="/services-microsoft-dynamics-365-finance"
+                        className="block text-sm text-gray-700"
+                      >
                         Support & Managed
                       </a>
                     </li>
@@ -190,10 +205,11 @@ const SecNavbar = () => {
               >
                 Industries we serve
                 <FaAngleDown
-                  className={`transition-transform ${openDropdownMobile === "services"
-                    ? "rotate-180 text-mainColor"
-                    : ""
-                    }`}
+                  className={`transition-transform ${
+                    openDropdownMobile === "services"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
                 />
               </div>
               <AnimatePresence>
@@ -206,25 +222,37 @@ const SecNavbar = () => {
                   >
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaMoneyCheckAlt className="text-[#0a3161]" />
-                      <a href="/industries" className="block text-sm text-gray-700">
+                      <a
+                        href="/industries"
+                        className="block text-sm text-gray-700"
+                      >
                         Financial
                       </a>
                     </li>
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaIndustry className="text-[#0a3161]" />
-                      <a href="/industries" className="block text-sm text-gray-700">
+                      <a
+                        href="/industries"
+                        className="block text-sm text-gray-700"
+                      >
                         Manufacturing
                       </a>
                     </li>
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaLaptopCode className="text-[#0a3161]" />
-                      <a href="/industries" className="block text-sm text-gray-700">
+                      <a
+                        href="/industries"
+                        className="block text-sm text-gray-700"
+                      >
                         Software
                       </a>
                     </li>
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaUniversity className="text-[#0a3161]" />
-                      <a href="/industries" className="block text-sm text-gray-700">
+                      <a
+                        href="/industries"
+                        className="block text-sm text-gray-700"
+                      >
                         Public Sector
                       </a>
                     </li>
@@ -240,10 +268,11 @@ const SecNavbar = () => {
               >
                 Our Solutions
                 <FaAngleDown
-                  className={`transition-transform ${openDropdownMobile === "products"
-                    ? "rotate-180 text-mainColor"
-                    : ""
-                    }`}
+                  className={`transition-transform ${
+                    openDropdownMobile === "products"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
                 />
               </div>
               <AnimatePresence>
@@ -278,15 +307,15 @@ const SecNavbar = () => {
               >
                 About Trescor
                 <FaAngleDown
-                  className={`transition-transform ${openDropdownMobile === "technologies"
-                    ? "rotate-180 text-mainColor"
-                    : ""
-                    }`}
+                  className={`transition-transform ${
+                    openDropdownMobile === "technologies"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
                 />
               </div>
               <AnimatePresence>
                 {openDropdownMobile === "technologies" && (
-
                   <motion.ul
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
@@ -295,19 +324,28 @@ const SecNavbar = () => {
                   >
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaQuestionCircle className="text-[#0a3161]" />
-                      <a href="/about-trescor" className="block text-sm text-gray-700">
+                      <a
+                        href="/about-trescor"
+                        className="block text-sm text-gray-700"
+                      >
                         Why Trescor
                       </a>
                     </li>
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaHandshake className="text-[#0a3161]" />
-                      <a href="/collaborate-with-us" className="block text-sm text-gray-700">
+                      <a
+                        href="/collaborate-with-us"
+                        className="block text-sm text-gray-700"
+                      >
                         Collaborate with us
                       </a>
                     </li>
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaLock className="text-[#0a3161]" />
-                      <a href="/privacy-policy" className="block text-sm text-gray-700">
+                      <a
+                        href="/privacy-policy"
+                        className="block text-sm text-gray-700"
+                      >
                         Privacy Policy
                       </a>
                     </li>
@@ -322,8 +360,11 @@ const SecNavbar = () => {
               >
                 Need Support
                 <FaAngleDown
-                  className={`transition-transform ${openDropdownMobile === "mobile-app" ? "rotate-180 text-mainColor" : ""
-                    }`}
+                  className={`transition-transform ${
+                    openDropdownMobile === "mobile-app"
+                      ? "rotate-180 text-mainColor"
+                      : ""
+                  }`}
                 />
               </div>
               <AnimatePresence>
@@ -334,27 +375,28 @@ const SecNavbar = () => {
                     exit={{ opacity: 0, height: 0 }}
                     className="mt-6 grid grid-cols-2 gap-4"
                   >
-
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaLifeRing className="text-[#0a3161]" />
-                      <a href="/contact-trescor" className="block text-sm text-gray-700">
+                      <a
+                        href="/contact-trescor"
+                        className="block text-sm text-gray-700"
+                      >
                         Contact Us
                       </a>
                     </li>
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaLifeRing className="text-[#0a3161]" />
-                      <a href="/dynamics-365-support-services" className="block text-sm text-gray-700">
+                      <a
+                        href="/dynamics-365-support-services"
+                        className="block text-sm text-gray-700"
+                      >
                         Find with us
                       </a>
                     </li>
                   </motion.ul>
-
                 )}
               </AnimatePresence>
             </li>
-
-
-
 
             <li className="px-4 mt-10 w-[100%] flex justify-center items-center">
               <a
@@ -473,13 +515,15 @@ const Tab = ({ children, tab, handleSetSelected, selected }) => {
       id={`shift-tab-${tab}`}
       onMouseEnter={() => handleSetSelected(tab)}
       onClick={() => handleSetSelected(tab)}
-      className={`flex items-center gap-1 rounded-full md:text-sm lg:text-base px-3 py-1.5 transition-colors  ${isScrolled ? "text-[#0A3161]" : "text-[#0A3161]"
-        }  ${selected === tab ? "text-[#0A3161]" : "text-[#0A3161]"}`}
+      className={`flex items-center gap-1 rounded-full md:text-sm lg:text-base px-3 py-1.5 transition-colors  ${
+        isScrolled ? "text-[#0A3161]" : "text-[#0A3161]"
+      }  ${selected === tab ? "text-[#0A3161]" : "text-[#0A3161]"}`}
     >
       <span>{children}</span>
       <FiChevronDown
-        className={`transition-transform ${selected === tab ? "rotate-180" : ""
-          }`}
+        className={`transition-transform ${
+          selected === tab ? "rotate-180" : ""
+        }`}
       />
     </button>
   );
@@ -577,14 +621,10 @@ const Blog = () => {
         <div className="flex flex-row items-center">
           <FaMoneyCheck className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Dynamics 365 F & O
-            </p>
+            <p className="font-semibold text-[14px] ">Dynamics 365 F & O</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
-
-
       </a>
 
       <a
@@ -600,10 +640,7 @@ const Blog = () => {
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
-
-
       </a>
-
 
       <a
         href="/services-microsoft-dynamics-365-finance"
@@ -618,10 +655,7 @@ const Blog = () => {
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
-
-
       </a>
-
     </div>
   );
 };
@@ -636,14 +670,10 @@ const Homebar = () => {
         <div className="flex flex-row items-center">
           <FaIntercom className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Integration Consulting
-            </p>
+            <p className="font-semibold text-[14px] ">Integration Consulting</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
-
-
       </a>
 
       <a
@@ -653,19 +683,11 @@ const Homebar = () => {
         <div className="flex flex-row items-center">
           <FaBusinessTime className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Business Needs
-            </p>
+            <p className="font-semibold text-[14px] ">Business Needs</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
-
-
       </a>
-
-
-
-
     </div>
   );
 };
@@ -680,14 +702,10 @@ const ContactBar = () => {
         <div className="flex flex-row items-center">
           <FaSackDollar className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Financial Services
-            </p>
+            <p className="font-semibold text-[14px] ">Financial Services</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
-
-
       </a>
 
       <a
@@ -697,16 +715,11 @@ const ContactBar = () => {
         <div className="flex flex-row items-center">
           <MdFactory className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Manufacturing Services
-            </p>
+            <p className="font-semibold text-[14px] ">Manufacturing Services</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
-
-
       </a>
-
 
       <a
         href="/industries"
@@ -715,9 +728,7 @@ const ContactBar = () => {
         <div className="flex flex-row items-center">
           <FaLaptop className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Software Services
-            </p>
+            <p className="font-semibold text-[14px] ">Software Services</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
@@ -730,20 +741,14 @@ const ContactBar = () => {
         <div className="flex flex-row items-center">
           <FaUsers heck className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Public Sector Services
-            </p>
+            <p className="font-semibold text-[14px] ">Public Sector Services</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
-
-
       </a>
-
     </div>
   );
 };
-
 
 const SupportBar = () => {
   return (
@@ -755,9 +760,7 @@ const SupportBar = () => {
         <div className="flex flex-row items-center">
           <MdSupport className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Where to find us
-            </p>
+            <p className="font-semibold text-[14px] ">Where to find us</p>
             <p className="text-[12px] mt-1">We are here to assist you</p>
           </div>
         </div>
@@ -776,14 +779,10 @@ const AboutBar = () => {
         <div className="flex flex-row items-center">
           <GrCloudSoftware className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Why Trescor?
-            </p>
+            <p className="font-semibold text-[14px] ">Why Trescor?</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
-
-
       </a>
 
       <a
@@ -793,16 +792,11 @@ const AboutBar = () => {
         <div className="flex flex-row items-center">
           <FaHandshake className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Collaborate with us
-            </p>
+            <p className="font-semibold text-[14px] ">Collaborate with us</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
-
-
       </a>
-
 
       <a
         href="/privacy-policy"
@@ -811,19 +805,11 @@ const AboutBar = () => {
         <div className="flex flex-row items-center">
           <MdPrivacyTip className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Privacy Policy
-            </p>
+            <p className="font-semibold text-[14px] ">Privacy Policy</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
-
-
       </a>
-
-
-
-
     </div>
   );
 };

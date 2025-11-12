@@ -1,5 +1,6 @@
 import { FaFacebook, FaThreads } from "react-icons/fa6";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { RiMenu3Fill } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
@@ -483,7 +484,6 @@ const Tabs = () => {
 
 const Tab = ({ children, tab, handleSetSelected, selected }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > window.innerHeight / 4) {
@@ -533,7 +533,7 @@ const Content = ({ selected, dir }) => {
         opacity: 0,
         y: 8,
       }}
-      className="absolute left-1/2 top-[calc(100%_+_24px)] w-[1400px] max-w-[90vw] -translate-x-1/2 bg-white rounded-lg shadow overflow-hidden"
+      className="absolute left-1/2 top-[calc(100%_+_1px)] w-[1400px] max-w-[90vw] -translate-x-1/2 bg-white rounded-lg shadow overflow-hidden"
     >
       <Bridge />
       <Nub selected={selected} />
@@ -699,7 +699,7 @@ const Homebar = () => {
       <div className="w-[70%] p-6 bg-white rounded-r-lg">
         <div className="grid grid-cols-2 gap-4">
           <a
-            href="/solutions/integration-consulting"
+            href="/"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -714,7 +714,7 @@ const Homebar = () => {
           </a>
 
           <a
-            href="/solutions/business-needs"
+            href="/"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -729,7 +729,7 @@ const Homebar = () => {
           </a>
 
           <a
-            href="/solutions/cloud-migration"
+            href="/"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -744,7 +744,7 @@ const Homebar = () => {
           </a>
 
           <a
-            href="/solutions/custom-development"
+            href="/"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -781,7 +781,7 @@ const ContactBar = () => {
       <div className="w-[70%] p-6 bg-white rounded-r-lg">
         <div className="grid grid-cols-2 gap-4">
           <a
-            href="/industries/financial-services"
+            href="/industries"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -796,7 +796,7 @@ const ContactBar = () => {
           </a>
 
           <a
-            href="/industries/manufacturing"
+            href="/industries"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -811,7 +811,7 @@ const ContactBar = () => {
           </a>
 
           <a
-            href="/industries/software-services"
+            href="/industries"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -826,7 +826,7 @@ const ContactBar = () => {
           </a>
 
           <a
-            href="/industries/public-sector"
+            href="/industries"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
