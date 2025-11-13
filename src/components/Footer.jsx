@@ -4,8 +4,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa6";
-import { FaUsers, FaLightbulb, FaShieldAlt } from "react-icons/fa";
-import { FiArrowUpRight } from "react-icons/fi";
+import india from "../assets/india.svg";
+import usa from "../assets/usa.svg";
 
 const Footer = () => {
   return (
@@ -32,6 +32,37 @@ const Footer = () => {
                 <button className="w-fit px-[36px] py-[12px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
                   Connect with Us
                 </button>
+              </div>
+
+              <div>
+                <a
+                  href="https://maps.app.goo.gl/bTxVirWoKNPPm1xb6"
+                  className="flex flex-row items-center lg:justify-start justify-center gap-4 text-gray-600 hover:text-[#0A3161] hover:underline cursor-pointer"
+                >
+                  <div>
+                    <img src={usa} alt="India" className="w-8 h-8" />
+                  </div>
+                  <div>
+                    <p>
+                      530 Technology Drive, Irvine, California, United
+                      States-92614
+                    </p>
+                  </div>
+                </a>
+                <a
+                  href="https://maps.app.goo.gl/bTxVirWoKNPPm1xb6"
+                  className="flex flex-row items-center lg:justify-start justify-center gap-4 text-gray-600 hover:text-[#0A3161] hover:underline cursor-pointer"
+                >
+                  <div>
+                    <img src={india} alt="India" className="w-8 h-8" />
+                  </div>
+                  <div>
+                    <p>
+                      1-53, P NO.27, SY NO.41/P, 42/P Guttala, Begumpet,
+                      Hyderabad, India-500016
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
             <div className="flex justify-center items-center w-full h-full min-h-[400px]">
@@ -145,11 +176,11 @@ const Footer = () => {
             </div>
             <div className="space-y-3">
               {[
-                { name: "Contact Support", href: "/contact-trescor" },
-                { name: "Documentation", href: "/documentation" },
-                { name: "Training Resources", href: "/training" },
-                { name: "Community Forum", href: "/community" },
-                { name: "Service Status", href: "/status" },
+                { name: "Contact Us", href: "/contact" },
+                { name: "Help Center", href: "/support" },
+                { name: "FAQs", href: "/faq" },
+                { name: "Collaboration", href: "/collaborate-with-us" },
+                { name: "Privacy Policy", href: "/privacy-policy" },
               ].map((link, index) => (
                 <a
                   key={index}
@@ -166,23 +197,23 @@ const Footer = () => {
           {/* Resources */}
           <div className="space-y-4">
             <div className="flex items-center mb-6">
-              <h4 className="text-lg font-bold text-[#0A3161]">Resources</h4>
+              <h4 className="text-lg font-bold text-[#0A3161]">Policy</h4>
             </div>
             <div className="space-y-3">
               {[
-                { name: "Case Studies", href: "/case-studies" },
-                { name: "White Papers", href: "/white-papers" },
-                { name: "Blog", href: "/blog" },
-                { name: "Webinars", href: "/webinars" },
-                { name: "Downloads", href: "/downloads" },
-              ].map((link, index) => (
+                { name: "Privacy Policy", href: "/privacy-policy" },
+                { name: "Anti Slavery Policy", href: "/anti-slavery-policy" },
+                { name: "Cookie Statement", href: "/cookie-policy" },
+                { name: "User Consent", href: "/user-consent" },
+                { name: "CCPA", href: "/privacy-policy" },
+              ].map((policy, index) => (
                 <a
                   key={index}
-                  href={link.href}
+                  href={policy.href}
                   className="flex items-center space-x-2 text-gray-600 hover:text-[#F14F21] transition-all duration-200 group hover:pl-2"
                 >
                   <FaAngleRight className="text-xs group-hover:translate-x-1 transition-transform opacity-60 group-hover:opacity-100" />
-                  <span className="text-sm font-medium">{link.name}</span>
+                  <span className="text-sm font-medium">{policy.name}</span>
                 </a>
               ))}
             </div>
@@ -209,10 +240,10 @@ const Footer = () => {
                   </a>
                   <div className="h-4 w-px bg-gray-400" />
                   <a
-                    href="/terms-of-service"
+                    href="/privacy-policy"
                     className="text-gray-300 hover:text-[#7EB900] transition-colors font-medium"
                   >
-                    Terms of Service
+                    CCPA
                   </a>
                   <div className="h-4 w-px bg-gray-400" />
                   <a

@@ -232,7 +232,7 @@ const SecNavbar = () => {
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaIndustry className="text-[#0a3161]" />
                       <a
-                        href="/industries"
+                        href="/industries/manufacturing"
                         className="block text-sm text-gray-700"
                       >
                         Manufacturing
@@ -696,13 +696,13 @@ const ContactBar = () => {
   return (
     <div className="grid grid-cols-2 gap-4 ">
       <a
-        href="/industries"
+        href="/industries/manufacturing"
         className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
       >
         <div className="flex flex-row items-center">
-          <FaSackDollar className=" w-6 h-6" />
+          <MdFactory className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Financial Services</p>
+            <p className="font-semibold text-[14px] ">Manufacturing Services</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>
@@ -713,9 +713,9 @@ const ContactBar = () => {
         className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
       >
         <div className="flex flex-row items-center">
-          <MdFactory className=" w-6 h-6" />
+          <FaSackDollar className=" w-6 h-6" />
           <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Manufacturing Services</p>
+            <p className="font-semibold text-[14px] ">Financial Services</p>
             <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
           </div>
         </div>

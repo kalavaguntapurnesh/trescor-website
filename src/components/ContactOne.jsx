@@ -65,7 +65,7 @@ const ContactOne = () => {
                         <p>42/P Guttala, Begumpet,</p>
                         <p>Hyderabad, India-500016</p>
                         <a
-                          href="mailto:info@trescorsolutions.com"
+                          href="mailto:info@trescorsoftwaresolutions.com"
                           className="mt-3 text-[#00A3EE] hover:text-[#0A3161] font-medium transition-colors duration-300"
                         >
                           info@trescorsolutions.com

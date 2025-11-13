@@ -50,7 +50,7 @@ const PrivacyPolicy = () => {
                       <h2 className="text-xl font-bold mt-4 text-[#0A3161]">
                         Information That We Collect & Process
                       </h2>
-                      <p className="mb-4 text-gray-700">
+                      <p className="mb-4 text-gray-600">
                         The only purpose of collecting data from you is just to
                         serve an improved experience to you every time when you
                         visit our website. Initially, we collect information
@@ -62,10 +62,10 @@ const PrivacyPolicy = () => {
                         or subscribe to our newsletters.
                       </p>
                     </div>
-                    <h3 className="text-xl font-bold mt-8 mb-2 text-[#0A3161]">
+                    <h3 className="text-2xl font-bold mt-8 mb-2 text-[#0A3161]">
                       Cookies That We Use
                     </h3>
-                    <p className="mb-4 text-gray-700">
+                    <p className="mb-4 text-gray-600">
                       We use cookies that help us to identify your browsing
                       data, clicks you ensure, and the time you spent while
                       navigating our website. All such information helps us to
@@ -74,26 +74,26 @@ const PrivacyPolicy = () => {
                       the last web activities that you ensured so that we can
                       serve what is anticipated by you.
                     </p>
-                    <h3 className="text-xl font-bold mt-8 mb-2 text-[#0A3161]">
+                    <h3 className="text-2xl font-bold mt-8 mb-2 text-[#0A3161]">
                       Data Disclosure
                     </h3>
-                    <p className="mb-4 text-gray-700">
+                    <p className="mb-4 text-gray-600">
                       To improve our user experience, we may share our users'
                       personal-identifiable information with certain third-party
                       sources including our business partners, stakeholders, and
                       vendors. We may also share your information with our
                       search engine or digital providers.
                     </p>
-                    <p className="mb-4 text-gray-700">
+                    <p className="mb-4 text-gray-600">
                       When it comes to complying with any legal obligation,
                       protect our rights, and ensuring the safety of our
                       customers or any other terms, etc., we share our users'
                       data.
                     </p>
-                    <h3 className="text-xl font-bold mt-8 mb-2 text-[#0A3161]">
+                    <h3 className="text-2xl font-bold mt-8 mb-2 text-[#0A3161]">
                       Data Security
                     </h3>
-                    <p className="mb-4 text-gray-700">
+                    <p className="mb-4 text-gray-600">
                       We use security measures to protect and prevent your data
                       from being misused, lost, or accessed by unauthorized
                       sources. We do not share your data with any sources that
@@ -101,10 +101,10 @@ const PrivacyPolicy = () => {
                       share your data in case of a suspected data breach, we
                       will notify you in advance.
                     </p>
-                    <h3 className="text-xl font-bold mt-8 mb-2 text-[#0A3161]">
+                    <h3 className="text-2xl font-bold mt-8 mb-2 text-[#0A3161]">
                       User Rights
                     </h3>
-                    <p className="mb-4 text-gray-700">
+                    <p className="mb-4 text-gray-600">
                       Users can anytime unsubscribe from the notifications for
                       newsletters, events/webinars, or from any of our incoming
                       calls. You can either change your notification preference
@@ -117,17 +117,17 @@ const PrivacyPolicy = () => {
                         info@trescoresoftwaresolutions.com
                       </a>
                     </p>
-                    <h3 className="text-xl font-bold mt-8 mb-2 text-[#0A3161]">
+                    <h3 className="text-2xl font-bold mt-8 mb-2 text-[#0A3161]">
                       Changes & Amendments
                     </h3>
-                    <p className="mb-4 text-gray-700">
+                    <p className="mb-4 text-gray-600">
                       Trescore Software Solutions has the right to make changes
                       and amendments anytime whenever requires. We can modify or
                       update the provisions made in our privacy policy. Hence,
                       to remain updated with our latest privacy policy, you are
                       required to visit our page at frequent intervals.
                     </p>
-                    <p className="mb-4 text-gray-700">
+                    <p className="mb-4 text-gray-600">
                       We always welcome you to connect with us in any term. If
                       you have any queries, questions, or suggestions, please
                       write us at{" "}
@@ -137,6 +137,24 @@ const PrivacyPolicy = () => {
                       >
                         info@trescoresoftwaresolutions.com
                       </a>
+                    </p>
+
+                    <h3 className="text-2xl font-bold mt-8 mb-2 text-[#0A3161]">
+                      CCPA Compliance Statement
+                    </h3>
+
+                    <p className="mb-2 text-gray-600">
+                      The California Consumer Privacy Act (CCPA) provides
+                      California residents with specific rights regarding their
+                      personal information. Trescor Software Solutions respects
+                      these rights and maintains full transparency in how data
+                      is collected and used. We only collect your business name
+                      and business email when you voluntarily submit our Contact
+                      Us form. Under the CCPA, you may request access,
+                      correction, or deletion of your information at any time.
+                      We do not sell or share personal information with third
+                      parties. To exercise your rights, contact us at
+                      support@trescor.com.
                     </p>
                   </div>
                 </section>

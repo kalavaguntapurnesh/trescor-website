@@ -221,7 +221,7 @@ const Navbar = () => {
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaIndustry className="text-[#0a3161]" />
                       <a
-                        href="/industries"
+                        href="/industries/manufacturing"
                         className="block text-sm text-gray-700"
                       >
                         Manufacturing
@@ -781,6 +781,20 @@ const ContactBar = () => {
       <div className="w-[70%] p-6 bg-white rounded-r-lg">
         <div className="grid grid-cols-2 gap-4">
           <a
+            href="/industries/manufacturing"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <MdFactory className="w-6 h-6 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
+                Manufacturing
+              </h4>
+            </div>
+            <p className=" text-gray-600">
+              Streamlined production and supply chain optimization
+            </p>
+          </a>
+          <a
             href="/industries"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
@@ -792,21 +806,6 @@ const ContactBar = () => {
             </div>
             <p className=" text-gray-600">
               Comprehensive financial solutions and compliance management
-            </p>
-          </a>
-
-          <a
-            href="/industries"
-            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
-          >
-            <div className="flex items-center mb-2">
-              <MdFactory className="w-6 h-6 text-[#7EB900] mr-3" />
-              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
-                Manufacturing
-              </h4>
-            </div>
-            <p className=" text-gray-600">
-              Streamlined production and supply chain optimization
             </p>
           </a>
 
