@@ -7,6 +7,10 @@
   font-style: normal;
 }
 
+body, #root {
+  user-select: none;
+}
+
 
 @keyframes pulse {
   0% {

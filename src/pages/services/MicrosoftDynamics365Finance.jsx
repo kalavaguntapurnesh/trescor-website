@@ -9,6 +9,7 @@ import Maintenance from "../../assets/Maintenance.png";
 import Nine from "../../assets/Nine.png";
 import ScrollToTop from "../../components/ScrollToTop";
 import { FiArrowUpRight } from "react-icons/fi";
+import { FiSettings, FiLayers, FiTrendingUp, FiShield } from "react-icons/fi";
 
 const MicrosoftDynamics365Finance = () => {
   return (
@@ -37,38 +38,44 @@ const MicrosoftDynamics365Finance = () => {
                       </div>
                       <div className="text-gray-600 lg:text-lg text-base lg:text-start text-center lg:ml-2 px-2 md:px-0">
                         <p>
-                          In today’s fast-paced digital landscape, businesses
-                          need agile and robust solutions to stay competitive
-                          and grow. At Trescor, we offer specialized services in
-                          Microsoft Dynamics 365 F & O solutions that transform
-                          your operations, boost efficiency, and unlock new
-                          levels of performance.
+                          Finance is one of the most complex functions of an
+                          organization involving data and reports – general
+                          ledgers, fixed assets, receivables, payables,
+                          reconciliation, cash flow, and more. With Microsoft
+                          Dynamics 365 Finance and Operations, you can do much
+                          more than a basic accounting or financial software to
+                          drive business agility and growth. For instance, you
+                          can automate your key processes, streamline your
+                          accounting needs, and manage your financial data while
+                          integrating it with other parts of your business.
                         </p>
                       </div>
                       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 lg:px-0 px-2">
                         <div className="flex flex-row md:justify-start justify-center items-center">
-                          <FiArrowUpRight className="w-8 h-8 text-[#00A3EE]" />
-                          <p className="ml-2 text-gray-600 ">
-                            Full-Cycle End-to-End Implementation Service
+                          <FiSettings className="w-8 h-8 text-[#00A3EE]" />
+                          <p className="ml-2 text-gray-600 lg:text-lg text-base">
+                            Automate key financial processes
                           </p>
                         </div>
+
                         <div className="flex flex-row md:justify-start justify-center items-center">
-                          <FiArrowUpRight className="w-8 h-8 text-[#7EB900]" />
-                          <p className="ml-2 text-gray-600">
-                            Advanced Customization and Seamless Integration
+                          <FiLayers className="w-8 h-8 text-[#7EB900]" />
+                          <p className="ml-2 text-gray-600 lg:text-lg text-base">
+                            Integrate systems for a unified view
                           </p>
                         </div>
+
                         <div className="flex flex-row md:justify-start justify-center items-center">
-                          <FiArrowUpRight className="w-8 h-8 text-[#F14F21]" />
-                          <p className="ml-2 text-gray-600">
-                            Scalable, Reliable Global Compliance Enablement
+                          <FiTrendingUp className="w-8 h-8 text-[#F14F21]" />
+                          <p className="ml-2 text-gray-600 lg:text-lg text-base">
+                            Enable faster & accurate decision-making
                           </p>
                         </div>
+
                         <div className="flex flex-row md:justify-start justify-center items-center">
-                          <FiArrowUpRight className="w-8 h-8 text-[#0A3161]" />
-                          <p className="ml-2 text-gray-600">
-                            24/7 Dedicated Support — Around the Clock, and the
-                            World
+                          <FiShield className="w-8 h-8 text-[#0A3161]" />
+                          <p className="ml-2 text-gray-600 lg:text-lg text-base">
+                            Simplify financial complexity & risk
                           </p>
                         </div>
                       </div>
@@ -111,13 +118,14 @@ const MicrosoftDynamics365Finance = () => {
                     ></div>
                     <div className="relative z-10 h-full flex flex-col text-[#F4F2F2] gap-[16px] w-[90%]">
                       <h1 className="text-[26px] md:text-[28px] lg:text-[40px] font-bold ">
-                        Data Strategy and Consulting
+                        Manage your financial operations with us.
                       </h1>
                       <p className="text-[15px] md:text-[18px] lg:text-[20px] leading-relaxed   max-w-[65%] whitespace-break-spaces">
-                        Data Roadblocks Holding You Back? Get strategic Guidance
-                        for Data Success
+                        To monitor the performance of your global financial
+                        operations, Dynamics 365 Finance comes with several
+                        features.
                       </p>
-                      <button className="w-fit px-[20px] py-[12px] rounded-[10px] text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
+                      <button className="w-fit px-[20px] py-[12px] rounded-[10px] text-[14px] font-[500] bg-[#00A3EE]  text-white shadow-lg hover:bg-[#0A3161] transition-colors duration-300 cursor-pointer">
                         Connect with Us
                       </button>
                     </div>
@@ -147,14 +155,12 @@ const MicrosoftDynamics365Finance = () => {
                 </div>
 
                 <div className="pt-8">
-                  <p className="text-gray-600 ">
-                    Data holds the answers, but are you asking the right
-                    questions? Most companies drown in data yet struggle to find
-                    strategic direction. Trescor transforms this struggle into a
-                    clear advantage. We craft adaptable data strategies,
-                    simplifying complexity through expert consulting. Our focus
-                    on data management, cloud optimization, and AI ensures your
-                    data becomes a powerful competitive asset.
+                  <p className="text-gray-600 lg:text-lg text-base">
+                    Our team will help you leverage the full potential of
+                    Dynamics 365 finance modules and features, automating tasks
+                    and streamlining accounting. This goes beyond basic
+                    financial software by providing a unified view of your
+                    finances.
                   </p>
                 </div>
               </div>
@@ -171,51 +177,69 @@ const MicrosoftDynamics365Finance = () => {
                 <div className="flex flex-wrap pb-2 flex-col items-center">
                   <div className="text-center mt-4">
                     <h1 className="md:text-4xl text-3xl font-extrabold leading-tight drop-shadow-md text-[#0A3161]">
-                      Features of Dynamics 365 Finance{" "}
+                      Microsoft Dynamics 365 Finance:{" "}
                       <span className="bg-gradient-to-r from-[#F14F21] via-[#00A3EE] to-[#7EB900] bg-clip-text text-transparent">
-                        & Operations
+                        Benefits
                       </span>
                     </h1>
                   </div>
                 </div>
 
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 pt-10 px-4 lg:px-8">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pt-10 ">
                   {[
                     {
                       icon: analytics,
-                      Title: "BI Analytics",
+                      Title: "Improved business health",
                       description:
-                        "Business Intelligence Analytics combines data analysis, visualization, and reporting to support informed decision-making and optimize business performance effectively.",
+                        "Achieve strong financial health with unified financial reporting that provides clear insights for better strategic planning.",
                     },
                     {
                       icon: settings,
-                      Title: "End-to-End Implementation",
+                      Title: "Better financial controls",
                       description:
-                        "Tailor the Dynamics 365 system architecture to align with your operations and objectives. Seamless installation and configuration of the solution, ensuring minimal disruption to your business.",
+                        "Gain enhanced control with in-depth reporting capabilities and embedded real-time analytics that improve transparency and accuracy.",
                     },
                     {
                       icon: migrations,
-                      Title: "Data Migration Services",
+                      Title: "Optimized cash flows",
                       description:
-                        "Transition your legacy data to our platform with precision and accuracy. Data Cleansing & Validation will ensure clean, reliable data that supports your business goals.",
+                        "Leverage predictive insights to manage working capital more efficiently and strengthen your organization’s cash flow cycle.",
                     },
                     {
                       icon: Maintenance,
-                      Title: "Post-Implementation Support",
+                      Title: "AI-powered decision-making",
                       description:
-                        "Deliver ongoing technical support to resolve issues and improve system performance. Regularly optimize workflows and implement upgrades to keep your business ahead of the curve.",
+                        "Make smarter financial decisions with AI capabilities and Microsoft Power BI workspaces designed for advanced analytics.",
                     },
                     {
                       icon: business,
-                      Title: "Business Upload & Maintenance",
+                      Title: "Reduced time, cost & errors",
                       description:
-                        "Conduct periodic assessments of your system to ensure compliance, efficiency, and optimal performance. Offer proactive maintenance to prevent downtime and address potential risks.",
+                        "Save time and operational costs while minimizing errors through automation of key financial processes.",
                     },
                     {
                       icon: Nine,
-                      Title: "Customization and Integration",
+                      Title: "Higher efficiency with Microsoft 365",
                       description:
-                        "Adapt Dynamics 365 and its features to fit your unique processes. Integrate with existing tools like CRM systems, supply chain management software, and third-party applications for a unified ecosystem.",
+                        "Boost team productivity through seamless integration with Microsoft Office 365 tools to streamline workflows.",
+                    },
+                    {
+                      icon: analytics,
+                      Title: "Compliance-ready financial system",
+                      description:
+                        "Easily manage changing regulatory requirements using a no-code configuration method that simplifies ongoing compliance updates.",
+                    },
+                    {
+                      icon: settings,
+                      Title: "Adapt to global & local needs",
+                      description:
+                        "Effortlessly support both local and international financial requirements with built-in adaptability and flexibility.",
+                    },
+                    {
+                      icon: migrations,
+                      Title: "Improved employee productivity",
+                      description:
+                        "Enhance employee satisfaction and work-life balance with simplified workflows that reduce manual work and repetitive tasks.",
                     },
                   ].map((value, index) => (
                     <div
@@ -226,6 +250,7 @@ const MicrosoftDynamics365Finance = () => {
                         <div className="flex justify-center items-center mb-5">
                           <div className="relative w-24 h-24 flex items-center justify-center rounded-full overflow-hidden">
                             <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 blur-lg transition duration-500"></div>
+
                             <img
                               src={value.icon}
                               alt="icon"
@@ -233,6 +258,7 @@ const MicrosoftDynamics365Finance = () => {
                             />
                           </div>
                         </div>
+
                         <h1
                           className={`
             text-2xl font-bold mb-3 transition-colors duration-300
@@ -249,9 +275,11 @@ const MicrosoftDynamics365Finance = () => {
                         >
                           {value.Title}
                         </h1>
+
                         <p className="text-gray-600 leading-relaxed mb-6 px-2">
                           {value.description}
                         </p>
+
                         <div
                           className={`
             h-[3px] w-1/2 mx-auto rounded-full 
@@ -289,13 +317,13 @@ const MicrosoftDynamics365Finance = () => {
                       <div className="w-full">
                         <h3 className="text-[26px] md:text-[28px] lg:text-[32px] font-bold text-[#0A3161]">
                           <span className="bg-gradient-to-r from-[#F14F21] via-[#00A3EE] to-[#7EB900] bg-clip-text text-transparent">
-                            Success Stories:
+                            Features:
                           </span>{" "}
-                          Optimizing the Retail &amp; CPG Industry with AI
+                          Microsoft Dynamics 365 Finance
                         </h3>
 
                         <div className="my-6">
-                          <button className="w-fit px-[32px] py-[8px] rounded text-[14px] font-[500] bg-[#0A3161] text-white hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
+                          <button className="w-fit px-[32px] py-[8px] rounded-full font-medium bg-[#0A3161] text-white hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
                             Know More
                           </button>
                         </div>
@@ -305,8 +333,8 @@ const MicrosoftDynamics365Finance = () => {
                     <div className="flex gap-12 md:min-h-[300px] flex-col md:flex-row relative my-4 mb-[3rem]">
                       <div className="md:w-[70%] lg:w-[50%] flex flex-col gap-[40px] z-10 relative">
                         <div>
-                          <h5 className="text-lg font-medium pb-[20px] inline-block">
-                            Challenge
+                           <h5 className="text-lg font-semibold pb-[20px] inline-block">
+                            Automate & simplify financial operations
                             <div
                               className="mt-1"
                               style={{
@@ -321,21 +349,18 @@ const MicrosoftDynamics365Finance = () => {
                           </h5>
                           <ul className="list-disc pl-4 space-y-2">
                             <li className=" tracking-[2%] text-[#525252]">
-                              A multinational snack &amp; confectionery company
-                              sought to enhance operational efficiency by
-                              automating data extraction from Certificate of
-                              Analysis (COA) documents.{" "}
+                              Use several work-simplifying tools like vendor
+                              invoice automation and expense management
                             </li>
                             <li className=" tracking-[2%] text-[#525252]">
-                              The manual extraction process was inefficient,
-                              time-consuming, and prone to human error,
-                              hindering quality control.
+                              Integration with MS Excel, Outlook, and Skype to
+                              enhance efficiencies
                             </li>
                           </ul>
                         </div>
                         <div>
-                          <h5 className="text-lg font-medium pb-[20px] inline-block">
-                            Outcome
+                           <h5 className="text-lg font-semibold pb-[20px] inline-block">
+                            Monitor performance in real time
                             <div
                               className="h-[2px] bg-transparent mt-1"
                               style={{
@@ -350,11 +375,12 @@ const MicrosoftDynamics365Finance = () => {
                           </h5>
                           <ul className="list-disc pl-4">
                             <li className=" tracking-[2%] text-[#525252]">
-                              Enhanced efficiency in quality control processes.
+                              Workspaces with analytics and processes tailored
+                              by role{" "}
                             </li>
                             <li className="tracking-[2%] text-[#525252]">
-                              Reduced reliance on manual labor, overcoming time
-                              constraints.
+                              Option for drill throughs & details on every
+                              transaction.
                             </li>
                           </ul>
                         </div>
@@ -367,8 +393,8 @@ const MicrosoftDynamics365Finance = () => {
                               "rgba(0, 0, 0, 0.05) -2px 0px 4px 0px, rgba(0, 0, 0, 0.04) -6px 0px 6px 0px, rgba(0, 0, 0, 0.03) -14px 0px 9px 0px, rgba(0, 0, 0, 0.01) -26px 0px 10px 0px, rgba(0, 0, 0, 0) -40px 0px 11px 0px",
                           }}
                         >
-                          <h5 className="text-lg font-medium pb-[20px] inline-block">
-                            Solution
+                           <h5 className="text-lg font-semibold pb-[20px] inline-block">
+                            Predict future outcomes
                             <div
                               className="h-[2px] bg-transparent mt-1"
                               style={{
@@ -383,14 +409,13 @@ const MicrosoftDynamics365Finance = () => {
                           </h5>
                           <ul className="text-[#525252] pl-4 list-disc">
                             <li className="text-[14px] tracking-[2%]">
-                              Trescor Technologies developed an automated
-                              solution to extract key information pairs from COA
-                              documents.
+                              Capability to predict invoice payments by
+                              analyzing client payment history
                             </li>
                             <li className="text-[14px] tracking-[2%]">
-                              This solution addressed the challenges of manual
-                              extraction, significantly enhancing efficiency and
-                              reducing labor requirements.
+                              Inbuilt Artificial Intelligence, Machine Learning,
+                              and predictive analytics to gain strategic
+                              insights
                             </li>
                           </ul>
                         </div>
