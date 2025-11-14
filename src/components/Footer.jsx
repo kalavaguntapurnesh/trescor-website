@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa6";
-import india from "../assets/India.svg";
+import india from "../assets/india.svg";
 import usa from "../assets/usa.svg";
 
 const Footer = () => {
