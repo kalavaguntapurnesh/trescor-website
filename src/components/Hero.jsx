@@ -93,7 +93,7 @@ const Hero = () => {
               </div>
 
               <div>
-                <h1 className="lg:text-6xl md:text-5xl text-4xl font-bold text-[#e7e5df] leading-tight">
+                <h1 className="xl:text-6xl md:text-5xl text-4xl font-bold text-[#e7e5df] leading-tight">
                   End-to-End Digital
                   <br /> Transformation Powered by
                   <br /> Microsoft{" "}
@@ -104,7 +104,7 @@ const Hero = () => {
               </div>
 
               <div>
-                <p className="pt-4 lg:text-lg text-[#e7e5df] leading-relaxed">
+                <p className="pt-4 xl:text-lg text-[#e7e5df] leading-relaxed">
                   Our Dynamics 365 Consultants work with you to tailor Dynamics
                   to your organization's
                   <br />
@@ -121,14 +121,14 @@ const Hero = () => {
               <div className="pt-4">
                 <a
                   href="/contact-trescor"
-                  className="inline-block px-[48px] py-3 border-[1px] bg-[#e7e5df] border-[#e7e5df] text-[#1a1a1a] rounded-full font-medium transition duration-300 hover:bg-transparent hover:text-[#e7e5df]"
+                  className="inline-block px-[48px] lg:py-2.5 xl:py-3 border-[1px] bg-[#e7e5df] border-[#e7e5df] text-[#1a1a1a] rounded-full font-medium transition duration-300 hover:bg-transparent hover:text-[#e7e5df]"
                 >
                   Contact Us Now
                 </a>
               </div>
             </div>
 
-            <div className="p-8 lg:col-span-2 lg:block hidden">
+            <div className="lg:p-6 xl:p-8 lg:col-span-2 lg:block hidden">
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -141,7 +141,7 @@ const Hero = () => {
                 <div className="bg-gradient-to-br from-white/95 to-white/90 backdrop-blur-xl rounded-lg p-6 shadow-xl border border-white/50">
                   <div className="flex flex-col gap-4">
                     <div className="text-center">
-                      <h2 className="text-[#05273a] font-extrabold text-2xl lg:text-3xl">
+                      <h2 className="text-[#05273a] font-extrabold text-2xl xl:text-3xl">
                         <span className="bg-gradient-to-r from-[#F14F21] via-[#00A3EE] to-[#7EB900] bg-clip-text text-transparent">
                           How can we help?
                         </span>
@@ -285,7 +285,7 @@ const Hero = () => {
                         <button
                           type="submit"
                           disabled={submitting || done}
-                          className="relative inline-flex items-center justify-center w-full px-6 py-3 rounded-full bg-gradient-to-r from-[#00A3EE] to-[#7EB900] text-white font-semibold shadow-xl hover:scale-[1.01] transform transition"
+                          className="relative inline-flex items-center justify-center w-full px-6 lg:py-2.5 xl:py-3 rounded-full bg-gradient-to-r from-[#00A3EE] to-[#7EB900] text-white font-semibold shadow-xl hover:scale-[1.01] transform transition"
                           aria-live="polite"
                         >
                           {!done ? (
