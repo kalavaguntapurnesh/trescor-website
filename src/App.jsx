@@ -17,7 +17,9 @@ import BIAnalytics from "./pages/services/BIAnalytics";
 import AntiSlaveryPolicy from "./pages/AntiSlaveryPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import UserConsent from "./pages/UserConsent";
-import Manufacturing from './pages/industries/Manufacturing';
+import Manufacturing from "./pages/industries/Manufacturing";
+import BankingAndFinance from "./pages/solutions/BankingAndFinance";
+import MicrosoftFabric from "./pages/solutions/MicrosoftFabric";
 
 function App() {
   return (
@@ -43,8 +45,17 @@ function App() {
       <Route path="/cookie-policy" element={<CookiePolicy />} />
       <Route path="/user-consent" element={<UserConsent />} />
 
-
       <Route path="/industries/manufacturing" element={<Manufacturing />} />
+
+      <Route
+        path="/solutions/microsoft-dynamics-365-for-finance"
+        element={<BankingAndFinance />}
+      />
+
+      <Route
+        path="/solutions/microsoft-fabric"
+        element={<MicrosoftFabric />}
+      />
     </Routes>
   );
 }

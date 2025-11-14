@@ -125,7 +125,7 @@ const MicrosoftDynamics365Finance = () => {
                         operations, Dynamics 365 Finance comes with several
                         features.
                       </p>
-                      <button className="w-fit px-[20px] py-[12px] rounded-[10px] text-[14px] font-[500] bg-[#00A3EE]  text-white shadow-lg hover:bg-[#0A3161] transition-colors duration-300 cursor-pointer">
+                      <button className="w-fit px-[20px] py-[12px] rounded-full text-[14px] font-[500] bg-[#00A3EE]  text-white shadow-lg hover:bg-[#0A3161] transition-colors duration-300 cursor-pointer">
                         Connect with Us
                       </button>
                     </div>
