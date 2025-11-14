@@ -3,14 +3,11 @@ import One from "../assets/One.svg";
 import Two from "../assets/Two.svg";
 import Three from "../assets/Three.webp";
 import Four from "../assets/Four.svg";
-import career from "../assets/career.png";
-import expert from "../assets/comm.png";
 import World from "../assets/globe.png";
 import graph from "../assets/investment.png";
 import Finance from "../assets/Finance.png";
 import settings from "../assets/Maintenance.png";
 import business from "../assets/business.png";
-import CPI from "../assets/CPI.png";
 
 const Carousel = () => {
   const values1 = [
@@ -40,13 +37,17 @@ const Carousel = () => {
         <div className="w-full">
           <div className="w-full mx-auto max-w-[1400px] pb-12">
             <div className="w-full p-4 mx-auto max-w-[1400px] mt-8">
-              <div className="flex flex-wrap flex-col items-center pb-3">
-                <div className="text-center mt-4">
-                  <h3 className="lg:text-4xl text-2xl font-bold text-[#0A3161]">
-                    Explore Our Range of Products
+              <div className="flex flex-col items-center pb-3">
+                <div className="text-center mt-4 relative">
+                  <h3 className="lg:text-4xl text-3xl font-bold text-[#0A3161]">
+                    Explore our range{" "}
+                    <span className="bg-gradient-to-r from-[#F14F21] via-[#7EB900] to-[#00A3EE] bg-clip-text text-transparent">
+                      of Services
+                    </span>
                   </h3>
+                  {/* Animated Accent */}
+                  <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 block w-32 h-2 bg-gradient-to-r from-[#F14F21] via-[#7EB900] to-[#00A3EE] rounded-full animate-pulse opacity-80"></span>
                 </div>
-                <div className="md:w-40 w-20 h-1 border-b-2 border-[#B31942] mt-[1px]"></div>
               </div>
 
               <div className="text-center mt-4">
@@ -177,26 +178,25 @@ const Carousel = () => {
                               </p>
                             </div>
                             <h3 className="lg:text-4xl text-3xl font-bold text-[#0A3161] lg:text-start text-center">
-                              Empowering Business Innovation through Deep
-                              Expertise.
+                              Empowering Business Intelligence with Microsoft
+                              Fabric AI
                             </h3>
 
                             <div className="lg:text-start text-center mt-4 mb-1">
                               <p className=" text-base text-gray-600">
-                                Trescor specializes in Dynamics AX
-                                implementations with core focus on Dynamics AX +
-                                Analytics. Our expertise with Dynamics AX
-                                includes customization in X++, Business
-                                intelligence with SSRS, Analytics with OLAP,
-                                Power BI and AX Integration with external
-                                systems.
+                                We help organisations connect Dynamics 365 to
+                                Microsoft Fabric — turning transactional data
+                                into a single trusted data foundation, real-time
+                                insights and AI-driven decisioning that scales
+                                across finance, operations and enterprise
+                                analytics.
                               </p>
                             </div>
                             <div className=" mt-6 space-y-4">
                               <div className="flex lg:justify-start justify-center items-center pb-4">
                                 <a
                                   href="/contact-trescor"
-                                  className="relative flex h-[50px] md:w-60 w-3/4 items-center bg-[#0A3161] border-[#0A3161] text-white justify-center overflow-hidden border  transition-all before:absolute before:h-0 before:w-0  before:bg-[#B31942] hover:text-white hover:border-[#B31942] before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded"
+                                  className="relative flex h-[50px] md:w-60 w-3/4 items-center bg-[#0A3161] border-[#0A3161] text-white justify-center overflow-hidden border  transition-all before:absolute before:h-0 before:w-0  before:bg-[#B31942] hover:text-white hover:border-[#B31942] before:duration-500 before:ease-out  hover:before:h-56 hover:before:w-full rounded-full"
                                 >
                                   <span className="relative z-10">
                                     Request a Demo
@@ -213,11 +213,11 @@ const Carousel = () => {
                                 className="w-20 h-20 mb-2 text-mainColor"
                               />
                               <h4 className="mb-2 text-2xl lg:text-start text-center font-bold text-[#0A3161] ">
-                                Business Intelligence Analytics
+                                Fabric-powered BI & OneLake
                               </h4>
                               <p className=" text-gray-600 lg:text-start text-center">
-                                Seamless integration with apps, data and
-                                processes.
+                                Consolidate data into OneLake and deliver
+                                governed Power BI experiences.
                               </p>
                             </div>
                             <div className="flex flex-col lg:items-start items-center">
@@ -227,11 +227,11 @@ const Carousel = () => {
                                 className="w-16 h-16 mb-2 text-mainColor"
                               />
                               <h4 className="mb-2 text-2xl font-bold lg:text-start text-center text-[#0A3161]">
-                                Dynamic 365 Finance & Operations
+                                Unified Financial Insights
                               </h4>
                               <p className=" text-gray-600 lg:text-start text-center">
-                                Turn relevant and timely business data into
-                                actionable insights.
+                                Merge Dynamics 365 finance data with Fabric
+                                analytics for real-time cashflow.
                               </p>
                             </div>
 
@@ -242,11 +242,11 @@ const Carousel = () => {
                                 alt="carousel_one"
                               />
                               <h4 className="mb-2 text-2xl text-[#0A3161] font-bold lg:text-start text-center">
-                                Support & Managed Services
+                                AI Workspaces & Copilots
                               </h4>
                               <p className=" text-gray-600 lg:text-start text-center">
-                                Ongoing support and partnership after the
-                                go-live activities.
+                                Enable data scientists and business users with
+                                Fabric notebooks, copilots.
                               </p>
                             </div>
 
@@ -257,11 +257,11 @@ const Carousel = () => {
                                 alt="carousel_two"
                               />
                               <h4 className="mb-2 text-2xl text-[#0A3161] font-bold md:text-start text-center">
-                                Tailoring Applications in X++
+                                Governance & Compliance
                               </h4>
                               <p className=" text-gray-600 md:text-start text-center">
-                                Tailoring Dynamics AX to meet specific business
-                                requirements.
+                                Enterprise-grade governance: lineage, access
+                                controls and data protection.
                               </p>
                             </div>
                           </div>

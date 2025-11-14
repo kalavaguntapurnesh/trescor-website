@@ -38,6 +38,9 @@ import {
   FaLifeRing,
 } from "react-icons/fa";
 
+import { FaChartPie, FaUserTie } from "react-icons/fa";
+import { GiFactory } from "react-icons/gi";
+
 const SecNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -56,14 +59,6 @@ const SecNavbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const toggleDropdown = (dropdown) => {
-    if (openDropdown === dropdown) {
-      setOpenDropdown(null);
-    } else {
-      setOpenDropdown(dropdown);
-    }
-  };
 
   const toggleMobileDropdown = (dropdown) => {
     setOpenDropdownMobile((prev) => (prev === dropdown ? null : dropdown));
@@ -101,7 +96,7 @@ const SecNavbar = () => {
         <div className="hidden lg:flex space-x-4">
           <a
             href="/contact-trescor"
-            className={`border-[1px] font-medium relative  lg:px-6 md:px-4 py-2 rounded text-sm border-[#0A3161] transition duration-500 ${
+            className={`border-[1px] font-medium relative lg:px-6 md:px-4 py-2 rounded-full text-sm border-[#0A3161] transition duration-500 ${
               isScrolled
                 ? "border-[#0A3161] hover:border-none text-[#0A3161] font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0 before:bg-[#B31942] before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 "
                 : "border-[#0A3161] text-[#0A3161]"
@@ -495,7 +490,6 @@ const Tabs = () => {
 
 const Tab = ({ children, tab, handleSetSelected, selected }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > window.innerHeight / 4) {
@@ -545,7 +539,7 @@ const Content = ({ selected, dir }) => {
         opacity: 0,
         y: 8,
       }}
-      className="absolute left-0 top-[calc(100%_+_24px)] w-[100%] bg-white rounded-lg shadow p-4"
+      className="absolute left-1/2 top-[calc(100%_+_1px)] w-[1400px] max-w-[90vw] -translate-x-1/2 bg-white rounded-lg shadow overflow-hidden"
     >
       <Bridge />
       <Nub selected={selected} />
@@ -611,205 +605,412 @@ const Nub = ({ selected }) => {
   );
 };
 
+/* Replace your current Blog, Homebar, ContactBar, SupportBar, AboutBar with these */
+
 const Blog = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 ">
-      <a
-        href="/services-microsoft-dynamics-365-finance"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <FaMoneyCheck className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Dynamics 365 F & O</p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
+    <div className="flex flex-col md:flex-row min-h-[300px]">
+      {/* Left Section - 30% */}
+      <div className="w-full md:w-[30%] bg-gradient-to-br from-[#F14F21] to-[#00A3EE] p-6 rounded-t-lg md:rounded-l-lg md:rounded-tr-none flex items-center">
+        <div className="text-white">
+          <FaCogs className="w-12 h-12 mb-4" />
+          <h3 className="text-2xl font-bold mb-2">Our Services</h3>
+          <p className="opacity-90 text-sm md:text-lg">
+            Comprehensive Microsoft Dynamics 365 and business solutions
+          </p>
         </div>
-      </a>
+      </div>
 
-      <a
-        href="/bi-analytics-services"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <VscGraph className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Business Intelligence Analytics
+      {/* Right Section - 70% */}
+      <div className="w-full md:w-[70%] bg-white p-6 rounded-b-lg md:rounded-r-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a
+            href="/services-microsoft-dynamics-365-finance"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaMoneyCheck className="w-8 h-8 text-[#F14F21] mr-3 group-hover:text-[#F14F21]" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#F14F21]">
+                Dynamics 365 Finance & Operations
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Complete ERP solution for financial management and operations
             </p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
-        </div>
-      </a>
+          </a>
 
-      <a
-        href="/services-microsoft-dynamics-365-finance"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <MdOutlineSupportAgent className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">
-              Support & Managed Services
+          <a
+            href="/bi-analytics-services"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <VscGraph className="w-8 h-8 text-[#00A3EE] mr-3 group-hover:text-[#00A3EE]" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#00A3EE]">
+                Business Intelligence & Analytics
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Transform data into actionable insights with advanced analytics
             </p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
+          </a>
+
+          <a
+            href="/services-dynamics-365-implementation"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaTools className="w-8 h-8 text-[#F14F21] mr-3 group-hover:text-[#7EB900]" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
+                Implementation & Deployment
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Expert implementation of Dynamics 365 solutions for your business
+            </p>
+          </a>
+
+          <a
+            href="/services-support-managed-services"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <MdOutlineSupportAgent className="w-8 h-8 text-[#00A3EE] mr-3 group-hover:text-[#00A3EE]" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
+                Support & Managed Services
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Ongoing support and maintenance for your Dynamics 365 environment
+            </p>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
   );
 };
 
 const Homebar = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 ">
-      <a
-        href="/"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <FaIntercom className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Integration Consulting</p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
+    <div className="flex flex-col md:flex-row min-h-[300px]">
+      {/* Left Section - 30% */}
+      <div className="w-full md:w-[30%] bg-gradient-to-br from-[#7EB900] to-[#FEB800] p-6 rounded-t-lg md:rounded-l-lg md:rounded-tr-none flex items-center">
+        <div className="text-white">
+          <FaIntercom className="w-12 h-12 mb-4" />
+          <h3 className="text-2xl font-bold mb-2">Solutions</h3>
+          <p className="opacity-90 text-sm md:text-lg">
+            Business solutions tailored to your needs
+          </p>
         </div>
-      </a>
+      </div>
 
-      <a
-        href="/"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <FaBusinessTime className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Business Needs</p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
+      {/* Right Section - 70% */}
+      <div className="w-full md:w-[70%] bg-white p-6 rounded-b-lg md:rounded-r-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a
+            href="/solutions/microsoft-fabric"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <GiFactory className="w-8 h-8 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
+                Microsoft Dynamics 365 Fabric Solutions
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Streamline production, supply chain and operations.
+            </p>
+          </a>
+
+          <a
+            href="/solutions/microsoft-dynamics-365-for-finance"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaUniversity className="w-8 h-8 text-[#FEB800] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
+                Dynamics 365 for Banking & Finance
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Modernize financial ops with automation and analytics.
+            </p>
+          </a>
+
+          <a
+            href="/"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaChartPie className="w-8 h-8 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
+                Dynamics CRM for Asset Management
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Manage assets, monitor performance and improve visibility.
+            </p>
+          </a>
+
+          <a
+            href="/"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaUserTie className="w-8 h-8 text-[#FEB800] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
+                Dynamics 365 Professional Solutions
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              End-to-end solutions for consulting & professional services.
+            </p>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
   );
 };
 
 const ContactBar = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 ">
-      <a
-        href="/industries/manufacturing"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <MdFactory className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Manufacturing Services</p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
+    <div className="flex flex-col md:flex-row min-h-[300px]">
+      {/* Left Section - 30% */}
+      <div className="w-full md:w-[30%] bg-gradient-to-br from-[#00A3EE] to-[#7EB900] p-6 rounded-t-lg md:rounded-l-lg md:rounded-tr-none flex items-center">
+        <div className="text-white">
+          <MdFactory className="w-12 h-12 mb-4" />
+          <h3 className="text-2xl font-bold mb-2">Industries We Serve</h3>
+          <p className="opacity-90 text-sm md:text-lg">
+            Tailored solutions across diverse sectors
+          </p>
         </div>
-      </a>
+      </div>
 
-      <a
-        href="/industries"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <FaSackDollar className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Financial Services</p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
-        </div>
-      </a>
+      {/* Right Section - 70% */}
+      <div className="w-full md:w-[70%] bg-white p-6 rounded-b-lg md:rounded-r-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a
+            href="/industries/manufacturing"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <MdFactory className="w-6 h-6 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
+                Manufacturing
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Streamlined production & supply chain optimization
+            </p>
+          </a>
 
-      <a
-        href="/industries"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <FaLaptop className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Software Services</p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
-        </div>
-      </a>
+          <a
+            href="/industries"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaSackDollar className="w-8 h-8 text-[#00A3EE] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#00A3EE]">
+                Financial Services
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Financial solutions & compliance management
+            </p>
+          </a>
 
-      <a
-        href="/industries"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <FaUsers heck className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Public Sector Services</p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
+          <a
+            href="/industries"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaLaptop className="w-8 h-8 text-[#00A3EE] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#00A3EE]">
+                Technology & Software
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Digital transformation & development solutions
+            </p>
+          </a>
+
+          <a
+            href="/industries"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaUsers className="w-8 h-8 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
+                Public Sector
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Government & public administration solutions
+            </p>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
   );
 };
 
 const SupportBar = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 ">
-      <a
-        href="/dynamics-365-support-services"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <MdSupport className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Where to find us</p>
-            <p className="text-[12px] mt-1">We are here to assist you</p>
-          </div>
+    <div className="flex flex-col md:flex-row min-h-[300px]">
+      {/* Left Section - 30% */}
+      <div className="w-full md:w-[30%] bg-gradient-to-br from-[#FEB800] to-[#F14F21] p-6 rounded-t-lg md:rounded-l-lg md:rounded-tr-none flex items-center">
+        <div className="text-white">
+          <MdSupport className="w-12 h-12 mb-4" />
+          <h3 className="text-2xl font-bold mb-2">Need Support</h3>
+          <p className="opacity-90 text-sm md:text-lg">
+            Get help and assistance from our team
+          </p>
         </div>
-      </a>
+      </div>
+
+      {/* Right Section - 70% */}
+      <div className="w-full md:w-[70%] bg-white p-6 rounded-b-lg md:rounded-r-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a
+            href="/dynamics-365-support-services"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <MdSupport className="w-8 h-8 text-[#FEB800] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#F14F21]">
+                Where to find us
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              We are here to assist you with all technical needs
+            </p>
+          </a>
+
+          <a
+            href="/contact-trescor"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaLifeRing className="w-8 h-8 text-[#F14F21] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#00A3EE]">
+                Contact Support
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Get in touch with our support team for immediate assistance
+            </p>
+          </a>
+
+          <a
+            href="/documentation"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaQuestionCircle className="w-8 h-8 text-[#FEB800] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
+                Documentation
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Access comprehensive guides and docs
+            </p>
+          </a>
+
+          <a
+            href="/faq"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaLightbulb className="w-8 h-8 text-[#F14F21] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
+                FAQ
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">Find answers to FAQs</p>
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
 
 const AboutBar = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 ">
-      <a
-        href="/about-trescor"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <GrCloudSoftware className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Why Trescor?</p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
+    <div className="flex flex-col md:flex-row min-h-[300px]">
+      {/* Left Section - 30% */}
+      <div className="w-full md:w-[30%] bg-gradient-to-br from-[#7EB900] to-[#00A3EE] p-6 rounded-t-lg md:rounded-l-lg md:rounded-tr-none flex items-center">
+        <div className="text-white">
+          <GrCloudSoftware className="w-12 h-12 mb-4" />
+          <h3 className="text-2xl font-bold mb-2">About Trescor</h3>
+          <p className="opacity-90 text-sm md:text-lg">
+            Learn more about our company, mission and values
+          </p>
         </div>
-      </a>
+      </div>
 
-      <a
-        href="/collaborate-with-us"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <FaHandshake className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Collaborate with us</p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
-        </div>
-      </a>
+      {/* Right Section - 70% */}
+      <div className="w-full md:w-[70%] bg-white p-6 rounded-b-lg md:rounded-r-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <a
+            href="/about-trescor"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <GrCloudSoftware className="w-8 h-8 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
+                Why Trescor?
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Discover what makes us the right choice for your business
+            </p>
+          </a>
 
-      <a
-        href="/privacy-policy"
-        className="flex w-full flex-col items-start justify-start text-[#0A3161] transition-colors hover:bg-[#ffffff] rounded-xl px-4 py-1.5 hover:text-[#B31942] hover:shadow-sm "
-      >
-        <div className="flex flex-row items-center">
-          <MdPrivacyTip className=" w-6 h-6" />
-          <div className="flex flex-col ml-4">
-            <p className="font-semibold text-[14px] ">Privacy Policy</p>
-            <p className="text-[12px] mt-1">Dynamics 365 F & O solutions</p>
-          </div>
+          <a
+            href="/collaborate-with-us"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaHandshake className="w-8 h-8 text-[#00A3EE] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#F14F21]">
+                Collaborate with us
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Partner with us to build innovative solutions together
+            </p>
+          </a>
+
+          <a
+            href="/privacy-policy"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <MdPrivacyTip className="w-8 h-8 text-[#7EB900] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#00A3EE]">
+                Privacy Policy
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              How we protect & handle your data
+            </p>
+          </a>
+
+          <a
+            href="/careers"
+            className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
+          >
+            <div className="flex items-center mb-2">
+              <FaUsers className="w-8 h-8 text-[#00A3EE] mr-3" />
+              <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
+                Join Our Team
+              </h4>
+            </div>
+            <p className="text-gray-600 text-sm">
+              Explore career opportunities and grow with us
+            </p>
+          </a>
         </div>
-      </a>
+      </div>
     </div>
   );
 };

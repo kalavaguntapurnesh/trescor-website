@@ -119,7 +119,7 @@ const BIAnalytics = () => {
                         Data Roadblocks Holding You Back? Get strategic Guidance
                         for Data Success
                       </p>
-                      <button className="w-fit px-[20px] py-[12px] rounded-[10px] text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
+                      <button className="w-fit px-[20px] py-[12px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
                         Connect with Us
                       </button>
                     </div>
@@ -297,7 +297,7 @@ const BIAnalytics = () => {
                           Analytics
                         </h3>
                         <div className="my-6">
-                          <button className="w-fit px-[32px] py-[8px] rounded text-[14px] font-[500] bg-[#0A3161] text-white hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
+                          <button className="w-fit px-[32px] py-[8px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
                             View BI Analytics
                           </button>
                         </div>

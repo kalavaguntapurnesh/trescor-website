@@ -262,7 +262,7 @@ const CalendarBooking = () => {
 
               <button
                 type="submit"
-                className="group bg-gradient-to-r from-[#0A3161] to-[#00A3EE] hover:from-[#00A3EE] hover:to-[#7EB900] px-6 py-3 rounded-lg text-white items-center gap-3 transition-all duration-500 w-full flex justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="group bg-gradient-to-r from-[#0A3161] to-[#00A3EE] hover:from-[#00A3EE] hover:to-[#7EB900] px-6 py-3 rounded-full text-white items-center gap-3 transition-all duration-500 w-full flex justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 <span className="relative z-10">Submit</span>
               </button>

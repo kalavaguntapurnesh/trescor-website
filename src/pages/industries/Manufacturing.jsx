@@ -7,7 +7,6 @@ import {
   FaCogs,
   FaChartBar,
   FaClipboardCheck,
-  FaTruck,
   FaSmileBeam,
   FaTruckLoading,
 } from "react-icons/fa";

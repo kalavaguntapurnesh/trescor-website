@@ -38,6 +38,9 @@ import {
   FaLifeRing,
 } from "react-icons/fa";
 
+import { FaChartPie, FaUserTie } from "react-icons/fa";
+import { GiFactory } from "react-icons/gi";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -90,7 +93,7 @@ const Navbar = () => {
         <div className="hidden lg:flex space-x-4">
           <a
             href="/contact-trescor"
-            className={`border-[1px] relative  lg:px-6 md:px-4 py-2 rounded text-sm  transition duration-500 ${
+            className={`border-[1px] relative lg:px-6 md:px-4 py-2 rounded-full text-sm  transition duration-500 ${
               isScrolled
                 ? "border-[#0A3161] hover:border-none text-[#0A3161] font-medium overflow-hidden transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-auto before:w-0 before:bg-[#00A3EE] before:duration-300 before:ease-out hover:text-white hover:shadow-mainColor hover:before:h-40 hover:before:w-48 "
                 : "border-navGray font-light text-white"
@@ -698,63 +701,73 @@ const Homebar = () => {
       {/* Right Section - 70% */}
       <div className="w-[70%] p-6 bg-white rounded-r-lg">
         <div className="grid grid-cols-2 gap-4">
+          {/* 1. Microsoft Dynamics CRM for Asset Management */}
+
           <a
-            href="/"
+            href="/solutions/microsoft-fabric"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaIntercom className="w-8 h-8 text-[#7EB900] mr-3" />
+              <GiFactory className="w-8 h-8 text-[#7EB900] mr-3" />
               <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
-                Integration Consulting
+                Microsoft Dynamics 365 Fabric Solutions
               </h4>
             </div>
-            <p className=" text-gray-600">
-              Expert guidance for seamless system integration and optimization
+            <p className="text-gray-600">
+              Streamline production, supply chain, and fabric operations
+              effortlessly.
             </p>
           </a>
 
           <a
-            href="/"
+            href="/solutions/microsoft-dynamics-365-for-finance"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaBusinessTime className="w-8 h-8 text-[#FEB800] mr-3" />
+              <FaUniversity className="w-8 h-8 text-[#FEB800] mr-3" />
               <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
-                Business Needs Analysis
+                Microsoft Dynamics 365 for Banking and Finance
               </h4>
             </div>
-            <p className=" text-gray-600">
-              Comprehensive assessment and strategic planning for your business
+            <p className="text-gray-600">
+              Modernize financial operations with automation and advanced
+              analytics.
             </p>
           </a>
-
           <a
             href="/"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <GrCloudSoftware className="w-8 h-8 text-[#7EB900] mr-3" />
+              <FaChartPie className="w-8 h-8 text-[#7EB900] mr-3" />
               <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
-                Cloud Migration
+                Microsoft Dynamics CRM for Asset Management
               </h4>
             </div>
-            <p className=" text-gray-600">
-              Secure and efficient migration to cloud platforms
+            <p className="text-gray-600">
+              Manage assets, monitor performance, and improve operational
+              visibility.
             </p>
           </a>
 
+          {/* 2. Microsoft Dynamics 365 for Banking and Finance */}
+
+          {/* 3. Microsoft Dynamics 365 Fabric Solutions */}
+
+          {/* 4. Microsoft Dynamics 365 Professional Solutions */}
           <a
             href="/"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
-              <FaLaptopCode className="w-8 h-8 text-[#FEB800] mr-3" />
+              <FaUserTie className="w-8 h-8 text-[#FEB800] mr-3" />
               <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
-                Custom Development
+                Microsoft Dynamics 365 Professional Solutions
               </h4>
             </div>
-            <p className=" text-gray-600">
-              Tailored software solutions built to your specifications
+            <p className="text-gray-600">
+              End-to-end solutions tailored for consulting and professional
+              services.
             </p>
           </a>
         </div>
