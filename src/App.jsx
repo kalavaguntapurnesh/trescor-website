@@ -11,7 +11,7 @@ import About from "./pages/About";
 import Support from "./pages/Support";
 import CollaborateWithUs from "./pages/CollaborateWithUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Industries from "./pages/Industries";
+import Financial from "./pages/Industries/Financial";
 import MicrosoftDynamics365Finance from "./pages/services/MicrosoftDynamics365Finance";
 import BIAnalytics from "./pages/services/BIAnalytics";
 import AntiSlaveryPolicy from "./pages/AntiSlaveryPolicy";
@@ -30,7 +30,7 @@ function App() {
       <Route path="/dynamics-365-support-services" element={<Support />} />
       <Route path="/collaborate-with-us" element={<CollaborateWithUs />} />
 
-      <Route path="/industries" element={<Industries />} />
+      <Route path="/industries/financial" element={<Financial />} />
 
       <Route
         path="/services-microsoft-dynamics-365-finance"

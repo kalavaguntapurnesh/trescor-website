@@ -218,7 +218,7 @@ const SecNavbar = () => {
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaMoneyCheckAlt className="text-[#0a3161]" />
                       <a
-                        href="/industries"
+                        href="/industries/financial"
                         className="block text-sm text-gray-700"
                       >
                         Financial
@@ -236,7 +236,7 @@ const SecNavbar = () => {
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaLaptopCode className="text-[#0a3161]" />
                       <a
-                        href="/industries"
+                        href="/industries/financial"
                         className="block text-sm text-gray-700"
                       >
                         Software
@@ -245,7 +245,7 @@ const SecNavbar = () => {
                     <li className="text-navGray p-2 rounded bg-[#e6e6e6] text-center font-medium flex items-center gap-2 justify-center">
                       <FaUniversity className="text-[#0a3161]" />
                       <a
-                        href="/industries"
+                        href="/industries/financial"
                         className="block text-sm text-gray-700"
                       >
                         Public Sector
@@ -655,7 +655,7 @@ const Blog = () => {
           </a>
 
           <a
-            href="/services-dynamics-365-implementation"
+            href="/services-microsoft-dynamics-365-finance"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -670,7 +670,7 @@ const Blog = () => {
           </a>
 
           <a
-            href="/services-support-managed-services"
+            href="/services-microsoft-dynamics-365-finance"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -804,7 +804,7 @@ const ContactBar = () => {
           </a>
 
           <a
-            href="/industries"
+            href="/industries/financial"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -819,7 +819,7 @@ const ContactBar = () => {
           </a>
 
           <a
-            href="/industries"
+            href="/industries/financial"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -834,7 +834,7 @@ const ContactBar = () => {
           </a>
 
           <a
-            href="/industries"
+            href="/industries/financial"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
@@ -901,31 +901,33 @@ const SupportBar = () => {
           </a>
 
           <a
-            href="/documentation"
+            href="/cookie-policy"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
               <FaQuestionCircle className="w-8 h-8 text-[#FEB800] mr-3" />
               <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#7EB900]">
-                Documentation
+                Cookie Policy
               </h4>
             </div>
             <p className="text-gray-600 text-sm">
-              Access comprehensive guides and docs
+              Understand how we use cookies to enhance your experience
             </p>
           </a>
 
           <a
-            href="/faq"
+            href="/user-consent"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
               <FaLightbulb className="w-8 h-8 text-[#F14F21] mr-3" />
               <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
-                FAQ
+                User Consent
               </h4>
             </div>
-            <p className="text-gray-600 text-sm">Find answers to FAQs</p>
+            <p className="text-gray-600 text-sm">
+              Manage your preferences and consent settings
+            </p>
           </a>
         </div>
       </div>
@@ -996,17 +998,17 @@ const AboutBar = () => {
           </a>
 
           <a
-            href="/careers"
+            href="/anti-slavery-policy"
             className="flex flex-col p-4 rounded-lg hover:bg-gray-50 transition-colors group"
           >
             <div className="flex items-center mb-2">
               <FaUsers className="w-8 h-8 text-[#00A3EE] mr-3" />
               <h4 className="font-bold text-lg text-[#0A3161] group-hover:text-[#FEB800]">
-                Join Our Team
+                Anti Slavery Policy
               </h4>
             </div>
             <p className="text-gray-600 text-sm">
-              Explore career opportunities and grow with us
+              Explore our anti slavery policy & government regulations.
             </p>
           </a>
         </div>

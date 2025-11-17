@@ -104,7 +104,7 @@ const Hero = () => {
               </div>
 
               <div>
-                <p className="pt-4 xl:text-lg text-[#e7e5df] leading-relaxed">
+                {/* <p className="pt-4 xl:text-lg text-[#e7e5df] leading-relaxed">
                   Our Dynamics 365 Consultants work with you to tailor Dynamics
                   to your organization's
                   <br />
@@ -115,6 +115,13 @@ const Hero = () => {
                   maintenance, our M365
                   <br />
                   Consultants are ready to help.
+                </p> */}
+                <p className="pt-4 xl:text-lg text-[#e7e5df] leading-relaxed">
+                  We help organizations tailor Dynamics 365 to their unique
+                  goals, needs, and processes. <br />
+                  From implementation and configuration to customization,
+                  integration, and ongoing <br />
+                  maintenance, we provide complete support at every stage.
                 </p>
               </div>
 
