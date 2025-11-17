@@ -4,7 +4,7 @@ import SecNavbar from "../../components/SecNavbar";
 // import { FiDatabase, FiZap, FiShield } from "react-icons/fi";
 import { motion } from "framer-motion"; // optional - for smoother entrance animation
 import fabricAI from "../../assets/FabricAI.png";
-import fabricTab from "../../assets/FabricTab.png";
+import fabricTab from "../../assets/fabricTab.png";
 import { FiLink, FiRefreshCcw } from "react-icons/fi";
 import { FaUsers } from "react-icons/fa";
 import { useState } from "react";
