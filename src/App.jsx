@@ -20,6 +20,7 @@ import UserConsent from "./pages/UserConsent";
 import Manufacturing from "./pages/industries/Manufacturing";
 import BankingAndFinance from "./pages/solutions/BankingAndFinance";
 import MicrosoftFabric from "./pages/solutions/MicrosoftFabric";
+import D365PharmaFinance from './pages/finance/D365PharmaFinance';
 
 function App() {
   return (
@@ -52,10 +53,9 @@ function App() {
         element={<BankingAndFinance />}
       />
 
-      <Route
-        path="/solutions/microsoft-fabric"
-        element={<MicrosoftFabric />}
-      />
+      <Route path="/solutions/microsoft-fabric" element={<MicrosoftFabric />} />
+
+      <Route path="/d365finance/pharma" element={<D365PharmaFinance />} />
     </Routes>
   );
 }
