@@ -11,7 +11,7 @@ import About from "./pages/About";
 import Support from "./pages/Support";
 import CollaborateWithUs from "./pages/CollaborateWithUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Financial from "./pages/Industries/Financial";
+import Financial from "./pages/industries/Financial";
 import MicrosoftDynamics365Finance from "./pages/services/MicrosoftDynamics365Finance";
 import BIAnalytics from "./pages/services/BIAnalytics";
 import AntiSlaveryPolicy from "./pages/AntiSlaveryPolicy";
