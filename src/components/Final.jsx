@@ -1,11 +1,5 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants.js";
-import { FaWrench } from "react-icons/fa";
-import { VscGraph } from "react-icons/vsc";
-import { FaSearch } from "react-icons/fa";
-import FinalOne from "../assets/FinalOne.png";
-import FinalTwo from "../assets/FinalTwo.png";
-import FinalThree from "../assets/FinalThree.png";
 
 const Final = () => {
   return (
