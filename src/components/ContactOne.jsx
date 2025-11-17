@@ -54,7 +54,7 @@ const ContactOne = () => {
                         <img
                           src={india}
                           alt="india"
-                          className="md:w-36 md:h-36 h-auto w-[50%] filter drop-shadow-md"
+                          className="md:w-40 md:h-36 h-auto w-[50%] filter drop-shadow-md"
                         />
                       </div>
                       <div className="text-gray-700 flex flex-col lg:items-start items-center space-y-1">
@@ -78,7 +78,7 @@ const ContactOne = () => {
                         <img
                           src={usa}
                           alt="usa"
-                          className="md:w-36 md:h-36 h-auto w-[50%] filter drop-shadow-md"
+                          className="md:w-40 md:h-36 h-auto w-[50%] filter drop-shadow-md"
                         />
                       </div>
                       <div className="text-gray-700 flex flex-col lg:items-start items-center space-y-1">

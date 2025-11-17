@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center min-h-[500px]">
             <div className="flex flex-col space-y-6 w-full justify-center h-full">
               <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-2 px-2 md:px-0">
-                <h1 className="text-4xl md:text-5xl font-bold text-[#0A3161]">
+                <h1 className="text-4xl md:text-5xl font-extrabold text-[#0A3161]">
                   We're to Help
                 </h1>
               </div>

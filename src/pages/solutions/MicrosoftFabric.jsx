@@ -3,7 +3,8 @@ import ScrollToTop from "../../components/ScrollToTop";
 import SecNavbar from "../../components/SecNavbar";
 // import { FiDatabase, FiZap, FiShield } from "react-icons/fi";
 import { motion } from "framer-motion"; // optional - for smoother entrance animation
-import fabric from "../../assets/FabricAI.png";
+import fabricAI from "../../assets/FabricAI.png";
+import fabricTab from "../../assets/fabricTab.png";
 import { FiLink, FiRefreshCcw } from "react-icons/fi";
 import { FaUsers } from "react-icons/fa";
 import { useState } from "react";
@@ -29,9 +30,6 @@ const MicrosoftFabric = () => {
         "Automate data movement, analytics workflows, and decision-making with Fabric's fully integrated and future-ready ecosystem.",
     },
   ];
-
-  const SHARED_IMAGE =
-    "https://ctwebsite2025.blob.core.windows.net/media/celebalwebsite2025/assets_webp/news-and-press/finalist-2025/homeCard.webp";
 
   const TAB_DATA = {
     realtime: {
@@ -170,11 +168,31 @@ const MicrosoftFabric = () => {
                     </p>
                   </div>
 
-                  <div className="relative h-[350px] md:h-[500px] lg:h-[600px] mx-auto max-w-[1400px] overflow-hidden">
+                  {/* <div className="relative h-[350px] md:h-[500px] lg:h-[600px] mx-auto max-w-[1400px] overflow-hidden">
                     <img
                       src={fabric}
                       alt="Business Technology Background"
                       className="absolute top-0 left-0 w-full h-full lg:object-contain object-center"
+                    />
+                  </div> */}
+
+                  <div className="relative h-[350px] md:h-[500px] lg:h-[600px] mx-auto max-w-[1400px] overflow-hidden group">
+                    {/* Default Image */}
+                    <img
+                      src={fabricAI}
+                      alt="Fabric AI"
+                      className="absolute top-0 left-0 w-full h-full lg:object-contain object-center
+               transition-opacity duration-1000
+               group-hover:opacity-0"
+                    />
+
+                    {/* Hover Image */}
+                    <img
+                      src={fabricTab}
+                      alt="Fabric Tab"
+                      className="absolute top-0 left-0 w-full h-full lg:object-contain object-center
+               opacity-0 transition-opacity duration-1000
+               group-hover:opacity-100"
                     />
                   </div>
                 </div>
@@ -490,7 +508,7 @@ const MicrosoftFabric = () => {
                 </div>
 
                 {/* Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {TAB_DATA[active].cards.map((card, idx) => (
                     <a
                       key={idx}
@@ -570,7 +588,7 @@ const MicrosoftFabric = () => {
                         Power BI, Dataverse, and cloud sources—delivering
                         real-time insights, predictive intelligence.
                       </p>
-                      <button className="w-fit px-[20px] py-[12px] rounded-[10px] text-[14px] font-[500] bg-[#00A3EE]  text-white shadow-lg hover:bg-[#0A3161] transition-colors duration-300 cursor-pointer">
+                      <button className="w-fit px-[20px] py-[12px] rounded-full text-[14px] font-[500] bg-[#00A3EE]  text-white shadow-lg hover:bg-[#0A3161] transition-colors duration-300 cursor-pointer">
                         Connect with Us
                       </button>
                     </div>

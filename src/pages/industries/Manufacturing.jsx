@@ -10,50 +10,51 @@ import {
   FaSmileBeam,
   FaTruckLoading,
 } from "react-icons/fa";
+import { FiSettings, FiLayers, FiTrendingUp, FiShield } from "react-icons/fi";
 
 const Manufacturing = () => {
   const industries = [
     {
-      name: "Manufacturing Services",
+      name: "Smart Manufacturing Operations",
       image:
-        "https://www.tectura.com/wp-content/uploads/2023/04/Industries_EquipmentDistributors.jpg",
+        "https://images.unsplash.com/photo-1716194583732-0b9874234218?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "From smart factories to predictive maintenance to inventory management, we help manufacturers unlock deeper insights and improve production efficiency with better manufacturing technology and AI solutions.",
+        "Microsoft 365 streamlines factory-floor operations with real-time data access, digitized workflows, and automated task management — enabling teams to work faster, safer, and with more accuracy.",
     },
     {
-      name: "Financial Services",
+      name: "Production Planning & Scheduling",
       image:
-        "https://images.pexels.com/photos/210990/pexels-photo-210990.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.unsplash.com/photo-1740733448722-82e16d3468bb?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Our cloud and data solutions increase agility, support data-driven decision making, and enable innovative, secure customer experiences to keep pace with evolving market demands.",
+        "With tools like Microsoft Teams, Power BI, and Planner, manufacturing leaders can optimize production schedules, reduce downtime, and enhance collaboration between planning and shop-floor teams.",
     },
     {
-      name: "Software Services",
+      name: "Quality & Compliance Management",
       image:
-        "https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://plus.unsplash.com/premium_photo-1661962730207-7f7e3ce04a03?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Our full suite of digital transformation services will help maximize IT investments, meet business goals and support the pace of change in the technology industry using the dynamic capabilities.",
+        "Microsoft 365 digitizes quality checks, provides automated audit trails, and ensures every process meets regulatory standards through secure documentation, approval workflows,",
     },
     {
-      name: "Retail Services",
+      name: "Supply Chain Collaboration",
       image:
-        "https://images.pexels.com/photos/7679444/pexels-photo-7679444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.unsplash.com/photo-1590497008432-598f04441de8?q=80&w=3382&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Our retail cloud solutions enhance omni-channel customer experiences, operational efficiency, and real-time insights, helping you meet today's customer demands.",
+        "Boost supply chain efficiency with cloud-based collaboration, shared workspaces, vendor communication tools, and Power BI dashboards offering end-to-end supply chain visibility.",
     },
     {
-      name: "Public Sector Services",
+      name: "Workplace Safety & Training",
       image:
-        "https://images.pexels.com/photos/19374520/pexels-photo-19374520/free-photo-of-people-on-cicek-pasaji-in-istanbul.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.unsplash.com/photo-1699106359375-2ac57b239f9e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Empower your citizens with modern cloud-based platforms and management tools for permitting, business licensing, code inspections, maintenance and more.",
+        "Microsoft 365 enables digital safety training, real-time alerts, incident reporting, and easy access to safety documents — improving overall plant safety and workforce readiness.",
     },
     {
-      name: "Health Care Services",
+      name: "Maintenance & Asset Management",
       image:
-        "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://plus.unsplash.com/premium_photo-1663126432237-66cb611134ea?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Healthcare technology experts will help you leverage the cloud to optimize operations, increase patient engagement, improve data insights and much more developments.",
+        "Technicians can use Teams, SharePoint, and mobile apps to access manuals, log issues, capture images, and collaborate instantly — accelerating repairs and improving asset lifecycle management.",
     },
   ];
 
@@ -124,7 +125,7 @@ const Manufacturing = () => {
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="text-white font-semibold text-lg">
-                        Benefits of Dynamics 365
+                        Manufacturing Service Highlights
                       </h3>
                       <p className="text-sm text-[#C9CDD0] mt-1">
                         Tailored solutions for manufacturing excellence
@@ -209,27 +210,30 @@ const Manufacturing = () => {
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] pb-12">
               <div className="p-4">
-                <div className="space-y-3 pb-4">
+                <div className="space-y-4 pb-4">
                   <div className="flex items-center lg:justify-start justify-center">
-                    <h1 className=" font-bold text-[#B31942] uppercase">
-                      Serving Industries
+                    <h1 className="font-bold text-[#B31942] uppercase">
+                      Manufacturing Industry
                     </h1>
                   </div>
 
-                  <div className="lg:text-4xl text-3xl lg:text-start text-center font-bold text-[#0A3161]">
-                    <h1>We serve a wide range of Industries</h1>
+                  <div className="text-start mt-4 relative">
+                    <h3 className="lg:text-4xl text-3xl font-bold text-[#0A3161]">
+                      Enhancing Manufacturing with{" "}
+                      <span className="bg-gradient-to-r from-[#F14F21] via-[#7EB900] to-[#00A3EE] bg-clip-text text-transparent">
+                        Microsoft 365
+                      </span>
+                    </h3>
                   </div>
 
                   <div className="text-gray-600 lg:text-start text-center">
                     <p>
-                      Trescor offers unparalleled expertise across a diverse
-                      range of industries. Whether you’re in Healthcare,
-                      Manufacturing, Public Sector or beyond, we’ll deliver
-                      bespoke solutions that align perfectly with your
-                      challenges. By combining our industry expertise with
-                      cutting-edge Microsoft technologies, we can help your
-                      organization thrive in today’s digital-first world, no
-                      matter the sector.
+                      Microsoft 365 helps manufacturing companies streamline
+                      operations, improve team collaboration, and digitize
+                      shop-floor processes. With real-time communication,
+                      automated workflows, and better visibility into daily
+                      activities, manufacturers can increase productivity,
+                      enhance quality, and make faster, data-driven decisions.
                     </p>
                   </div>
                 </div>
@@ -293,89 +297,58 @@ const Manufacturing = () => {
 
       {/* Section 2 */}
 
-      <div className="lg:pt-20 pt-8">
+      <div className="lg:pt-12 pt-8">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full mx-auto max-w-[1400px] pb-12">
+            <div className="w-full mx-auto max-w-[1400px] lg:pb-12 pb-4">
               <div className="p-4">
-                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
-                  <div className="flex flex-col space-y-6 w-full">
-                    <div className="flex items-center lg:justify-start justify-center md:ml-4">
-                      <h1 className="uppercase font-bold text-[#B31942]">
-                        Transformative power
-                      </h1>
-                    </div>
+                <div className="w-full pb-4">
+                  <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center min-h-[500px]">
+                    {/* Left content */}
+                    <div className="flex flex-col space-y-8 w-full justify-center h-full">
+                      <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-2 px-2 md:px-0">
+                        <h1 className="uppercase font-bold text-[#B31942]">
+                          Transformative power
+                        </h1>
 
-                    <div className="lg:text-4xl text-3xl lg:text-start text-center font-bold md:ml-2 px-2 md:px-0 text-[#0A3161]">
-                      <h1>Industry Solutions: AI and Cloud Technology</h1>
-                    </div>
+                        <h2 className="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-md text-[#0A3161]">
+                          Dynamics 365 for{" "}
+                          <span className="bg-gradient-to-r from-[#F14F21] via-[#00A3EE] to-[#7EB900] bg-clip-text text-transparent">
+                            Manufacturing Excellence
+                          </span>
+                        </h2>
+                      </div>
 
-                    <div className="text-gray-600 lg:text-start text-center md:ml-2 px-2 md:px-0">
-                      <p>
-                        Our expert team is having a decade of expertise in
-                        Microsoft Industry Modules. It doesn’t if it’s about
-                        your Sales, Marketing, Supply chain, Finance, or
-                        managing the whole business, we have all the solution.
-                        With modernize solution, Make your repetitive task,
-                        Automatic. Make a business Apps with no-coding
-                        experience. Imagine the whole business in a data form
-                        and you can get it on one click and make data centric
-                        decision for your business.
-                      </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 lg:px-0 px-2">
-                      <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
-                        <div className="text-gray-800 text-center">
-                          <p>
-                            Data-Driven Supply Chain Optimization and
-                            Operational Efficiency
-                          </p>
-                        </div>
-                      </div>
-                      <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
-                        <div className="text-gray-800 text-center">
-                          <p>
-                            End-to-End Project Management for Strategic
-                            Execution
-                          </p>
-                        </div>
-                      </div>
-                      <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
-                        <div className="text-gray-800 text-center">
-                          <p>
-                            Global Compliance Support to Navigate Complex
-                            Regulations
-                          </p>
-                        </div>
-                      </div>
-                      <div className="bg-[#f8f9fa] rounded flex flex-col justify-center items-center p-4 shadow">
-                        <div className="text-gray-800 text-center">
-                          <p>
-                            Strategic Advisor to CIOs: Empowering Technology
-                            Leadership
-                          </p>
-                        </div>
+                      <div className="text-gray-600 lg:text-lg text-base lg:text-start text-center lg:ml-2 px-2 md:px-0">
+                        <p>
+                          Microsoft Dynamics 365 equips manufacturers with
+                          intelligent tools to unify production, supply chain,
+                          and asset operations on a single, connected platform.
+                          From real-time shop-floor visibility to automated
+                          quality checks and AI-powered forecasting, Dynamics
+                          365 helps manufacturers reduce downtime, increase
+                          throughput, and make faster, data-informed decisions.
+                          With built-in cloud scalability and seamless workflow
+                          automation, it enables a modern, resilient, and highly
+                          collaborative manufacturing environment.
+                        </p>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="flex justify-center items-center w-[100%]">
-                    <div>
-                      <img
-                        src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="industries_one"
-                        width="612"
-                        height="512"
-                        className="rounded lg:block hidden"
-                      />
-                    </div>
-                    <div className="flex justify-center items-center">
-                      <img
-                        src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="industries_two"
-                        className="rounded lg:hidden block w-[90%]"
-                      />
+                    {/* Right image with accents */}
+                    <div className="flex justify-center items-center w-full h-full min-h-[400px]">
+                      <div className="relative flex justify-center items-center w-full h-full">
+                        {/* Accent blobs */}
+                        <div className="absolute -top-4 -left-12 border border-red-500 w-40 h-40 bg-gradient-to-br from-[#00A3EE] via-[#7EB900] to-[#F14F21] rounded-full blur-2xl opacity-30"></div>
+                        <div className="absolute -bottom-8 -right-4 w-32 h-32 bg-gradient-to-br from-[#00A3EE] via-[#FEB800] to-[#0A3161] rounded-full blur-2xl opacity-40"></div>
+
+                        {/* Image */}
+                        <img
+                          src="https://global.hitachi-solutions.com/wp-content/uploads/2023/07/Financial_Hero-Graphic.png"
+                          alt="Manufacturing AI and Cloud solutions"
+                          className="rounded-xl w-full max-w-[550px] h-auto object-contain z-10 mx-auto"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
