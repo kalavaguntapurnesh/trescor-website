@@ -22,7 +22,7 @@ const Footer = () => {
                   We're to Help
                 </h1>
               </div>
-              <div className="text-gray-600 lg:text-lg text-base lg:text-start text-center lg:ml-2 px-2 md:px-0">
+              <div className="text-[#0A3161] lg:text-lg text-base lg:text-start text-center lg:ml-2 px-2 md:px-0">
                 <p>
                   To learn more about how Trescor Solutions can help your
                   projects succeed, contact us today.
@@ -37,7 +37,7 @@ const Footer = () => {
               <div>
                 <a
                   href="https://maps.app.goo.gl/bTxVirWoKNPPm1xb6"
-                  className="flex flex-row items-center lg:justify-start justify-center gap-4 text-gray-600 hover:text-[#0A3161] hover:underline cursor-pointer"
+                  className="flex flex-row items-center lg:justify-start justify-center gap-4 text-[#0A3161] hover:underline cursor-pointer"
                 >
                   <div>
                     <img src={usa} alt="India" className="w-8 h-8" />
@@ -51,7 +51,7 @@ const Footer = () => {
                 </a>
                 <a
                   href="https://maps.app.goo.gl/bTxVirWoKNPPm1xb6"
-                  className="flex flex-row items-center lg:justify-start justify-center gap-4 text-gray-600 hover:text-[#0A3161] hover:underline cursor-pointer"
+                  className="flex flex-row items-center lg:justify-start justify-center gap-4 text-[#0A3161] hover:underline cursor-pointer"
                 >
                   <div>
                     <img src={india} alt="India" className="w-8 h-8" />
@@ -82,7 +82,7 @@ const Footer = () => {
           {/* Services */}
           <div className="space-y-4">
             <div className="flex items-center mb-6">
-              <h4 className="text-lg font-bold text-[#0A3161]">Services</h4>
+              <h4 className="font-bold uppercase text-[#B31942]">Services</h4>
             </div>
             <div className="space-y-3">
               {[
@@ -94,20 +94,20 @@ const Footer = () => {
                   name: "Business Intelligence",
                   href: "/bi-analytics-services",
                 },
-                { name: "Cloud Migration", href: "/services-cloud-migration" },
+                { name: "Cloud Migration", href: "/" },
                 {
                   name: "Custom Development",
-                  href: "/services-custom-development",
+                  href: "/",
                 },
                 {
                   name: "Support & Managed Services",
-                  href: "/services-support-managed",
+                  href: "/",
                 },
               ].map((service, index) => (
                 <a
                   key={index}
                   href={service.href}
-                  className="flex items-center space-x-2 text-gray-600 hover:text-[#F14F21] transition-all duration-200 group hover:pl-2"
+                  className="flex items-center space-x-2 text-[#0A3161] hover:text-[#F14F21] transition-all duration-200 group hover:pl-2"
                 >
                   <FaAngleRight className="text-xs group-hover:translate-x-1 transition-transform opacity-60 group-hover:opacity-100" />
                   <span className="text-sm font-medium">{service.name}</span>
@@ -119,7 +119,7 @@ const Footer = () => {
           {/* Industries */}
           <div className="space-y-4">
             <div className="flex items-center mb-6">
-              <h4 className="text-lg font-bold text-[#0A3161]">Industries</h4>
+              <h4 className="font-bold uppercase text-[#B31942]">Industries</h4>
             </div>
             <div className="space-y-3">
               {[
@@ -127,15 +127,15 @@ const Footer = () => {
                 { name: "Manufacturing", href: "/industries/manufacturing" },
                 {
                   name: "Technology & Software",
-                  href: "/industries/technology",
+                  href: "/",
                 },
-                { name: "Public Sector", href: "/industries/public-sector" },
-                { name: "Healthcare", href: "/industries/healthcare" },
+                { name: "Public Sector", href: "/" },
+                { name: "Healthcare", href: "/" },
               ].map((industry, index) => (
                 <a
                   key={index}
                   href={industry.href}
-                  className="flex items-center space-x-2 text-gray-600 hover:text-[#00A3EE] transition-all duration-200 group hover:pl-2"
+                  className="flex items-center space-x-2 text-[#0A3161] hover:text-[#00A3EE] transition-all duration-200 group hover:pl-2"
                 >
                   <FaAngleRight className="text-xs group-hover:translate-x-1 transition-transform opacity-60 group-hover:opacity-100" />
                   <span className="text-sm font-medium">{industry.name}</span>
@@ -147,20 +147,20 @@ const Footer = () => {
           {/* Company */}
           <div className="space-y-4">
             <div className="flex items-center mb-6">
-              <h4 className="text-lg font-bold text-[#0A3161]">Company</h4>
+              <h4 className="font-bold uppercase text-[#B31942]">Company</h4>
             </div>
             <div className="space-y-3">
               {[
                 { name: "About Trescor", href: "/about-trescor" },
-                { name: "Our Leadership", href: "/leadership" },
+                { name: "Contact Trescor", href: "/contact-trescor" },
                 { name: "Careers", href: "/careers" },
                 { name: "Partner with Us", href: "/collaborate-with-us" },
-                { name: "Why Choose Trescor", href: "/why-trescor" },
+                { name: "Global Presence", href: "/contact-trescor" },
               ].map((link, index) => (
                 <a
                   key={index}
                   href={link.href}
-                  className="flex items-center space-x-2 text-gray-600 hover:text-[#7EB900] transition-all duration-200 group hover:pl-2"
+                  className="flex items-center space-x-2 text-[#0A3161] hover:text-[#7EB900] transition-all duration-200 group hover:pl-2"
                 >
                   <FaAngleRight className="text-xs group-hover:translate-x-1 transition-transform opacity-60 group-hover:opacity-100" />
                   <span className="text-sm font-medium">{link.name}</span>
@@ -172,20 +172,20 @@ const Footer = () => {
           {/* Support */}
           <div className="space-y-4">
             <div className="flex items-center mb-6">
-              <h4 className="text-lg font-bold text-[#0A3161]">Support</h4>
+              <h4 className="font-bold uppercase text-[#B31942]">Solutions</h4>
             </div>
             <div className="space-y-3">
               {[
-                { name: "Contact Us", href: "/contact" },
-                { name: "Help Center", href: "/support" },
-                { name: "FAQs", href: "/faq" },
-                { name: "Collaboration", href: "/collaborate-with-us" },
-                { name: "Privacy Policy", href: "/privacy-policy" },
+                { name: "Fabric AI", href: "/solutions/microsoft-fabric" },
+                { name: "Banking & Finance", href: "/solutions/microsoft-dynamics-365-for-finance" },
+                { name: "Asset Management", href: "/" },
+                { name: "Professional Solutions", href: "/" },
+                { name: "Industry Solutions", href: "/d365finance/pharma" },
               ].map((link, index) => (
                 <a
                   key={index}
                   href={link.href}
-                  className="flex items-center space-x-2 text-gray-600 hover:text-[#FEB800] transition-all duration-200 group hover:pl-2"
+                  className="flex items-center space-x-2 text-[#0A3161] hover:text-[#FEB800] transition-all duration-200 group hover:pl-2"
                 >
                   <FaAngleRight className="text-xs group-hover:translate-x-1 transition-transform opacity-60 group-hover:opacity-100" />
                   <span className="text-sm font-medium">{link.name}</span>
@@ -197,7 +197,7 @@ const Footer = () => {
           {/* Resources */}
           <div className="space-y-4">
             <div className="flex items-center mb-6">
-              <h4 className="text-lg font-bold text-[#0A3161]">Policy</h4>
+              <h4 className="font-bold uppercase text-[#B31942]">Policy</h4>
             </div>
             <div className="space-y-3">
               {[
@@ -205,12 +205,12 @@ const Footer = () => {
                 { name: "Anti Slavery Policy", href: "/anti-slavery-policy" },
                 { name: "Cookie Statement", href: "/cookie-policy" },
                 { name: "User Consent", href: "/user-consent" },
-                { name: "CCPA", href: "/privacy-policy" },
+                { name: "CCPA", href: "/privacy-policy#ccpa-compliance" },
               ].map((policy, index) => (
                 <a
                   key={index}
                   href={policy.href}
-                  className="flex items-center space-x-2 text-gray-600 hover:text-[#F14F21] transition-all duration-200 group hover:pl-2"
+                  className="flex items-center space-x-2 text-[#0A3161] hover:text-[#F14F21] transition-all duration-200 group hover:pl-2"
                 >
                   <FaAngleRight className="text-xs group-hover:translate-x-1 transition-transform opacity-60 group-hover:opacity-100" />
                   <span className="text-sm font-medium">{policy.name}</span>
