@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../components/Footer";
 import SecNavbar from "./../components/SecNavbar";
 import ScrollToTop from "../components/ScrollToTop";
 
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    // Handle hash navigation when component mounts
+    const hash = window.location.hash;
+    if (hash) {
+      // Remove the # from hash
+      const elementId = hash.substring(1);
+      const element = document.getElementById(elementId);
+      if (element) {
+        // Add a delay to ensure the page is fully rendered
+        setTimeout(() => {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }, 100);
+      }
+    }
+  }, []);
   return (
     <div>
       <SecNavbar />
@@ -139,23 +157,25 @@ const PrivacyPolicy = () => {
                       </a>
                     </p>
 
-                    <h3 className="text-2xl font-bold mt-8 mb-2 text-[#0A3161]">
-                      CCPA Compliance Statement
-                    </h3>
+                    <div id="ccpa-compliance" className="scroll-mt-32">
+                      <h3 className="text-2xl font-bold mt-8 mb-2 text-[#0A3161]">
+                        CCPA Compliance Statement
+                      </h3>
 
-                    <p className="mb-2 text-gray-600">
-                      The California Consumer Privacy Act (CCPA) provides
-                      California residents with specific rights regarding their
-                      personal information. Trescor Software Solutions respects
-                      these rights and maintains full transparency in how data
-                      is collected and used. We only collect your business name
-                      and business email when you voluntarily submit our Contact
-                      Us form. Under the CCPA, you may request access,
-                      correction, or deletion of your information at any time.
-                      We do not sell or share personal information with third
-                      parties. To exercise your rights, contact us at
-                      support@trescor.com.
-                    </p>
+                      <p className="mb-2 text-gray-600">
+                        The California Consumer Privacy Act (CCPA) provides
+                        California residents with specific rights regarding
+                        their personal information. Trescor Software Solutions
+                        respects these rights and maintains full transparency in
+                        how data is collected and used. We only collect your
+                        business name and business email when you voluntarily
+                        submit our Contact Us form. Under the CCPA, you may
+                        request access, correction, or deletion of your
+                        information at any time. We do not sell or share
+                        personal information with third parties. To exercise
+                        your rights, contact us at support@trescor.com.
+                      </p>
+                    </div>
                   </div>
                 </section>
               </div>
