@@ -296,151 +296,6 @@ const MicrosoftFabric = () => {
         </div>
       </div>
 
-      {/* <section className="relative overflow-hidden">
-        <div className="absolute -top-24 -left-24 w-[640px] h-[640px] rounded-full bg-gradient-to-tr from-[#0A3161] to-[#00A3EE] opacity-10 blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-40 -right-32 w-[520px] h-[520px] rounded-full bg-gradient-to-br from-[#F14F21] to-[#7EB900] opacity-8 blur-3xl pointer-events-none" />
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 lg:py-28 flex items-center">
-          <div className="w-full lg:w-3/5 relative z-10">
-            <div className="flex justify-center lg:justify-start">
-              <span className="inline-flex items-center px-4 py-1 rounded-full text-xs font-semibold tracking-wide text-white bg-[#0A3161] shadow-sm">
-                Fabric AI
-              </span>
-            </div>
-
-            <motion.h1
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="mt-6 lg:mt-8 text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0A3161] leading-tight"
-            >
-              <span>Smart solutions to </span>
-              <br className="hidden md:block" />
-              <span
-                className="bg-gradient-to-r from-[#F14F21] via-[#00A3EE] to-[#7EB900] bg-clip-text text-transparent"
-                aria-hidden="true"
-              >
-                propel your
-              </span>{" "}
-              <br />
-              <span className="text-[#0A3161]">business forward</span>
-            </motion.h1>
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              className="mt-6 text-gray-600 max-w-2xl text-center lg:text-left"
-            >
-              Fabric AI unifies your data, enhances insights, and automates
-              decisions across industries. From Healthcare to Manufacturing, we
-              deliver tailored solutions that accelerate innovation and boost
-              business performance.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.35, duration: 0.6 }}
-              className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center lg:items-start"
-            >
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-gradient-to-r from-[#F14F21] via-[#00A3EE] to-[#7EB900] text-white font-semibold shadow-lg hover:scale-105 transform transition"
-              >
-                Talk to an expert
-              </a>
-
-              <a
-                href="/solutions"
-                className="inline-flex items-center justify-center px-5 py-3 rounded-full border border-gray-200 bg-white text-[#0A3161] font-medium hover:bg-gray-50 transition"
-              >
-                Explore Fabric AI
-              </a>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 0.6 }}
-              className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl"
-            >
-              <div className="flex items-center gap-3 bg-white/60 backdrop-blur rounded-lg p-3 shadow-sm">
-                <div className="p-2 rounded-md bg-white">
-                  <FiDatabase className="w-5 h-5 text-[#0A3161]" />
-                </div>
-                <div>
-                  <div className="text-sm font-semibold text-[#0A3161]">
-                    Unified Data
-                  </div>
-                  <div className="text-xs text-gray-500">
-                    Single truth layer
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3 bg-white/60 backdrop-blur rounded-lg p-3 shadow-sm">
-                <div className="p-2 rounded-md bg-white">
-                  <FiZap className="w-5 h-5 text-[#7EB900]" />
-                </div>
-                <div>
-                  <div className="text-sm font-semibold text-[#0A3161]">
-                    Intelligent Automation
-                  </div>
-                  <div className="text-xs text-gray-500">Speed & accuracy</div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3 bg-white/60 backdrop-blur rounded-lg p-3 shadow-sm">
-                <div className="p-2 rounded-md bg-white">
-                  <FiShield className="w-5 h-5 text-[#00A3EE]" />
-                </div>
-                <div>
-                  <div className="text-sm font-semibold text-[#0A3161]">
-                    Secure & Compliant
-                  </div>
-                  <div className="text-xs text-gray-500">Enterprise-grade</div>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-
-          <div className="hidden lg:flex lg:w-2/5 justify-end pl-10 relative">
-            <div className="w-[420px] bg-white rounded-2xl p-6 shadow-2xl transform -translate-y-6 hover:translate-y-0 transition-transform duration-500">
-              <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-xs text-gray-400">Live Demo</div>
-                  <div className="text-sm font-semibold text-[#0A3161]">
-                    Fabric AI Workspace
-                  </div>
-                </div>
-                <div className="text-sm text-[#7EB900] font-bold">Beta</div>
-              </div>
-
-              <div className="mt-4 h-[220px] rounded-md bg-gradient-to-br from-[#F8FAFC] to-white border border-gray-100 flex items-center justify-center text-sm text-gray-400">
-                <div className="text-center px-4">
-                  <div className="font-medium text-gray-500 mb-2">
-                    Power BI • Fabric • AI
-                  </div>
-                  <div className="text-xs">
-                    Interactive insights & pipelines
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-4 flex items-center gap-3">
-                <div className="text-xs text-gray-500">Trusted by</div>
-                <div className="h-6 w-6 rounded bg-gray-200" />
-                <div className="h-6 w-6 rounded bg-gray-200" />
-                <div className="h-6 w-6 rounded bg-gray-200" />
-              </div>
-            </div>
-
-            <div className="absolute -right-8 bottom-0 w-44 h-44 rounded-full bg-gradient-to-br from-[#00A3EE] to-[#7EB900] opacity-6 blur-2xl pointer-events-none" />
-          </div>
-        </div>
-      </section> */}
-
       <section className="pb-16">
         <div className="relative w-full">
           <div className="w-full mx-auto max-w-[1400px]">
@@ -555,9 +410,12 @@ const MicrosoftFabric = () => {
 
                 {/* Explore CTA */}
                 <div className="lg:px-0 px-2 pt-6 flex justify-center">
-                  <button className="w-fit px-[36px] py-[12px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
+                  <a
+                    href="/contact-trescor"
+                    className="w-fit px-[36px] py-[12px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer"
+                  >
                     Connect with Us
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -588,12 +446,12 @@ const MicrosoftFabric = () => {
                         Power BI, Dataverse, and cloud sources—delivering
                         real-time insights, predictive intelligence.
                       </p>
-                      <button className="w-fit px-[20px] py-[12px] rounded-full text-[14px] font-[500] bg-[#00A3EE]  text-white shadow-lg hover:bg-[#0A3161] transition-colors duration-300 cursor-pointer">
-                        Connect with Us
-                      </button>
+                      <a href="/contact-trescor" className="w-fit px-[20px] py-[12px] rounded-full text-[14px] font-[500] bg-[#00A3EE]  text-white shadow-lg hover:bg-[#0A3161] transition-colors duration-300 cursor-pointer">
+                        Know More
+                      </a>
                     </div>
-                    <div className="absolute bottom-2 left-[2px] z-20 text-sm   font-medium">
-                      <p className="text-[12px] md:text-[12px] lg:text-[18px]">
+                    <div className="absolute bottom-2 left-[2px] z-20 font-bold">
+                      <p className="">
                         Solutions /{" "}
                         <span className="text-[#0A3161]">
                           Dynamics 365 + Fabric AI

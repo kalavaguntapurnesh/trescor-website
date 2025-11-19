@@ -250,16 +250,14 @@ const Support = () => {
                         decisions.
                       </p>
 
-                      <button className="w-fit md:mt-4 px-[28px] py-[12px] rounded-[10px] text-[14px] font-semibold bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
+                      <a href="/contact-trescor" className="w-fit md:mt-4 px-[28px] py-[12px] rounded-full text-[14px] font-semibold bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
                         Connect with Us
-                      </button>
+                      </a>
                     </div>
-                    <div class="absolute bottom-2 left-[2px] z-20 text-sm   font-medium">
-                      <p class="text-xl font-semibold">
+                    <div class="absolute bottom-2 left-[2px] z-20 text-sm font-bold">
+                      <p class="text-2xl font-bold">
                         Support /{" "}
-                        <span className="text-[#00A3EE]">
-                          Support System We Offer
-                        </span>
+                        <span className="text-[#00A3EE]">Support We Offer</span>
                       </p>
                     </div>
                     <div class="absolute bottom-0 left-0 w-full leading-none z-0">
@@ -285,7 +283,7 @@ const Support = () => {
       </div>
 
       {/* section 1 */}
-      <div className="md:pt-16 pt-4">
+      <div className="pt-8">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-6 mx-auto">
@@ -360,7 +358,7 @@ const Support = () => {
 
       {/* section 2 */}
 
-      <div className="lg:pt-20 lg:pb-16 pt-12">
+      <div className="pt-8">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] ">
@@ -391,7 +389,7 @@ const Support = () => {
                       <div className="flex lg:justify-start justify-center">
                         <a
                           href="/contact-trescor"
-                          className="relative flex h-[50px] md:w-60 w-3/4 items-center bg-white border-[#0A3161] text-[#0A3161] justify-center overflow-hidden border transition-all before:absolute before:h-0 before:w-0 before:bg-[#B31942] hover:text-white hover:border-[#B31942] before:duration-500 before:ease-out hover:before:h-56 hover:before:w-full rounded text-lg"
+                          className="relative flex h-[50px] md:w-60 w-3/4 items-center bg-white border-[#0A3161] text-[#0A3161] justify-center overflow-hidden border transition-all before:absolute before:h-0 before:w-0 before:bg-[#B31942] hover:text-white hover:border-[#B31942] before:duration-500 before:ease-out hover:before:h-56 hover:before:w-full rounded-full text-lg"
                         >
                           <span className="relative z-10">Read More</span>
                         </a>
@@ -417,7 +415,7 @@ const Support = () => {
 
       {/* section 3 */}
 
-      <div className="lg:pt-20 lg:pb-16 pt-12 select-none">
+      <div className="pt-8">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px]">
@@ -463,7 +461,7 @@ const Support = () => {
                       <div className="flex lg:justify-start justify-center">
                         <a
                           href="/contact-trescor"
-                          className="relative flex h-[50px] md:w-60 w-3/4 items-center bg-white border-[#0A3161] text-[#0A3161] justify-center overflow-hidden border transition-all before:absolute before:h-0 before:w-0 before:bg-[#B31942] hover:text-white hover:border-[#B31942] before:duration-500 before:ease-out hover:before:h-56 hover:before:w-full rounded text-lg"
+                          className="relative flex h-[50px] md:w-60 w-3/4 items-center bg-white border-[#0A3161] text-[#0A3161] justify-center overflow-hidden border transition-all before:absolute before:h-0 before:w-0 before:bg-[#B31942] hover:text-white hover:border-[#B31942] before:duration-500 before:ease-out hover:before:h-56 hover:before:w-full rounded-full text-lg"
                         >
                           <span className="relative z-10">Read More</span>
                         </a>
@@ -480,7 +478,7 @@ const Support = () => {
 
       {/* section 4 */}
 
-      <div className="md:pt-16 pt-4">
+      <div className="pt-8">
         <div className="relative">
           <div className="w-full">
             <div className="w-full lg:mx-auto max-w-[1400px] pb-6 mx-auto">

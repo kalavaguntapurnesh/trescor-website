@@ -22,15 +22,13 @@ const ContactOne = () => {
 
                 <div className="text-gray-600 text-center max-w-full mx-auto">
                   <p className="text-lg leading-relaxed">
-                    Our dedicated team is here for you. Whether you have
-                    inquiries about cargo status or want to know more about our
-                    solutions, please don't hesitate to contact us, and we will
-                    be delighted to assist you.
+                    Reach out to us for tailored solutions, expert guidance, and
+                    dedicated support to drive your business success forward.
                   </p>
                 </div>
               </div>
 
-              <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:pt-16 pt-8">
+              <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:pt-12 pt-8">
                 <div className="flex flex-col space-y-6 mt-8">
                   <div className="lg:text-start text-center">
                     <p className="lg:text-4xl text-3xl font-bold text-[#0A3161] leading-tight">
@@ -47,10 +45,10 @@ const ContactOne = () => {
                     </p>
                   </div>
 
-                  <div className="grid md:grid-cols-2 grid-cols-1 gap-8 mt-8">
+                  <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
                     <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative">
                       <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-orange-500 via-white to-green-600"></div>
-                      <div className="flex lg:justify-start justify-center mb-4">
+                      <div className="flex lg:justify-start justify-center mb-2">
                         <img
                           src={india}
                           alt="india"
@@ -66,7 +64,7 @@ const ContactOne = () => {
                         <p>Hyderabad, India-500016</p>
                         <a
                           href="mailto:info@trescorsoftwaresolutions.com"
-                          className="mt-3 text-[#00A3EE] hover:text-[#0A3161] font-medium transition-colors duration-300"
+                          className="mt-2 text-[#00A3EE] hover:text-[#0A3161] font-medium transition-colors duration-300"
                         >
                           info@trescorsolutions.com
                         </a>
@@ -74,7 +72,7 @@ const ContactOne = () => {
                     </div>
                     <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 relative">
                       <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-red-600 via-white to-blue-600"></div>
-                      <div className="flex lg:justify-start justify-center mb-4">
+                      <div className="flex lg:justify-start justify-center mb-2">
                         <img
                           src={usa}
                           alt="usa"
@@ -89,10 +87,10 @@ const ContactOne = () => {
                         <p>Irvine, California,</p>
                         <p>United States-92614</p>
                         <a
-                          href="mailto:info@axseva.com"
-                          className="mt-3 text-[#00A3EE] hover:text-[#0A3161] font-medium transition-colors duration-300"
+                          href="mailto:info@trescorsolutions.com"
+                          className="mt-2 text-[#00A3EE] hover:text-[#0A3161] font-medium transition-colors duration-300"
                         >
-                          info@axseva.com
+                          info@trescorsolutions.com
                         </a>
                       </div>
                     </div>

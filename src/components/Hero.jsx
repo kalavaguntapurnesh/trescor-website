@@ -83,7 +83,7 @@ const Hero = () => {
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black/50 bg-opacity-50 text-[#e7e5df] lg:text-start text-center">
-        <div className="max-w-[1400px] mx-auto w-full pt-16 lg:pt-28">
+        <div className="max-w-[1400px] mx-auto w-full pt-16 lg:pt-32">
           <div className="w-[100%] grid lg:grid-cols-5 grid-cols-1 lg:gap-0 gap-4 ">
             <div className="space-y-4 lg:col-span-3 lg:px-6 flex flex-col lg:justify-center">
               <div>

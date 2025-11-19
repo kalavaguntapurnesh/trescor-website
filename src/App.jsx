@@ -22,6 +22,7 @@ import BankingAndFinance from "./pages/solutions/BankingAndFinance";
 import MicrosoftFabric from "./pages/solutions/MicrosoftFabric";
 import D365PharmaFinance from "./pages/finance/D365PharmaFinance";
 import D365NeoBank from "./pages/finance/D365NeoBank";
+import D365Fintech from "./pages/finance/D365Fintech";
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
       <Route path="/d365finance/pharma" element={<D365PharmaFinance />} />
 
       <Route path="/d365finance/neobank" element={<D365NeoBank />} />
+      <Route path="/d365finance/fintech" element={<D365Fintech />} />
     </Routes>
   );
 }

@@ -102,10 +102,10 @@ const MicrosoftDynamics365Finance = () => {
 
       {/* Modern Banner Section */}
 
-      <div className="lg:pt-4">
+      <div className="pt-4">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full mx-auto max-w-[1400px] lg:pb-12 pb-4">
+            <div className="w-full mx-auto max-w-[1400px] pb-4">
               <div className="p-4">
                 <div className="hidden md:block py-4 lg:py-6">
                   <div className="flex items-center relative rounded-tl-[24px] rounded-tr-[24px] rounded-br-[24px] overflow-hidden h-fit min-h-[360px] pl-[1rem] md:pl-[3rem] lg:pl-[4rem] py-[4rem] md:pt-[3rem] md:pb-[5rem] lg:pt-[4rem] lg:pb-[6rem]">
@@ -125,9 +125,12 @@ const MicrosoftDynamics365Finance = () => {
                         operations, Dynamics 365 Finance comes with several
                         features.
                       </p>
-                      <button className="w-fit px-[20px] py-[12px] rounded-full text-[14px] font-[500] bg-[#00A3EE]  text-white shadow-lg hover:bg-[#0A3161] transition-colors duration-300 cursor-pointer">
+                      <a
+                        href="/contact-trescor"
+                        className="w-fit px-[20px] py-[12px] rounded-full text-[14px] font-[500] bg-[#00A3EE]  text-white shadow-lg hover:bg-[#0A3161] transition-colors duration-300 cursor-pointer"
+                      >
                         Connect with Us
-                      </button>
+                      </a>
                     </div>
                     <div className="absolute bottom-2 left-[2px] z-20 text-sm   font-medium">
                       <p className="text-[12px] md:text-[12px] lg:text-[16px]">
@@ -323,9 +326,12 @@ const MicrosoftDynamics365Finance = () => {
                         </h3>
 
                         <div className="my-6">
-                          <button className="w-fit px-[32px] py-[8px] rounded-full font-medium bg-[#0A3161] text-white hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
+                          <a
+                            href="/contact-trescor"
+                            className="w-fit px-[32px] py-[8px] rounded-full font-medium bg-[#0A3161] text-white hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer"
+                          >
                             Know More
-                          </button>
+                          </a>
                         </div>
                       </div>
                       <div className="flex sm:justify-end gap-4 w-full md:w-auto mt-3 sm:mt-0"></div>
@@ -333,7 +339,7 @@ const MicrosoftDynamics365Finance = () => {
                     <div className="flex gap-12 md:min-h-[300px] flex-col md:flex-row relative my-4 mb-[3rem]">
                       <div className="md:w-[70%] lg:w-[50%] flex flex-col gap-[40px] z-10 relative">
                         <div>
-                           <h5 className="text-lg font-semibold pb-[20px] inline-block">
+                          <h5 className="text-lg font-semibold pb-[20px] inline-block">
                             Automate & simplify financial operations
                             <div
                               className="mt-1"
@@ -359,7 +365,7 @@ const MicrosoftDynamics365Finance = () => {
                           </ul>
                         </div>
                         <div>
-                           <h5 className="text-lg font-semibold pb-[20px] inline-block">
+                          <h5 className="text-lg font-semibold pb-[20px] inline-block">
                             Monitor performance in real time
                             <div
                               className="h-[2px] bg-transparent mt-1"
@@ -393,7 +399,7 @@ const MicrosoftDynamics365Finance = () => {
                               "rgba(0, 0, 0, 0.05) -2px 0px 4px 0px, rgba(0, 0, 0, 0.04) -6px 0px 6px 0px, rgba(0, 0, 0, 0.03) -14px 0px 9px 0px, rgba(0, 0, 0, 0.01) -26px 0px 10px 0px, rgba(0, 0, 0, 0) -40px 0px 11px 0px",
                           }}
                         >
-                           <h5 className="text-lg font-semibold pb-[20px] inline-block">
+                          <h5 className="text-lg font-semibold pb-[20px] inline-block">
                             Predict future outcomes
                             <div
                               className="h-[2px] bg-transparent mt-1"

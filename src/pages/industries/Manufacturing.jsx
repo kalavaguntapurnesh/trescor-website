@@ -108,7 +108,7 @@ const Manufacturing = () => {
 
                   <div className="mt-8 flex flex-col sm:flex-row gap-4">
                     <a
-                      href="/contact"
+                      href="/contact-trescor"
                       className="inline-flex items-center justify-center gap-3 bg-[#00A3EE] text-white px-[28px] py-3 rounded-full font-medium shadow-2xl transform-gpu transition hover:-translate-y-1"
                     >
                       Get Consultation

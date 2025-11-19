@@ -77,7 +77,7 @@ const CalendarBooking = () => {
 
       {activeTab === "calendar" ? (
         <div>
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex justify-between items-center mb-6">
             <h2 className="text-lg font-bold">
               {new Date(currentYear, currentMonth).toLocaleString("default", {
                 month: "long",
@@ -191,42 +191,43 @@ const CalendarBooking = () => {
               className="mt-8 lg:p-6 lg:shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] rounded"
             >
               <div className="w-full grid grid-cols-1 md:gap-4">
-                <div className="mb-3 w-full">
-                  <label
-                    htmlFor="companyName"
-                    className="mb-3 block text-base font-medium text-[#07074D]"
-                  >
-                    Company Name
-                  </label>
-                  <input
-                    type="text"
-                    name="companyName"
-                    id="companyName"
-                    // onChange={(e) => setFullName(e.target.value)}
-                    placeholder="Your Company Name"
-                    className="w-full rounded bg-[#f0f0f0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                  />
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-2">
+                  <div className="mb-3 w-full">
+                    <label
+                      htmlFor="companyName"
+                      className="mb-3 block text-base font-medium text-[#07074D]"
+                    >
+                      Company Name
+                    </label>
+                    <input
+                      type="text"
+                      name="companyName"
+                      id="companyName"
+                      // onChange={(e) => setFullName(e.target.value)}
+                      placeholder="Your Company Name"
+                      className="w-full rounded border border-[#e0e0e0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                    />
+                  </div>
+                  <div className="mb-5 w-full">
+                    <label
+                      htmlFor="businessEmail"
+                      className="mb-3 block text-base font-medium text-[#07074D]"
+                    >
+                      Business Email
+                    </label>
+                    <input
+                      type="email"
+                      name="businessEmail"
+                      id="businessEmail"
+                      // onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Your Business Email"
+                      className="w-full rounded border border-[#e0e0e0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                    />
+                  </div>
                 </div>
               </div>
 
-              <div className="mb-5 w-full">
-                <label
-                  htmlFor="businessEmail"
-                  className="mb-3 block text-base font-medium text-[#07074D]"
-                >
-                  Business Email
-                </label>
-                <input
-                  type="email"
-                  name="businessEmail"
-                  id="businessEmail"
-                  // onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your Business Email"
-                  className="w-full rounded bg-[#f0f0f0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
-                />
-              </div>
-
-              <div className="mb-5 w-full">
+              <div className="mb-3 w-full">
                 <label
                   htmlFor="phoneNumber"
                   className="mb-3 block text-base font-medium text-[#07074D]"
@@ -239,7 +240,7 @@ const CalendarBooking = () => {
                   id="phoneNumber"
                   // onChange={(e) => setPhoneNumber(e.target.value)}
                   placeholder="Your Phone Number"
-                  className="w-full rounded bg-[#f0f0f0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                  className="w-full rounded border border-[#e0e0e0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                 />
               </div>
 
@@ -256,13 +257,13 @@ const CalendarBooking = () => {
                   id="message"
                   // onChange={(e) => setMessage(e.target.value)}
                   placeholder="Let us know if you’d like to schedule a meeting, discuss opportunities, or have any questions. We're here to help!"
-                  className="w-full resize-none rounded bg-[#f0f0f0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
+                  className="w-full resize-none rounded border border-[#e0e0e0] py-3 px-6 text-base text-[#393053] outline-none focus:bg-white focus:border-[0.5px] ease-in-out transition duration-1000 focus:border-[#393053]"
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="group bg-gradient-to-r from-[#0A3161] to-[#00A3EE] hover:from-[#00A3EE] hover:to-[#7EB900] px-6 py-3 rounded-full text-white items-center gap-3 transition-all duration-500 w-full flex justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="group bg-gradient-to-r from-[#00A3EE] to-[#7EB900] hover:from-[#0A3161] hover:to-[#00A3EE]   px-6 py-3 rounded-full text-white items-center gap-3 transition-all duration-500 w-full flex justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 <span className="relative z-10">Submit</span>
               </button>

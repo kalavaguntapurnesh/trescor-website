@@ -482,9 +482,12 @@ const D365NeoBank = () => {
                           </h4>
                         </div>
 
-                        <button className="w-fit px-[36px] py-[12px] rounded-full text-[14px] font-[500] bg-white text-black cursor-pointer">
-                          Book a Consultation
-                        </button>
+                        <a
+                          href="/contact-trescor"
+                          className="w-fit px-[36px] py-[12px] rounded-full text-[14px] font-[500] bg-white text-black cursor-pointer"
+                        >
+                          Contact Us Now
+                        </a>
                       </div>
                     </div>
 
