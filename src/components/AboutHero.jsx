@@ -59,11 +59,13 @@ const AboutHero = () => {
       const animate = (timestamp) => {
         if (!startTime) startTime = timestamp;
         const progress = Math.min((timestamp - startTime) / duration, 1);
-        
+
         // Easing function for smooth animation
         const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-        const currentValue = Math.floor(startValue + (endValue - startValue) * easeOutQuart);
-        
+        const currentValue = Math.floor(
+          startValue + (endValue - startValue) * easeOutQuart
+        );
+
         setCount(currentValue);
 
         if (progress < 1) {
@@ -76,7 +78,8 @@ const AboutHero = () => {
 
     return (
       <h1 ref={counterRef} className="text-[28px] md:text-[32px] font-[700]">
-        {count}{suffix}
+        {count}
+        {suffix}
       </h1>
     );
   };
@@ -162,7 +165,7 @@ const AboutHero = () => {
                     </p>
                     <a
                       className="flex gap-[16px] items-center group cursor-pointer h-[40px]"
-                      href="/about-trescor"
+                      href="/contact-trescor"
                     >
                       <p className="transition-colors duration-500 group-hover:text-[#00A3EE] text-[14px] font-normal">
                         Learn More
@@ -211,7 +214,7 @@ const AboutHero = () => {
         </div>
       </div>
 
-      <div className="pt-12">
+      <div className="pt-8">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] px-4 py-4">
@@ -232,8 +235,8 @@ const AboutHero = () => {
                     impactful results in the Enterprise Technology space.
                   </p>
                   <a
-                    className="group bg-gradient-to-r from-[#0A3161] to-[#00A3EE] hover:from-[#00A3EE] hover:to-[#7EB900] px-6 py-3 rounded-lg text-white items-center gap-3 transition-all duration-500 w-fit flex shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                    href="/about/get-to-know-us"
+                    className="group bg-gradient-to-r from-[#0A3161] to-[#00A3EE] hover:from-[#00A3EE] hover:to-[#7EB900] px-6 py-3 rounded-full text-white items-center gap-3 transition-all duration-500 w-fit flex shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                   href="/contact-trescor"
                   >
                     <p className="text-[16px] font-medium">
                       Learn more about us
@@ -259,7 +262,7 @@ const AboutHero = () => {
         </div>
       </div>
 
-      <div className="pt-12">
+      <div className="pt-8">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] px-4 py-4">
@@ -332,7 +335,7 @@ const AboutHero = () => {
         </div>
       </div>
 
-      <div className="pt-12">
+      <div className="pt-8">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] ">
@@ -386,7 +389,7 @@ const AboutHero = () => {
         </div>
       </div>
 
-      <div className="pt-12 pb-16">
+      <div className="pt-8 pb-8">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] ">
@@ -485,7 +488,7 @@ const AboutHero = () => {
         </div>
       </div>
 
-      <div className="pt-12 pb-12">
+      <div className="pt-8 pb-8">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] px-4 py-4">
@@ -500,7 +503,7 @@ const AboutHero = () => {
                       “
                     </span>
 
-                    <p class="text-2xl md:text-3xl leading-snug font-semibold font-serif text-[#0A3161]">
+                    <p class="text-2xl md:text-3xl leading-snug font-bold text-[#0A3161]">
                       “At some point, you realize that once you’ve built the
                       right systems and team, you just have to trust the process
                       and keep moving forward.”
@@ -522,104 +525,6 @@ const AboutHero = () => {
           </div>
         </div>
       </div>
-{/* 
-      <div className="pt-12">
-        <div className="relative">
-          <div className="w-full">
-            <div className="w-full mx-auto max-w-[1400px] ">
-              <div className="p-4">
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 pt-8">
-                  <div className="col-span-2 bg-[#f2f2f3] rounded-xl py-4 px-6">
-                    <div className="text-2xl py-6 lg:text-3xl font-bold text-[#0A3161]">
-                      <h1>Sumanth Dama</h1>
-                    </div>
-
-                    <div className="text-gray-600">
-                      <p>
-                        {" "}
-                        When I founded AXSeva, my vision was clear: to empower
-                        businesses to reach their full potential through
-                        innovative financial technology solutions. In today's
-                        dynamic and competitive marketplace, having a robust
-                        financial management system isn't just an advantage—it's
-                        a necessity. That's why we've dedicated ourselves to
-                        mastering Microsoft Dynamics 365 Finance & Operations.
-                      </p>
-                    </div>
-
-                    <div className="flex flex-row justify-between items-center py-4 ">
-                      <p className="text-lg text-gray-600">
-                        Follow me on social media:
-                      </p>
-
-                      <div className="flex flex-row items-center space-x-4">
-                        <a
-                          href=""
-                          className="flex lg:justify-start justify-center items-center"
-                        >
-                          <FaLinkedin
-                            size={26}
-                            className="cursor-pointer text-[#555]"
-                          />
-                        </a>
-                        <a
-                          href=""
-                          className="flex lg:justify-start justify-center items-center"
-                        >
-                          <FaInstagram
-                            size={26}
-                            className="cursor-pointer text-[#555]"
-                          />
-                        </a>
-                        <a
-                          href=""
-                          className="flex lg:justify-start justify-center items-center"
-                        >
-                          <FaFacebook
-                            size={26}
-                            className="cursor-pointer text-[#555]"
-                          />
-                        </a>{" "}
-                      </div>
-                    </div>
-
-                    <div className="border-b border-gray-400 py-4"></div>
-
-                    <div className="py-4 text-gray-600">
-                      <p className="lg:text-start text-center">Expertise:</p>
-
-                      <div className="pt-2 flex lg:flex-row gap-2 flex-col items-center justify-between">
-                        <div className="flex flex-row items-center">
-                          <img src={star} alt="star" className="w-6 h-6" />
-                          <h1 className="ml-2">
-                            Dynamics 365 Business Analyst
-                          </h1>
-                        </div>
-
-                        <div className="flex flex-row items-center">
-                          <img src={star} alt="star" className="w-6 h-6" />
-                          <h1 className="ml-2">
-                            Dynamics 365 Supply Chain Consultant
-                          </h1>
-                        </div>
-
-                        <div className="flex flex-row items-center">
-                          <img src={star} alt="star" className="w-6 h-6" />
-                          <h1 className="ml-2">
-                            Dynamics AX Functional Specialist
-                          </h1>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-span-1 border-2 border-blue-500"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

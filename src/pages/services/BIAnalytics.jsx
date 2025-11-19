@@ -22,7 +22,7 @@ const BIAnalytics = () => {
       <div className="lg:pt-12">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full mx-auto max-w-[1400px] lg:pb-12 pb-4">
+            <div className="w-full mx-auto max-w-[1400px] pb-4">
               <div className="p-4">
                 <div className="w-full pt-20 pb-4">
                   <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 items-center min-h-[500px]">
@@ -97,10 +97,10 @@ const BIAnalytics = () => {
 
       {/* Modern Banner Section */}
 
-      <div className="lg:pt-4">
+      <div className="pt-4">
         <div className="relative">
           <div className="w-full">
-            <div className="w-full mx-auto max-w-[1400px] lg:pb-12 pb-4">
+            <div className="w-full mx-auto max-w-[1400px] pb-4">
               <div className="p-4">
                 <div className="hidden md:block py-4 lg:py-6">
                   <div className="flex items-center relative rounded-tl-[24px] rounded-tr-[24px] rounded-br-[24px] overflow-hidden h-fit min-h-[360px] pl-[1rem] md:pl-[3rem] lg:pl-[4rem] py-[4rem] md:pt-[3rem] md:pb-[5rem] lg:pt-[4rem] lg:pb-[6rem]">
@@ -119,9 +119,9 @@ const BIAnalytics = () => {
                         Data Roadblocks Holding You Back? Get strategic Guidance
                         for Data Success
                       </p>
-                      <button className="w-fit px-[20px] py-[12px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
+                      <a href="/contact-trescor" className="w-fit px-[20px] py-[12px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
                         Connect with Us
-                      </button>
+                      </a>
                     </div>
                     <div className="absolute bottom-2 left-[2px] z-20 text-sm font-medium">
                       <p className="text-[12px] md:text-[12px] lg:text-[16px]">
@@ -297,9 +297,9 @@ const BIAnalytics = () => {
                           Analytics
                         </h3>
                         <div className="my-6">
-                          <button className="w-fit px-[32px] py-[8px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
-                            View BI Analytics
-                          </button>
+                          <a href="/contact-trescor" className="w-fit px-[32px] py-[8px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
+                            View More
+                          </a>
                         </div>
                       </div>
                       <div className="flex sm:justify-end gap-4 w-full md:w-auto mt-3 sm:mt-0"></div>

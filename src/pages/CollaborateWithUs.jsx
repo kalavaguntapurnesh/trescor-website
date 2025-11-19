@@ -7,7 +7,7 @@ import { BiSolidNavigation } from "react-icons/bi";
 import { FaInbox } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import { RiEmotionHappyFill } from "react-icons/ri";
-import { useState } from "react";
+// import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import ContactOne from "../components/ContactOne.jsx";
 
@@ -57,88 +57,13 @@ const CollaborateWithUs = () => {
     },
   ];
 
-  const [formData, setFormData] = useState({
-    fullname: "",
-    jobtitle: "",
-    email: "",
-    phoneNumber: "",
-    companyName: "",
-    lookingFor: "",
-    message: "",
-    // termsAccepted: false,
-  });
-
-  console.log("data : ", formData);
-  const [captchaVerified, setCaptchaVerified] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    });
-  };
-
-  const handleCaptcha = (value) => {
-    setCaptchaVerified(!!value);
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    if (!captchaVerified) {
-      alert("Please verify the reCAPTCHA.");
-      return;
-    }
-
-    if (!formData.termsAccepted) {
-      alert("Please accept the terms and conditions.");
-      return;
-    }
-
-    try {
-      // https://axseva-backend.onrender.com
-      // http://localhost:3010/api/register
-      const response = await axios.post(
-        "https://axseva-backend.onrender.com/api/register",
-        formData
-      );
-      Swal.fire({
-        title: "Success",
-        text: "Form submitted successfully!",
-      });
-      setFormData({
-        fullname: "",
-        jobtitle: "",
-        email: "",
-        phoneNumber: "",
-        companyName: "",
-        lookingFor: "",
-        message: "",
-        termsAccepted: false,
-      });
-      setCaptchaVerified(false);
-    } catch (error) {
-      console.error(
-        "Error submitting form",
-        error.response ? error.response.data : error
-      );
-      Swal.fire({
-        title: "Error",
-        text: error.response
-          ? error.response.data.message
-          : "Server error or internal error!",
-      });
-    }
-  };
-
   return (
     <>
       <SecNavbar />
       <div>
         {/* Section 1 */}
 
-        <div className="lg:pt-32 pt-24">
+        <div className="lg:pt-28 pt-24">
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-6 mx-auto">
@@ -210,7 +135,7 @@ const CollaborateWithUs = () => {
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] pb-12 mx-auto">
                 <div className="p-4">
-                  <div className="md:flex md:h-[363px] mt-12">
+                  <div className="md:flex md:h-[363px] mt-8">
                     <div
                       className="px-[1rem] md:px-[3rem] lg:px-[4rem] py-[3rem] w-[100%] lg:w-[70%] h-full flex"
                       style={{
@@ -236,9 +161,12 @@ const CollaborateWithUs = () => {
                         <div>
                           <h4 className="text-[20px] md:text-[16px] lg:text-[20px] font-medium font-jakarta"></h4>
                         </div>
-                        <button className="w-fit px-[28px] py-[12px] rounded-full text-[14px] font-[500] bg-white text-black cursor-pointer">
-                          Book a Meeting
-                        </button>
+                        <a
+                          href="/contact-trescor"
+                          className="w-fit px-[28px] py-[12px] rounded-full text-[14px] font-[500] bg-white text-black cursor-pointer"
+                        >
+                          Know More
+                        </a>
                       </div>
                     </div>
                     <div className="hidden lg:block w-[100%] md:w-0 lg:w-[30%] h-[100%]">
@@ -257,12 +185,12 @@ const CollaborateWithUs = () => {
 
         {/* section 2 */}
 
-        <div className="lg:pt-20 lg:pb-16 pt-12">
+        <div className="pt-8 pb-8">
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px] ">
                 <div className="p-4">
-                  <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-8 gap-8 items-center">
+                  <div className="grid lg:grid-cols-2 grid-cols-1s gap-8 items-center">
                     {/* Left: Text Card */}
                     <div className="flex flex-col w-full lg:justify-start justify-center">
                       <div className="glass-card group transition-all duration-300 py-8 border border-transparent bg-white/60 backdrop-blur-lg relative">
@@ -314,7 +242,7 @@ const CollaborateWithUs = () => {
 
         {/* section 3 */}
 
-        <div className="lg:pt-20 lg:pb-16 pt-12 select-none">
+        <div className="pt-8 pb-8">
           <div className="relative">
             <div className="w-full">
               <div className="w-full lg:mx-auto max-w-[1400px]">

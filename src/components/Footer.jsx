@@ -29,9 +29,9 @@ const Footer = () => {
                 </p>
               </div>
               <div className="lg:px-0 px-2 flex lg:justify-start justify-center">
-                <button className="w-fit px-[36px] py-[12px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
+                <a href="/contact-trescor" className="w-fit px-[36px] py-[12px] rounded-full text-[14px] font-[500] bg-[#0A3161] text-white shadow-lg hover:bg-[#00A3EE] transition-colors duration-300 cursor-pointer">
                   Connect with Us
-                </button>
+                </a>
               </div>
 
               <div>
@@ -101,7 +101,7 @@ const Footer = () => {
                 },
                 {
                   name: "Support & Managed Services",
-                  href: "/",
+                  href: "/dynamics-365-support-services",
                 },
               ].map((service, index) => (
                 <a
@@ -153,7 +153,7 @@ const Footer = () => {
               {[
                 { name: "About Trescor", href: "/about-trescor" },
                 { name: "Contact Trescor", href: "/contact-trescor" },
-                { name: "Careers", href: "/careers" },
+                { name: "Our Capabilities", href: "/careers" },
                 { name: "Partner with Us", href: "/collaborate-with-us" },
                 { name: "Global Presence", href: "/contact-trescor" },
               ].map((link, index) => (
@@ -240,7 +240,7 @@ const Footer = () => {
                   </a>
                   <div className="h-4 w-px bg-gray-400" />
                   <a
-                    href="/privacy-policy"
+                    href="/privacy-policy#ccpa-compliance"
                     className="text-gray-300 hover:text-[#7EB900] transition-colors font-medium"
                   >
                     CCPA
