@@ -488,7 +488,7 @@ const AboutHero = () => {
         </div>
       </div>
 
-      <div className="pt-8 pb-8">
+      <div id="our_capabilities" className="pt-8 pb-8">
         <div className="relative">
           <div className="w-full">
             <div className="w-full mx-auto max-w-[1400px] px-4 py-4">
