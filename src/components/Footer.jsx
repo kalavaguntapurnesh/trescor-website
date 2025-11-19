@@ -153,7 +153,7 @@ const Footer = () => {
               {[
                 { name: "About Trescor", href: "/about-trescor" },
                 { name: "Contact Trescor", href: "/contact-trescor" },
-                { name: "Our Capabilities", href: "/careers" },
+                { name: "Our Capabilities", href: "/about-trescor#our_capabilities" },
                 { name: "Partner with Us", href: "/collaborate-with-us" },
                 { name: "Global Presence", href: "/contact-trescor" },
               ].map((link, index) => (
